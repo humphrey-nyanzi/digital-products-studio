@@ -1,9 +1,9 @@
-# Technology \& Infrastructure
+# Technology & Infrastructure
 
-\---
+---
 
-**Document:** Technology \& Infrastructure
-**File Name:** 10\_Technology \& Infrastructure.md
+**Document:** Technology & Infrastructure
+**File Name:** 10_Technology & Infrastructure.md
 **Status:** Authoritative
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
@@ -11,7 +11,7 @@
 **Last Updated:** June 2026
 **Next Review:** Quarterly
 
-\---
+---
 
 # Purpose
 
@@ -21,7 +21,7 @@ It explains where products are built, where documentation lives, how version con
 
 The objective is to keep the Studio practical, organised and scalable without introducing unnecessary complexity.
 
-\---
+---
 
 # Technology Philosophy
 
@@ -33,7 +33,7 @@ Simple, reliable and accessible tools are preferred over complex tools that add 
 
 The Studio should adopt the simplest workflow that satisfies current needs while leaving a clear path to future capabilities.
 
-\---
+---
 
 # Core Principle
 
@@ -49,7 +49,7 @@ This means that even spreadsheets, dashboards, templates and documents should ha
 * maintenance
 * clear ownership
 
-\---
+---
 
 # Primary Tools
 
@@ -68,7 +68,7 @@ The Studio currently uses:
 
 Additional tools may be introduced when justified by product requirements.
 
-\---
+---
 
 # GitHub
 
@@ -90,7 +90,7 @@ It stores:
 
 GitHub is the authoritative source for project history.
 
-\---
+---
 
 # Google Drive
 
@@ -112,7 +112,7 @@ It stores:
 
 Google Drive is optimised for editing, sharing and live collaboration.
 
-\---
+---
 
 # Important Clarification
 
@@ -134,7 +134,7 @@ The Google Sheet is the working product.
 
 GitHub documents, versions and packages the product.
 
-\---
+---
 
 # Recommended Workflow
 
@@ -168,7 +168,7 @@ The live product remains in Google Drive.
 
 The release package and project history live in GitHub.
 
-\---
+---
 
 # Repository Strategy
 
@@ -191,13 +191,13 @@ Contains:
 * Documentation Standards
 * Design System
 * Release Standards
-* Technology \& Infrastructure
+* Technology & Infrastructure
 * Product Templates
 * Shared prompts
 * Shared assets
 * Studio-level planning
 
-\---
+---
 
 ## Product Repositories
 
@@ -213,7 +213,7 @@ Each product repository contains the documentation, assets, releases and scripts
 
 Product repositories should reference the Studio repository standards.
 
-\---
+---
 
 # Product Repository Structure
 
@@ -243,8 +243,8 @@ product-name/
 │   └── icons/
 │
 ├── exports/
-│   ├── product-name\_v1.0.0.xlsx
-│   └── product-name\_v1.0.0.pdf
+│   ├── product-name_v1.0.0.xlsx
+│   └── product-name_v1.0.0.pdf
 │
 ├── templates/
 │   └── reusable templates
@@ -252,7 +252,7 @@ product-name/
 └── links.md
 ```
 
-\---
+---
 
 # links.md
 
@@ -271,7 +271,7 @@ It should contain:
 
 Do not rely on memory to locate important files.
 
-\---
+---
 
 # Version Control
 
@@ -287,7 +287,7 @@ Git should be used for:
 
 Git should not be used as the primary editor for live Google Sheets.
 
-\---
+---
 
 # Apps Script
 
@@ -299,7 +299,7 @@ Future maturity may include tools such as `clasp` for proper Apps Script version
 
 Do not introduce advanced tooling before it provides clear value.
 
-\---
+---
 
 # Excel Support
 
@@ -315,7 +315,7 @@ A Google Sheets product may still be released without full Excel parity if:
 * the product remains useful
 * the release notes explain compatibility clearly
 
-\---
+---
 
 # File Naming
 
@@ -324,9 +324,9 @@ Release files should use consistent names.
 Recommended format:
 
 ```text
-product-name\_v1.0.0.xlsx
-product-name\_user-guide\_v1.0.0.pdf
-product-name\_release-notes\_v1.0.0.md
+product-name_v1.0.0.xlsx
+product-name_user-guide_v1.0.0.pdf
+product-name_release-notes_v1.0.0.md
 ```
 
 Avoid:
@@ -338,7 +338,7 @@ new version.xlsx
 copy of template.xlsx
 ```
 
-\---
+---
 
 # Backups
 
@@ -354,7 +354,7 @@ Recommended backup moments:
 
 Backups should be labelled with dates and versions.
 
-\---
+---
 
 # Permissions
 
@@ -371,7 +371,7 @@ Recommended access levels:
 
 For public templates, users should receive copy access rather than edit access to the master file.
 
-\---
+---
 
 # Distribution
 
@@ -386,7 +386,7 @@ Products may be distributed through:
 
 The distribution method should match the product type and audience.
 
-\---
+---
 
 # GitHub Issues
 
@@ -401,7 +401,7 @@ GitHub Issues should be used for:
 
 Issues should be specific and actionable.
 
-\---
+---
 
 # GitHub Projects
 
@@ -435,7 +435,7 @@ Maintenance
 
 This pipeline should align with the Studio Manual.
 
-\---
+---
 
 # Infrastructure Maturity Model
 
@@ -453,7 +453,7 @@ Current default.
 
 This is sufficient for early products.
 
-\---
+---
 
 ## Stage 2 — Structured Engineering Workflow
 
@@ -466,7 +466,7 @@ Introduce when products become more complex.
 * reusable scripts
 * improved backup procedures
 
-\---
+---
 
 ## Stage 3 — Automated Workflow
 
@@ -481,7 +481,7 @@ Introduce only when justified.
 
 The Studio should not skip stages unnecessarily.
 
-\---
+---
 
 # Security
 
@@ -498,7 +498,7 @@ Never commit:
 
 Use placeholders or environment variables where necessary.
 
-\---
+---
 
 # Data Privacy
 
@@ -510,7 +510,7 @@ Client-specific files should remain private.
 
 Public products should not expose operationally sensitive information.
 
-\---
+---
 
 # Tool Adoption Criteria
 
@@ -525,7 +525,7 @@ Before adopting a new tool, ask:
 
 If the answer is unclear, postpone adoption.
 
-\---
+---
 
 # Failure Recovery
 
@@ -539,7 +539,7 @@ At minimum:
 * changelog explains recent changes
 * critical formulas are documented
 
-\---
+---
 
 # Related Documents
 
@@ -551,7 +551,7 @@ At minimum:
 * Release Standards
 * Product Template
 
-\---
+---
 
 # Change Log
 
@@ -559,7 +559,7 @@ At minimum:
 
 Initial release.
 
-\---
+---
 
 # Closing Statement
 
