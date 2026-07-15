@@ -35,6 +35,33 @@ The Studio should adopt the simplest workflow that satisfies current needs while
 
 ---
 
+# Global Product Configuration
+
+Studio products should be usable by a global audience where practical.
+
+Products should avoid hard-coding regional assumptions unless the product scope requires it.
+
+Where relevant, products should make the following configurable or clearly documented:
+
+* currency
+* timezone
+* date format
+* time format
+* measurement units
+* English terminology or spelling convention
+* competition season or reporting calendar
+* local terminology
+
+For spreadsheet products, prefer a visible setup or configuration sheet for these settings.
+
+Dates and times should be stored in a consistent internal format and displayed in the user's configured format where practical.
+
+Financial outputs should clearly state the selected currency. USD is the default for products involving money unless the product scope justifies another default. Products should not mix currencies unless conversion rules are explicitly defined.
+
+Exports, reports and documentation should show the assumptions used to produce them. Products are English-first unless a specific product scope explicitly requires translation.
+
+---
+
 # Core Principle
 
 Every product is developed as though it were a software product, regardless of its final format.
@@ -509,6 +536,10 @@ Demo datasets should use fictional or anonymised data.
 Client-specific files should remain private.
 
 Public products should not expose operationally sensitive information.
+
+Products intended for global use should also consider regional data protection expectations.
+
+Where products may involve children, athletes, health, finance or client data, collect the minimum information needed and document the intended use clearly.
 
 ---
 

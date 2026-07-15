@@ -1,0 +1,61 @@
+# QA Plan
+
+Product: Football Competition Results & Standings Manager  
+Status: Final clean-copy and ordinary-user QA scheduled for 16 July 2026  
+Last verified: 15 July 2026
+
+## Purpose
+
+Verify that a normal organiser can run a competition without damaging the workbook, losing audit data or publishing incorrect standings.
+
+## Current Gate
+
+The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA. Release still requires ordinary-user permissions and final clean-copy regression.
+
+The next QA session is scheduled for 16 July 2026 from 13:00 to 14:30 Africa/Kampala. It must use a clean customer-style copy and an intended non-owner user. The 17 July closeout may proceed only after this gate is completed.
+
+## Required Regression
+
+| Area | Test | Pass condition |
+|---|---|---|
+| Reset | Clear Match Data - Keep Setup | Backup is created, competition setup remains, match data clears and no error occurs. |
+| Reset | Reset to Blank Template | Backup is created, editable setup clears, formulas and automation remain intact. |
+| Setup | New competition configuration | Checks resolve after a name, 4 to 32 teams and one active venue are entered. |
+| Builder | Generate and transfer fixtures | Builder is Ready to review and Fixtures receives the correct fields and statuses. |
+| Group builder | Generate every registered group | Each group has complete internal pairings, no cross-group fixture exists and the combined count is within 200. |
+| Group scheduling | Compare equal and unequal group sizes | The same round across all groups is scheduled before the next round, dates remain chronological and capacity rules still apply. |
+| Group builder | Reject incomplete assignments | Active teams assigned to League and groups with fewer than two teams block generation with a corrective message. |
+| Round-robin fairness | Review home and away runs | Pair coverage remains complete and repeated home or away runs are kept within the verified balancing standard. |
+| Match days | Generate weekends and one named weekday | Every generated fixture date falls on an allowed day. |
+| Round spacing | Force one round across multiple dates | The next round starts from the final date used by the previous round plus the configured minimum gap. |
+| Return leg | Generate Double Round-robin with an added break | The extra break is applied once before the second leg and all 56 eight-team fixtures remain complete. |
+| Scheduling validation | Clear Match Days or enter an invalid break | Builder Status blocks transfer with a corrective message. |
+| Form sync | Sync eligible fixtures | Only valid Scheduled fixtures appear. |
+| Played | Submit and approve | Result Review, Fixtures, standings, Reports and Form eligibility update. |
+| Duplicate | Submit one fixture twice before approval | Manager can reject one and approve one while preserving both records. |
+| Walkover | Select Home team or Away team | Correct winner and default score reach official outputs. |
+| Postponed | Submit, approve and reschedule | Fixture stays closed until a valid new schedule is entered, then rescheduling reopens it and preserves the earlier report. |
+| Abandoned | Submit and resolve | Submitted status remains Abandoned and the manager records Played, Walkover, Postponed or Void. |
+| Reports | Compare approvals and official results | Official Results counts only Approved Played and Walkover outcomes. |
+| Correction | Correct after approval | Manager workflow preserves one Approved record and audit history. |
+| Language | Sweep customer-facing surfaces | No product code, prototype, batch, QA or developer terminology appears in the workbook, Form, menu, dialogs or User Manual. |
+| Identity | Check the workbook, Form and User Manual first screen | Each surface explicitly identifies football without relying on surrounding context. |
+| Typography | Check workbook, Form theme and User Manual | Workbook and User Manual use Arial; the Form uses the closest clean Basic sans-serif theme; no text is clipped or visually inconsistent. |
+| Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
+| Capacity | Run representative high-volume tests | Limits, performance and usable layout are confirmed. |
+
+## Evidence To Retain
+
+- Apps Script version and execution-log result.
+- Form URL and response destination for a clean copy.
+- Concise records of lifecycle tests.
+- Checks result after each high-risk action.
+
+## Release Rule
+
+Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
+
+After the 16 July regression, record pass or fail evidence in this plan and the Prototype Status document. The 17 July closeout must distinguish release-blocking defects from improvements that can wait until a later version.
+
+
+

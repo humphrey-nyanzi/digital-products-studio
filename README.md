@@ -59,6 +59,7 @@ Every Studio product should:
 * Be professionally documented.
 * Be modular.
 * Be easy to customise.
+* Work for a global audience where practical.
 * Be maintainable over time.
 
 Quality is preferred over quantity.
@@ -253,7 +254,7 @@ Studio Version:
 
 Current Focus:
 
-Preparing and developing Product 001.
+Completing final release QA for Product 001: Football Competition Results & Standings Manager.
 
 ---
 

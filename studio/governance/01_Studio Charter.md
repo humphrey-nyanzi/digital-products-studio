@@ -69,6 +69,12 @@ Products should remain globally useful while acknowledging the realities of low-
 
 Where appropriate, products should function with free or widely accessible software.
 
+Global usefulness requires products to handle regional differences deliberately.
+
+Products should avoid assuming a single country, currency, timezone, date format, season calendar or administrative context unless the product is explicitly scoped that way.
+
+When regional assumptions are necessary, they should be configurable or clearly documented.
+
 ---
 
 # Our Philosophy
@@ -183,6 +189,30 @@ Every release should improve the product without compromising its philosophy.
 
 ---
 
+## Global Practicality
+
+Products should be designed for real-world use across different regions where practical.
+
+This includes thoughtful handling of:
+
+* currencies
+* timezones
+* date and time formats
+* measurement units
+* local terminology
+* competition calendars
+* English terminology that remains understandable internationally
+
+The Studio publishes products in English by default. Translation into multiple languages is not a default requirement.
+
+Where products involve money, currency should be configurable when practical, with USD as the default unless another currency is required by the product scope.
+
+Global support should not make products unnecessarily complex.
+
+The Studio should prefer simple configuration, clear defaults and documented assumptions over hidden regional logic.
+
+---
+
 ## Documentation Is Part of the Product
 
 Documentation is not supplementary.
@@ -280,6 +310,7 @@ Before making significant decisions, ask:
 * Does this solve a real problem?
 * Does it simplify or complicate the product?
 * Will users trust it?
+* Are regional assumptions visible, configurable or documented?
 * Will this decision still make sense when Product #50 ships?
 * Does it align with this Charter?
 

@@ -97,6 +97,30 @@ What is the single most important outcome this product delivers?
 
 ---
 
+## Target Regions
+
+Where is the product expected to be usable?
+
+Document:
+
+regions or countries considered
+
+English terminology or spelling convention
+
+timezone assumptions
+
+currency assumptions, using USD as the default where money is involved unless another default is justified
+
+date and time format assumptions
+
+measurement units
+
+any regional rules, calendars or terminology
+
+If the product is global by default, explain how regional differences are handled without adding unnecessary complexity. Translation into multiple languages is not required unless explicitly approved.
+
+---
+
 # Product Scope
 
 ## Included
@@ -140,6 +164,8 @@ Feel professional?
 Remain modular?
 
 Hide unnecessary complexity?
+
+Handle global or regional assumptions clearly?
 
 Support long-term maintenance?
 
@@ -336,6 +362,16 @@ Budget
 Timeline
 
 Platform limitations
+
+Timezone handling
+
+Currency formatting
+
+Date format differences
+
+Regional terminology
+
+Local rules or legal constraints
 
 ---
 
