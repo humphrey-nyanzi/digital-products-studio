@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, final clean-copy QA pending  
-Last verified: 15 July 2026
+Status: Working prototype v0.1.0, clean-copy QA partially passed with release blockers
+Last verified: 16 July 2026
 
 ## Verified Product State
 
@@ -39,10 +39,29 @@ The Batch 8A workbook migration preserved 28 fixtures, 25 open fixtures, existin
 
 The User Manual formatting was repaired on 15 July 2026. Arial is applied throughout, the opening workflow uses a native numbered list, supporting instructions use native bullets, and operational labels use consistent subsection headings. The exported PDF embeds Arial successfully.
 
-## Active Blocker
+## Clean-copy QA Evidence
 
-Install v0.1.5.2, rebuild the Form content once, then run the final ordinary-user protection and permissions test in a clean copy on 16 July 2026.
+The first customer-account test confirmed:
+
+- the bound Apps Script copied with the workbook and the Competition Tools menu appeared;
+- the second account became the workbook owner;
+- a new Result Form was created under the second account;
+- the response tab remained hidden from the normal workflow;
+- a submitted result reached only the customer copy;
+- the Start Here Form link resolved to the new customer Form.
+
+The same test exposed two release blockers:
+
+- the Google authorisation flow displayed an unverified-app warning and the temporary Apps Script project name `Computations`;
+- the Fixtures Form link and several workbook navigation links still contain master workbook or master Form URLs.
+
+## Active Blockers
+
+1. Repair all hard-coded workbook and Form links so a customer copy cannot navigate into the Studio master.
+2. Establish the Studio Google application identity, domain, public privacy policy, standard Cloud project and least-privilege scope inventory.
+3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
+4. Repeat clean-copy and ordinary-user QA after the link and OAuth architecture decisions are implemented.
 
 ## Next Action
 
-Complete the 90-minute clean-copy regression on 16 July. Use 17 July to close release-blocking QA and decide delivery ownership, permissions, support and the first distribution route. Do not begin packaging or public release until those gates pass.
+Repair copy-local navigation first, then compare the Cloud project identity in the master and customer copy. Build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.
