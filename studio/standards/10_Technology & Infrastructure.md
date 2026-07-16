@@ -326,6 +326,68 @@ Future maturity may include tools such as `clasp` for proper Apps Script version
 
 Do not introduce advanced tooling before it provides clear value.
 
+## Public Google Automation
+
+Google Workspace products that request customer permissions require a trusted public identity and a repeatable release process. This applies to products using Apps Script, Google Forms, Drive access, installable triggers or other Google services.
+
+### Shared Studio infrastructure
+
+The Studio should establish and maintain these assets once, then reuse them where appropriate:
+
+* a Studio-controlled distribution account with a professional sender name
+* an owned domain and a public Studio or product-support website
+* a public privacy policy and support contact
+* one or more standard Google Cloud projects with clear production names
+* a documented OAuth consent and verification procedure
+* a register of approved scopes and why each scope is needed
+
+The personal account of the Studio Director should not be the default customer-facing sharing identity once a Studio distribution identity is available.
+
+### Per-product requirements
+
+Every Google automation product must document and verify:
+
+* the customer-facing application name and purpose
+* the exact Google services, data and OAuth scopes used
+* whether the product needs sensitive or restricted scopes
+* which public privacy policy and support contact apply
+* whether a copied bound script retains the intended Cloud project and consent identity
+* who owns each customer workbook, Form and response destination
+* that internal workbook links resolve inside the customer's copy
+* that Form links come from the copy's current configuration rather than a master URL
+* that a clean customer copy passes first-time setup and ordinary-user QA
+
+### OAuth and scope rules
+
+Use the least privilege required for the product to work. Prefer explicit scopes in the Apps Script manifest once the required scope set is understood.
+
+Before public distribution:
+
+1. associate the production script with the approved standard Google Cloud project;
+2. configure the OAuth consent screen with the correct app name, support contact, domain and public policy links;
+3. verify ownership of every domain used on the consent screen;
+4. prepare accurate scope justifications and demonstration evidence;
+5. complete the applicable Google verification process;
+6. test the consent flow using an account that did not build the product;
+7. record any warning, user cap or verification limitation as a release blocker.
+
+Do not promise that verification of the master automatically covers customer copies. Confirm the Cloud project and consent identity in an actual copied workbook.
+
+### Customer-copy isolation
+
+A customer copy must operate independently from the Studio master.
+
+Confirm that:
+
+* the customer owns their workbook and newly created Form;
+* submissions update only the customer workbook;
+* the response tab is hidden from the normal customer workflow;
+* navigation does not open the Studio master;
+* no master Form, response destination or private Drive file is reused;
+* repair and reset actions cannot alter another customer's copy or the Studio master.
+
+Any cross-copy link or data leak is a release-blocking defect.
+
 ---
 
 # Excel Support
@@ -335,6 +397,8 @@ Where practical, products should support Microsoft Excel.
 Excel support should be tested separately from Google Sheets.
 
 If a product behaves differently in Excel, document the limitation clearly.
+
+For automated Google products, sharing permissions and OAuth permissions are separate concerns. Both must be tested. A workbook can be owned correctly while its script still displays an unverified-app warning or requests scopes under an unsuitable project identity.
 
 A Google Sheets product may still be released without full Excel parity if:
 
@@ -476,6 +540,8 @@ Current default.
 * Google Drive for live Google products
 * manual exports
 * manual testing
+
+Public Google automation products must link to an accessible privacy policy that accurately explains the Google data accessed, the purpose of access, storage and retention, sharing, deletion or reset behaviour, security responsibilities and a contact route. The policy must match the released implementation and requested scopes.
 * manual release review
 
 This is sufficient for early products.

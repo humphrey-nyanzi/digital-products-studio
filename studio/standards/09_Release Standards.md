@@ -242,6 +242,18 @@ Verify:
 * permissions
 * expected behaviour
 
+For Google automation products, also verify:
+
+* the customer copy owns its workbook, Form and response destination
+* the copied script uses the intended Cloud project and application identity
+* the OAuth consent flow is acceptable for the intended audience
+* every requested scope is necessary and documented
+* internal navigation and Form links resolve inside the customer copy
+* submissions and automation affect only the customer copy
+* no master URLs, data or private files are exposed
+
+An unverified-app warning, a cross-copy link or an unclear permission request is a release blocker unless the Studio Director explicitly limits the release to a controlled test and documents the risk.
+
 ---
 
 ## 14. Packaging
@@ -344,6 +356,9 @@ Every release should satisfy:
 
 * Purpose confirmed
 * Scope reviewed
+* Customer-copy isolation verified, where applicable
+* OAuth identity, scopes and verification accepted, where applicable
+* Public privacy policy and support contact published, where applicable
 * Functionality verified
 * Formula validation complete
 * Documentation complete

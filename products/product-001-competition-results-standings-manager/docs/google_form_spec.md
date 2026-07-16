@@ -1,8 +1,8 @@
 # Google Form Specification
 
 Product: Football Competition Results & Standings Manager  
-Status: Form workflow verified in v0.1.5.0; customer-language and football-identity installer prepared in v0.1.5.2  
-Last verified: 15 July 2026
+Status: Form workflow verified in v0.1.5.2; copy-isolation repair prepared in v0.1.5.3
+Last verified: 16 July 2026
 
 ## Purpose
 

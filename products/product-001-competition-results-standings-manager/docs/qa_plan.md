@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Final clean-copy and ordinary-user QA scheduled for 16 July 2026  
-Last verified: 15 July 2026
+Status: First clean-copy QA completed, release-blocking isolation and OAuth checks remain
+Last verified: 16 July 2026
 
 ## Purpose
 
@@ -10,9 +10,9 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 ## Current Gate
 
-The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA. Release still requires ordinary-user permissions and final clean-copy regression.
+The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The next QA session is scheduled for 16 July 2026 from 13:00 to 14:30 Africa/Kampala. It must use a clean customer-style copy and an intended non-owner user. The 17 July closeout may proceed only after this gate is completed.
+The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Copy-local navigation is now implemented in the master and v0.1.5.3, but public release remains blocked until a fresh copy passes and the OAuth path is resolved.
 
 ## Required Regression
 
@@ -42,6 +42,10 @@ The next QA session is scheduled for 16 July 2026 from 13:00 to 14:30 Africa/Kam
 | Identity | Check the workbook, Form and User Manual first screen | Each surface explicitly identifies football without relying on surrounding context. |
 | Typography | Check workbook, Form theme and User Manual | Workbook and User Manual use Arial; the Form uses the closest clean Basic sans-serif theme; no text is clipped or visually inconsistent. |
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
+| OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
+| OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
+| Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |
+| Cloud project | Compare master and customer-copy project numbers | The copied-script verification architecture is confirmed rather than assumed. |
 | Capacity | Run representative high-volume tests | Limits, performance and usable layout are confirmed. |
 
 ## Evidence To Retain
@@ -50,12 +54,15 @@ The next QA session is scheduled for 16 July 2026 from 13:00 to 14:30 Africa/Kam
 - Form URL and response destination for a clean copy.
 - Concise records of lifecycle tests.
 - Checks result after each high-risk action.
+- Consent-screen screenshots and the tested Cloud project numbers.
+- A link-isolation checklist covering every visible customer navigation control.
+- The exact OAuth scope inventory and applicable privacy policy URL.
 
 ## Release Rule
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-After the 16 July regression, record pass or fail evidence in this plan and the Prototype Status document. The 17 July closeout must distinguish release-blocking defects from improvements that can wait until a later version.
+The first 16 July regression is recorded as a partial pass. Customer ownership and operational isolation passed, while OAuth trust and navigation isolation failed. The navigation repair now requires a newly created customer copy after v0.1.5.3 is installed. A controlled pilot may be considered only through an explicit Director decision; public release requires both gates to pass.
 
 
 

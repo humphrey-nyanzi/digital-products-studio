@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 15 July 2026
+Last updated: 16 July 2026
 
 ## D001 - Football-first self-service scope
 
@@ -96,6 +96,30 @@ Consequence: customer-facing documents use a consistent, readable and widely ava
 
 ## D019 - Release gates before public launch
 
-Decision: final clean-copy and ordinary-user QA takes place on 16 July 2026, followed by QA closeout and delivery decisions on 17 July. Pricing, packaging and publication remain gated by those outcomes.
+Decision: the 16 July clean-copy test is a partial pass. Customer ownership, copied automation, customer Form creation and isolated response processing passed. OAuth trust and copy-local navigation did not pass.
 
-Consequence: no broad feature work is added during release closeout. Release-blocking defects are fixed, limitations are documented and non-blocking improvements move to later scope.
+Consequence: public packaging and launch remain blocked while the Studio establishes its Google application identity, privacy and verification foundation and Product 001 repairs master-linked navigation.
+
+## D020 - Studio-managed Google application identity
+
+Decision: public Google automation products use a Studio-managed distribution identity, owned domain, public privacy policy, support contact and approved standard Google Cloud project rather than an informal personal or temporary project identity.
+
+Consequence: the Studio foundation is reusable across future products, while each product still records its exact scopes, data use and verification evidence.
+
+## D021 - Customer-copy isolation is mandatory
+
+Decision: every visible workbook link, Form link, response destination and automated write in a customer copy must resolve to that customer's assets or an explicitly public support resource.
+
+Consequence: a master workbook URL, old Form URL or cross-copy data write is a release-blocking defect.
+
+## D022 - Preserve the working master during release architecture work
+
+Decision: do not blank the current working master while link and OAuth architecture work is underway. Use disposable customer copies for reset, authorisation and delivery testing.
+
+Consequence: the master remains implementation evidence and the current QA copy remains defect evidence only. A fresh customer copy is required for the final release gate.
+
+## D023 - Copy-local navigation uses relative sheet links
+
+Decision: customer-facing workbook navigation uses relative sheet links. Form buttons read the configured published Form URL from Setup. Apps Script repairs legacy navigation and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook.
+
+Consequence: a copied workbook does not navigate back to the Studio master, and it does not expose the master Form before the customer owner sets up a copy-specific Result Form.

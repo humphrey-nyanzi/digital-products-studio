@@ -127,6 +127,55 @@ Conduct a complete product walkthrough.
 
 Review the product as though you were a first-time customer.
 
+## Google Automation Release Gate
+
+Complete this gate before a Google Workspace product becomes a public release candidate.
+
+### Studio identity and policy
+
+Confirm:
+
+* the distribution account and sender name are appropriate for customers;
+* the Studio controls the domain used for public application information;
+* the public privacy policy and support contact are live;
+* the production Google Cloud project has a clear customer-facing name.
+
+### Product permission review
+
+Record:
+
+* every Google service and OAuth scope used;
+* why each scope is necessary;
+* whether any scope is sensitive or restricted;
+* the verification status and any remaining warning or user cap.
+
+### Customer-copy test
+
+Using an account that did not build the master:
+
+1. create the delivery copy;
+2. confirm the customer account owns the copy;
+3. authorise the bound script and record the consent experience;
+4. create the product's Form or other connected assets;
+5. confirm all connected assets belong to the customer account;
+6. submit a test record and confirm only the customer copy changes;
+7. inspect every workbook and Form link for master references;
+8. compare the master and copy Cloud project identities;
+9. complete the ordinary-user protection and recovery tests.
+
+Do not distribute a customer copy that links back to the Studio master or an obsolete Form. Do not assume that copying a bound script preserves the intended verified application identity.
+
+### Evidence and decision
+
+Retain:
+
+* consent-screen screenshots;
+* Cloud project numbers for the tested master and copy;
+* the final scope inventory and justifications;
+* privacy policy and support URLs;
+* customer-copy ownership and isolation results;
+* the Director's release or controlled-pilot decision.
+
 ---
 
 # Stage 4 — Documentation Review
