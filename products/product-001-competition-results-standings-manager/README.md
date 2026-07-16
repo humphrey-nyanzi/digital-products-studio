@@ -11,8 +11,8 @@ The live workbook and linked Form are the implementation authority. The canonica
 
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
-- Installed script checkpoint: [v0.1.5.0](scripts/product001_apps_script_automation_v0_1_5_0.gs)
-- Next script checkpoint: [v0.1.5.2](scripts/product001_apps_script_automation_v0_1_5_2.gs), customer-language and explicit football identity prepared for installation
+- Installed script checkpoint: [v0.1.5.2](scripts/product001_apps_script_automation_v0_1_5_2.gs)
+- Next script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs), copy-local navigation repair prepared for installation
 
 ## Product Scope
 
@@ -48,7 +48,7 @@ Create Fixtures supports multi-group generation, balanced pairing orientation, p
 
 The customer workbook, Form, menu, dialogs and User Manual use the product name Football Competition Results & Standings Manager and task-based customer language. Product codes, batch names, QA evidence, implementation versions and migration details remain in repository and project records.
 
-The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.2 carries the matching Competition Tools menu and Football Match Result Submission title but still requires live installation.
+The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.2 is installed. The v0.1.5.3 checkpoint adds copy-local navigation repair and clears inherited Form configuration when a workbook copy first opens.
 
 ## Visual Standard
 
@@ -68,4 +68,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-On 16 July 2026, install Apps Script v0.1.5.2, run Set Up Result Form once, then complete the final clean-copy QA with an ordinary non-owner user. Verify permissions, protected ranges, per-copy Form ownership, response-tab privacy, the complete setup-to-publication journey and both reset actions. On 17 July, close QA and decide the delivery model, ownership boundary, support boundary and first distribution route.
+Install Apps Script v0.1.5.3 in the master, create a fresh disposable customer copy and verify every workbook and Form link. Then inventory OAuth scopes and compare the Cloud project identity in the master and customer copy before the Studio identity and verification work continues.

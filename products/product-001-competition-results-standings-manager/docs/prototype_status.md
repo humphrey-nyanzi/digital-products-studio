@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed bound script is v0.1.5.0. Apps Script v0.1.5.2 is prepared in the repository and must be installed to apply the Competition Tools menu, customer-facing dialogs, Football Match Result Submission wording and legacy review-decision migration.
+The installed bound script is v0.1.5.2. Apps Script v0.1.5.3 is prepared in the repository and must be installed to repair legacy customer-copy links and clear inherited Form configuration when a copied workbook first opens.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -53,15 +53,15 @@ The first customer-account test confirmed:
 The same test exposed two release blockers:
 
 - the Google authorisation flow displayed an unverified-app warning and the temporary Apps Script project name `Computations`;
-- the Fixtures Form link and several workbook navigation links still contain master workbook or master Form URLs.
+- the first customer copy exposed master workbook and master Form links. The master formulas are now repaired, but a fresh copy regression is still required.
 
 ## Active Blockers
 
-1. Repair all hard-coded workbook and Form links so a customer copy cannot navigate into the Studio master.
+1. Install v0.1.5.3 and verify the repaired workbook and Form links in a fresh customer copy.
 2. Establish the Studio Google application identity, domain, public privacy policy, standard Cloud project and least-privilege scope inventory.
 3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
 4. Repeat clean-copy and ordinary-user QA after the link and OAuth architecture decisions are implemented.
 
 ## Next Action
 
-Repair copy-local navigation first, then compare the Cloud project identity in the master and customer copy. Build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.
+Install v0.1.5.3 and run the fresh-copy link regression, then compare the Cloud project identity in the master and customer copy. Build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.

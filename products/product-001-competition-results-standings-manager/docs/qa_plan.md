@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Public release remains blocked until both defects are resolved and a fresh copy passes regression.
+The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Copy-local navigation is now implemented in the master and v0.1.5.3, but public release remains blocked until a fresh copy passes and the OAuth path is resolved.
 
 ## Required Regression
 
@@ -62,7 +62,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. Customer ownership and operational isolation passed, while OAuth trust and navigation isolation failed. The next regression must use a newly created customer copy after those fixes. A controlled pilot may be considered only through an explicit Director decision; public release requires both gates to pass.
+The first 16 July regression is recorded as a partial pass. Customer ownership and operational isolation passed, while OAuth trust and navigation isolation failed. The navigation repair now requires a newly created customer copy after v0.1.5.3 is installed. A controlled pilot may be considered only through an explicit Director decision; public release requires both gates to pass.
 
 
 

@@ -1,7 +1,7 @@
 # Architecture Blueprint
 
 Product: Football Competition Results & Standings Manager  
-Status: Live workbook architecture, verified 15 July 2026
+Status: Live workbook architecture, verified 16 July 2026
 
 ## Components
 
@@ -54,7 +54,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.2
+## Apps Script v0.1.5.3
 
 The next installation checkpoint includes:
 
@@ -68,6 +68,8 @@ The next installation checkpoint includes:
 - owner-only reset actions
 
 The installer rejects a Form in the bin or linked to another workbook, then discovers, records and hides the actual response sheet. The response processor resolves duplicate historical headers by selecting the newest nonblank answer.
+
+Customer-facing workbook navigation uses relative sheet links rather than master workbook URLs. On open and during Form setup, v0.1.5.3 repairs legacy links and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook. Start Here and Fixtures then read the copy-specific published Form URL from Setup.
 
 Result Review stores submitted Match Status separately from Official Outcome. The manager outcome drives Fixtures and Official Results. Official Walkover winners are resolved from Home team or Away team. Postponed fixtures use the rescheduling action to preserve audit history before reopening the Form.
 

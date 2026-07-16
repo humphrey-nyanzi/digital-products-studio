@@ -117,3 +117,9 @@ Consequence: a master workbook URL, old Form URL or cross-copy data write is a r
 Decision: do not blank the current working master while link and OAuth architecture work is underway. Use disposable customer copies for reset, authorisation and delivery testing.
 
 Consequence: the master remains implementation evidence and the current QA copy remains defect evidence only. A fresh customer copy is required for the final release gate.
+
+## D023 - Copy-local navigation uses relative sheet links
+
+Decision: customer-facing workbook navigation uses relative sheet links. Form buttons read the configured published Form URL from Setup. Apps Script repairs legacy navigation and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook.
+
+Consequence: a copied workbook does not navigate back to the Studio master, and it does not expose the master Form before the customer owner sets up a copy-specific Result Form.
