@@ -73,6 +73,19 @@ Customer-facing workbook navigation uses relative sheet links rather than master
 
 Result Review stores submitted Match Status separately from Official Outcome. The manager outcome drives Fixtures and Official Results. Official Walkover winners are resolved from Home team or Away team. Postponed fixtures use the rescheduling action to preserve audit history before reopening the Form.
 
+## OAuth Scope Inventory
+
+The v0.1.5.3 source uses only SpreadsheetApp, FormApp, DriveApp, ScriptApp and Utilities. The candidate explicit manifest scopes are:
+
+| Scope | Product use |
+|---|---|
+| https://www.googleapis.com/auth/spreadsheets.currentonly | Read and update the bound competition workbook. |
+| https://www.googleapis.com/auth/forms | Create, configure and update the workbook-specific Result Form. |
+| https://www.googleapis.com/auth/drive | Create the automatic workbook backup before a reset and inspect linked Form files. |
+| https://www.googleapis.com/auth/script.scriptapp | Create and repair Form-submit and approval-edit triggers. |
+| https://www.googleapis.com/auth/script.container.ui | Add Competition Tools menus, alerts and confirmation prompts. |
+
+No Gmail, Calendar, external-request or user-profile service is used. The full Drive scope is currently required by the automatic reset backup through DriveApp.makeCopy. Before verification, the Studio must decide whether that backup justifies the broad Drive permission or whether reset should require a manual owner-created backup so the script can be redesigned for narrower access. The final scope list must be confirmed against the live appsscript.json manifest and the authorisation screen.
 ## Reset Boundary
 
 Reset is an owner-only workflow. It creates a full-workbook backup, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.

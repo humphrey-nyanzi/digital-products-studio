@@ -11,7 +11,7 @@ The working lifecycle, buyer-facing workbook redesign, simplified Form workflow,
 ## Required Before Packaging
 
 1. Install v0.1.5.3 and verify the implemented copy-local workbook and configuration-driven Form links in a fresh customer copy.
-2. Inventory the exact OAuth scopes and remove any scope the released product does not need.
+2. Confirm the exact manifest scopes and decide whether automatic reset backups justify full Google Drive access.
 3. Choose the Studio distribution identity and low-cost domain route.
 4. Publish the Studio application homepage, privacy policy and support contact.
 5. Configure the production standard Google Cloud project and OAuth consent screen.
