@@ -46,7 +46,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
-| Least-privilege authorisation | Install v0.1.5.6 Code.gs in the master, create a disposable copy and reauthorise | The copied project infers current workbook access from Code.gs. Consent requests current workbook access, Forms management and trigger management only. Full Drive and account-wide Sheets access are absent. |
+| Least-privilege authorisation | Install v0.1.5.7 Code.gs in the master, create a disposable copy and reauthorise | The copied project infers current workbook access from Code.gs. Consent requests current workbook access, Forms management and trigger management only. Full Drive and account-wide Sheets access are absent. |
 | Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
 | Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
 | Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |

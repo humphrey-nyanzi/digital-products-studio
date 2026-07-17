@@ -12,7 +12,7 @@ The live workbook and linked Form are the implementation authority. The canonica
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
 - Installed script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs)
-- Prepared customer-copy checkpoint: [v0.1.5.6](scripts/product001_apps_script_automation_v0_1_5_6.gs)
+- Prepared customer-copy checkpoint: [v0.1.5.7](scripts/product001_apps_script_automation_v0_1_5_7.gs)
 
 
 ## Product Scope
@@ -69,4 +69,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Install v0.1.5.6 as the master Code.gs source. In a disposable customer copy, run Set Up Result Form, confirm the workbook timezone is detected automatically, and verify that authorisation requests current-workbook access, Forms management and trigger management only. Then repeat reset, fixture creation, submission and approval regression before the next customer copy.
+Install v0.1.5.7 as the master Code.gs source. In a disposable customer copy, run Set Up Result Form, confirm the workbook timezone is detected automatically, and verify that authorisation requests current-workbook access, Forms management and trigger management only. Then repeat reset, fixture creation, submission and approval regression before the next customer copy.

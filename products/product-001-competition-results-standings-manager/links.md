@@ -10,11 +10,11 @@
 
 - [Current prototype status](docs/prototype_status.md)
 - [Installed Apps Script checkpoint](scripts/product001_apps_script_automation_v0_1_5_3.gs)
-- [Prepared customer-copy Apps Script](scripts/product001_apps_script_automation_v0_1_5_6.gs)
+- [Prepared customer-copy Apps Script](scripts/product001_apps_script_automation_v0_1_5_7.gs)
 - [Apps Script checkpoint notes](scripts/README.md)
 
 ## Important
 
-The workbook and Form are live implementation assets. The installed bound script remains v0.1.5.3 until the master is updated. Prepared v0.1.5.6 places the current-workbook scope restriction directly in Code.gs, removes customer dependence on an explicit manifest and detects the organiser browser timezone during Result Form setup.
+The workbook and Form are live implementation assets. The installed bound script remains v0.1.5.3 until the master is updated. Prepared v0.1.5.7 places the current-workbook scope restriction directly in Code.gs, removes customer dependence on an explicit manifest and detects the organiser browser timezone during Result Form setup.
 
 The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. The 17 July 2026 fresh customer-copy regression passed all seven approved navigation and Form-isolation steps.

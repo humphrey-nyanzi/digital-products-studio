@@ -54,7 +54,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.6 Prepared Checkpoint
+## Apps Script v0.1.5.7 Prepared Checkpoint
 
 The prepared checkpoint includes:
 
@@ -78,7 +78,7 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
 
-The prepared v0.1.5.6 script places @OnlyCurrentDoc directly in Code.gs. This allows a copied bound project to infer current-workbook spreadsheet access without requiring the customer to install or edit an Apps Script manifest.
+The prepared v0.1.5.7 script places @OnlyCurrentDoc directly in Code.gs. This allows a copied bound project to infer current-workbook spreadsheet access without requiring the customer to install or edit an Apps Script manifest. Before Result Form setup continues, ScriptApp.requireScopes requests the exact current-workbook, Forms and trigger permissions so a copied project cannot reach Form creation with partial consent.
 
 | Scope | Product use |
 |---|---|

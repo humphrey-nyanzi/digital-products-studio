@@ -134,11 +134,11 @@ Consequence: customer-copy navigation is no longer a release blocker. OAuth cons
 
 ## D025 - Least-privilege Apps Script scopes
 
-Decision: the prepared v0.1.5.6 Code.gs declares the current-workbook permission boundary through @OnlyCurrentDoc and requires only current-workbook spreadsheet access, Forms management and trigger management. Full Google Drive and account-wide Sheets access are removed.
+Decision: the prepared v0.1.5.7 Code.gs declares the current-workbook permission boundary through @OnlyCurrentDoc and requires only current-workbook spreadsheet access, Forms management and trigger management. Full Google Drive and account-wide Sheets access are removed.
 
 Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
 
-Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.6 is installed, reauthorised and regression-tested in a disposable customer copy.
+Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.7 is installed, reauthorised and regression-tested in a disposable customer copy.
 
 ## D026 - Blank reset restores usable scheduling defaults
 
