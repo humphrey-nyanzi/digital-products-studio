@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed master bound script remains v0.1.5.3. A disposable customer copy successfully reauthorised v0.1.5.4 with current-workbook, Forms and trigger scopes. Full Drive and account-wide Sheets access were absent. The clean-start reset then exposed that Match Days and other scheduling defaults were cleared. The repository now contains v0.1.5.5, which preserves the reduced scopes and restores safe Create Fixtures defaults after a full reset. It is not live until installed in the master.
+The installed master bound script remains v0.1.5.3 until the master is updated. A disposable customer copy verified current-workbook, Forms and trigger scopes without full Drive or account-wide Sheets access. The clean-start reset defect is fixed. The repository now contains v0.1.5.6, which places the current-workbook restriction directly in Code.gs and detects the organiser browser timezone during Result Form setup. Customer copies no longer depend on an explicit manifest installation. Live master installation and clean-copy regression remain.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -59,11 +59,12 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 ## Active Blockers
 
-1. Install v0.1.5.5 and its reduced-scope manifest in the master, then verify Reset to Blank Template restores usable Create Fixtures defaults.
-2. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
-3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
-4. Repeat clean-copy and ordinary-user QA after the OAuth architecture decisions are implemented.
+1. Install v0.1.5.6 in the master Code.gs and verify the copied project infers current-workbook access without customer manifest work.
+2. Verify Set Up Result Form detects and applies the organiser browser timezone while keeping the system timezone row hidden.
+3. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
+4. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
+5. Repeat clean-copy and ordinary-user QA after the OAuth architecture decisions are implemented.
 
 ## Next Action
 
-Install v0.1.5.5 and its manifest in the master. Run Reset to Blank Template in a disposable copy and confirm that Match Days and the other starter scheduling values are restored. Then repeat fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.
+Install v0.1.5.6 in the master Code.gs. Create a disposable copy, run Set Up Result Form and confirm automatic timezone detection plus current-workbook-only Sheets permission. Then repeat reset, fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.

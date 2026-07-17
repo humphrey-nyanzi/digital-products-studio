@@ -14,14 +14,14 @@ Last reconciled: 2026-07-17
 | Canonical user manual | Google Docs, see `links.md` | Updated and reformatted through 15 July 2026 using Arial, native lists and corrected heading levels. |
 
 | Installed Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_3.gs | Installed source. Copy-local workbook and Form navigation passed fresh customer-copy QA. |
-| Prepared least-privilege checkpoint | scripts/product001_apps_script_automation_v0_1_5_4.gs and scripts/appsscript_v0_1_5_4.json | Removes full Drive access and adds the owner-only Result Form replacement path. Live installation and regression pending. |
+| Prepared customer-copy checkpoint | scripts/product001_apps_script_automation_v0_1_5_6.gs | Restricts spreadsheet access from Code.gs, keeps the owner-only Result Form replacement path and detects timezone automatically during Form setup. Live installation and regression pending. |
 | Legacy script files | `scripts/form_setup_installer.gs`, `scripts/form_fixture_sync.gs`, v0.1.2 files | Historical only. Do not install as current automation. |
 
 ## Planned Release Assets
 
 | Asset | Purpose | Status |
 |---|---|---|
-| Final bound Apps Script export | Preserve the final release source | v0.1.5.4 prepared with explicit least-privilege scopes. Installation, reauthorisation and customer-copy regression remain. |
+| Final bound Apps Script export | Preserve the final release source | v0.1.5.6 prepared as a script-only release. Installation, reauthorisation, timezone detection and customer-copy regression remain. |
 | User manual Google Doc | Canonical buyer instructions | Current and structurally repaired in Arial. |
 | User manual Word export | Marketplace delivery document | Regenerate after the 16 and 17 July release gates. |
 | Buyer quick-start guide | Short setup path | Pending packaging. |

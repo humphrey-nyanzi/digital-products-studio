@@ -54,7 +54,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.4 Prepared Checkpoint
+## Apps Script v0.1.5.6 Prepared Checkpoint
 
 The prepared checkpoint includes:
 
@@ -78,7 +78,7 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
 
-The prepared v0.1.5.4 manifest explicitly declares only:
+The prepared v0.1.5.6 script places @OnlyCurrentDoc directly in Code.gs. This allows a copied bound project to infer current-workbook spreadsheet access without requiring the customer to install or edit an Apps Script manifest.
 
 | Scope | Product use |
 |---|---|
@@ -86,9 +86,11 @@ The prepared v0.1.5.4 manifest explicitly declares only:
 | https://www.googleapis.com/auth/forms | Create, configure and update the workbook-specific Result Form. |
 | https://www.googleapis.com/auth/script.scriptapp | Create and repair Form-submit and approval-edit triggers. |
 
-No Drive, Gmail, Calendar, external-request or user-profile scope is declared. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
+No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets scope is required. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
 
-The scope reduction is prepared in the repository. It must still be installed, reauthorised and confirmed on the Google consent screen before it is treated as live evidence.
+Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. If the browser returns an unsupported value, the existing workbook timezone is retained. Reset to Blank Template preserves the system timezone instead of clearing it.
+
+The script-only scope and timezone change is prepared in the repository. It must still be installed in the master and confirmed through clean-copy consent and timezone QA before it is treated as live release evidence.
 
 ## Reset Boundary
 

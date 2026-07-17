@@ -134,14 +134,25 @@ Consequence: customer-copy navigation is no longer a release blocker. OAuth cons
 
 ## D025 - Least-privilege Apps Script scopes
 
-Decision: the prepared v0.1.5.4 manifest declares only current-workbook spreadsheet access, Forms management and trigger management. Full Google Drive access is removed.
+Decision: the prepared v0.1.5.6 Code.gs declares the current-workbook permission boundary through @OnlyCurrentDoc and requires only current-workbook spreadsheet access, Forms management and trigger management. Full Google Drive and account-wide Sheets access are removed.
 
 Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
 
-Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.4 is installed, reauthorised and regression-tested in a disposable customer copy.
+Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.6 is installed, reauthorised and regression-tested in a disposable customer copy.
 
 ## D026 - Blank reset restores usable scheduling defaults
 
 Decision: Reset to Blank Template clears customer competition data but restores safe Create Fixtures defaults instead of leaving required scheduling controls blank. The defaults are Every day, one 09:00 kick-off slot, one match at a time, a one-day minimum gap between rounds, zero return-leg break and the MD prefix.
 
 Consequence: a first-time organiser still chooses the format, teams and first match date, but is not blocked by a required Match Days value that the reset removed. Set Up Result Form installs the submission and approval triggers automatically. Trigger repair commands remain owner-only recovery tools rather than normal setup steps.
+## D027 - Automatic competition timezone
+
+Decision: competition organisers do not choose a timezone from a limited workbook list. Set Up Result Form detects the organiser browser timezone, applies it to the workbook and stores it as a hidden system setting.
+
+Consequence: dates, times, backups and Form operations use the organiser context without adding setup burden. If detection fails, the workbook retains its existing timezone.
+
+## D028 - Script-only current-workbook permission boundary
+
+Decision: the current-workbook access restriction is declared through @OnlyCurrentDoc in Code.gs rather than depending on customer installation of an Apps Script manifest.
+
+Consequence: copied bound projects can infer current-workbook spreadsheet access while retaining only Forms and trigger scopes required by the product. Clean-copy QA must confirm that full Drive and account-wide Sheets access are absent.

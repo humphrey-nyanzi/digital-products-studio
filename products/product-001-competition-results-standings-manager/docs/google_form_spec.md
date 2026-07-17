@@ -1,7 +1,7 @@
 # Google Form Specification
 
 Product: Football Competition Results & Standings Manager  
-Status: Form workflow verified in v0.1.5.3, least-privilege repair workflow prepared in v0.1.5.4
+Status: Form workflow verified in v0.1.5.3, script-only scope and automatic-timezone workflow prepared in v0.1.5.6
 Last verified: 17 July 2026
 
 ## Purpose
@@ -12,7 +12,7 @@ The customer-facing Form title is Football Match Result Submission so its purpos
 
 ## Per-copy Form Ownership
 
-Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
+Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. Setup detects the organiser browser timezone, applies it to the workbook and stores it in the hidden system settings. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
 
 ## Form Replacement
 

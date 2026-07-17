@@ -31,6 +31,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Return leg | Generate Double Round-robin with an added break | The extra break is applied once before the second leg and all 56 eight-team fixtures remain complete. |
 | Scheduling validation | Clear Match Days or enter an invalid break | Builder Status blocks transfer with a corrective message. |
 | Form setup | Run Set Up Result Form | The Form is created or repaired and both automatic triggers are installed without separate customer menu actions. |
+| Timezone | Run Set Up Result Form from a customer account in the intended location | The browser timezone is applied to the workbook automatically, the hidden Setup timezone value matches it and the customer is not asked to choose a timezone. |
 | Form sync | Sync eligible fixtures | Only valid Scheduled fixtures appear. |
 | Played | Submit and approve | Result Review, Fixtures, standings, Reports and Form eligibility update. |
 | Duplicate | Submit one fixture twice before approval | Manager can reject one and approve one while preserving both records. |
@@ -45,7 +46,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
-| Least-privilege authorisation | Install v0.1.5.5 with its manifest in a disposable copy and reauthorise | Consent requests current workbook access, Forms management and trigger management only. Full Drive and account-wide Sheets access are absent. |
+| Least-privilege authorisation | Install v0.1.5.6 Code.gs in the master, create a disposable copy and reauthorise | The copied project infers current workbook access from Code.gs. Consent requests current workbook access, Forms management and trigger management only. Full Drive and account-wide Sheets access are absent. |
 | Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
 | Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
 | Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |

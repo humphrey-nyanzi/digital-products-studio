@@ -14,7 +14,7 @@ Primary outcome: reliable current standings from reviewed match outcomes, withou
 
 The product must support:
 
-- competition identity, timezone and display preferences;
+- competition identity and display preferences, with timezone detected automatically during Result Form setup;
 - 4 to 32 teams and up to 20 venues or playing areas;
 - up to 200 official fixtures;
 - single and double round-robin, multi-group round-robin, simple knockout shell and manual entry;
