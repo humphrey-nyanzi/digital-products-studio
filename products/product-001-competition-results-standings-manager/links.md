@@ -14,6 +14,6 @@
 
 ## Important
 
-The workbook and Form are live implementation assets. The installed bound script is v0.1.5.2. It provisions a Form per workbook copy, hides Form-linked response tabs, rejects trashed or foreign Forms and supports the verified manager outcome and rescheduling lifecycle.
+The workbook and Form are live implementation assets. The installed bound script is v0.1.5.3. It provisions a Form per workbook copy, hides Form-linked response tabs, rejects trashed or foreign Forms and supports the verified manager outcome and rescheduling lifecycle.
 
-The current master contains the populated eight-team QA competition. Its internal navigation now uses copy-local sheet links and both visible Form links read the configured Form URL. Apps Script v0.1.5.3 is the next installation checkpoint and the fresh-copy regression remains pending.
+The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. The 17 July 2026 fresh customer-copy regression passed all seven approved navigation and Form-isolation steps.

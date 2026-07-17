@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, final clean-copy QA pending  
-Last verified: 15 July 2026
+Status: Working prototype v0.1.0, customer-copy isolation passed, OAuth release gate pending
+Last verified: 17 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -11,8 +11,8 @@ The live workbook and linked Form are the implementation authority. The canonica
 
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
-- Installed script checkpoint: [v0.1.5.2](scripts/product001_apps_script_automation_v0_1_5_2.gs)
-- Next script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs), copy-local navigation repair prepared for installation
+- Installed script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs)
+
 
 ## Product Scope
 
@@ -48,7 +48,7 @@ Create Fixtures supports multi-group generation, balanced pairing orientation, p
 
 The customer workbook, Form, menu, dialogs and User Manual use the product name Football Competition Results & Standings Manager and task-based customer language. Product codes, batch names, QA evidence, implementation versions and migration details remain in repository and project records.
 
-The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.2 is installed. The v0.1.5.3 checkpoint adds copy-local navigation repair and clears inherited Form configuration when a workbook copy first opens.
+The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.3 is installed. A fresh customer-copy regression confirmed copy-local navigation, customer-owned Form setup and customer-specific Form links across all seven approved steps.
 
 ## Visual Standard
 
@@ -68,4 +68,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Install Apps Script v0.1.5.3 in the master, create a fresh disposable customer copy and verify every workbook and Form link. Then inventory OAuth scopes and compare the Cloud project identity in the master and customer copy before the Studio identity and verification work continues.
+Inspect the live appsscript.json, confirm the exact OAuth scopes and compare the Google Cloud project identity in the master and customer copy. Then decide whether automatic reset backups justify full Google Drive access before the Studio identity and verification work continues.

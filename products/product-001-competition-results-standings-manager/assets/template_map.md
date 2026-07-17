@@ -3,7 +3,7 @@
 Owner: Humphrey Nyanzi  
 Product: Football Competition Results & Standings Manager  
 Status: Working prototype asset map  
-Last reconciled: 2026-07-16
+Last reconciled: 2026-07-17
 
 ## Current Assets
 
@@ -13,14 +13,14 @@ Last reconciled: 2026-07-16
 | Linked result Form | Google Forms, see `links.md` | Simplified status-based flow with per-copy ownership and verified response-tab privacy. |
 | Canonical user manual | Google Docs, see `links.md` | Updated and reformatted through 15 July 2026 using Arial, native lists and corrected heading levels. |
 
-| Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_3.gs | Next installation source. Parses successfully and repairs copy-local workbook and Form navigation. |
+| Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_3.gs | Installed source. Copy-local workbook and Form navigation passed fresh customer-copy QA. |
 | Legacy script files | `scripts/form_setup_installer.gs`, `scripts/form_fixture_sync.gs`, v0.1.2 files | Historical only. Do not install as current automation. |
 
 ## Planned Release Assets
 
 | Asset | Purpose | Status |
 |---|---|---|
-| Final bound Apps Script export | Preserve the final release source | v0.1.5.3 prepared; live installation and clean-copy QA pending. |
+| Final bound Apps Script export | Preserve the final release source | v0.1.5.3 installed and customer-copy isolation verified. Final OAuth architecture may require a later release checkpoint. |
 | User manual Google Doc | Canonical buyer instructions | Current and structurally repaired in Arial. |
 | User manual Word export | Marketplace delivery document | Regenerate after the 16 and 17 July release gates. |
 | Buyer quick-start guide | Short setup path | Pending packaging. |
@@ -34,5 +34,5 @@ Goal scorer tracking and Top Scorers are not v1.0 release assets. The hidden Goa
 
 ## Current Constraint
 
-Reset tools are owner-only. Per-copy Form provisioning, response-tab hiding and populated post-reset operation have passed live QA. Apps Script v0.1.5.2 is installed. The master navigation formulas are now copy-local and v0.1.5.3 adds automatic repair for inherited workbook and Form links. Fresh-copy QA remains pending.
+Reset tools are owner-only. Per-copy Form provisioning, response-tab hiding, populated post-reset operation and copy-local navigation have passed live QA. Apps Script v0.1.5.3 is installed. OAuth consent trust, exact scopes and the copied Cloud project architecture remain release constraints.
 

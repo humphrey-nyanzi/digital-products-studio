@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 16 July 2026
+Last updated: 17 July 2026
 
 ## D001 - Football-first self-service scope
 
@@ -123,3 +123,11 @@ Consequence: the master remains implementation evidence and the current QA copy 
 Decision: customer-facing workbook navigation uses relative sheet links. Form buttons read the configured published Form URL from Setup. Apps Script repairs legacy navigation and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook.
 
 Consequence: a copied workbook does not navigate back to the Studio master, and it does not expose the master Form before the customer owner sets up a copy-specific Result Form.
+
+## D024 - Customer-copy navigation isolation passed
+
+Decision: Apps Script v0.1.5.3 and the copy-local workbook formulas are the verified navigation baseline for the current prototype.
+
+Evidence: on 17 July 2026, a fresh customer copy passed all seven approved steps covering internal workbook navigation, pre-setup Form prompts, customer-owned Form creation and both post-setup Form links.
+
+Consequence: customer-copy navigation is no longer a release blocker. OAuth consent trust, exact scopes, Cloud project identity and the final ordinary-user release gate remain open.

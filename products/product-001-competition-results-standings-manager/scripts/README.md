@@ -4,7 +4,7 @@ The live master workbook uses a spreadsheet-bound Apps Script project.
 
 ## Current Repository Checkpoint
 
-product001_apps_script_automation_v0_1_5_3.gs is the 16 July 2026 copy-isolation checkpoint. It parses successfully and contains:
+product001_apps_script_automation_v0_1_5_3.gs is the installed 17 July 2026 copy-isolation checkpoint. It parses successfully and contains:
 
 - the customer-facing Competition Tools menu;
 - per-copy Result Form provisioning;
@@ -25,7 +25,7 @@ product001_apps_script_automation_v0_1_5_3.gs is the 16 July 2026 copy-isolation
 
 ## Installation Status
 
-The live bound project is running v0.1.5.2. Install v0.1.5.3 as the next Code.gs source, save and reload the master workbook. The next fresh customer copy should show copy-local navigation immediately and should show Set up the Result Form first until its owner runs Competition Tools > Set Up Result Form.
+The live bound project is running v0.1.5.3. A fresh customer copy passed all seven approved isolation steps: copy-local navigation worked immediately, both Form buttons requested setup before a Form existed, Set Up Result Form created the customer-owned Form and both buttons then opened that Form.
 
 ## Historical Files
 

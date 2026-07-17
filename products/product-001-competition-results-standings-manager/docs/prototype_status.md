@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, clean-copy QA partially passed with release blockers
-Last verified: 16 July 2026
+Status: Working prototype v0.1.0, customer-copy isolation passed with OAuth release blockers
+Last verified: 17 July 2026
 
 ## Verified Product State
 
@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed bound script is v0.1.5.2. Apps Script v0.1.5.3 is prepared in the repository and must be installed to repair legacy customer-copy links and clear inherited Form configuration when a copied workbook first opens.
+The installed bound script is v0.1.5.3. It repairs legacy customer-copy links and clears inherited Form configuration when a copied workbook first opens.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -50,18 +50,19 @@ The first customer-account test confirmed:
 - a submitted result reached only the customer copy;
 - the Start Here Form link resolved to the new customer Form.
 
-The same test exposed two release blockers:
+The first test exposed two release blockers:
 
 - the Google authorisation flow displayed an unverified-app warning and the temporary Apps Script project name `Computations`;
-- the first customer copy exposed master workbook and master Form links. The master formulas are now repaired, but a fresh copy regression is still required.
+- the first customer copy exposed master workbook and master Form links.
+
+On 17 July 2026, a fresh customer copy passed all seven approved regression steps. Internal navigation stayed within the customer workbook, both Form buttons prompted setup before a customer Form existed, Set Up Result Form created the customer-owned Form and both buttons then opened that Form. Customer-copy navigation isolation is no longer a release blocker.
 
 ## Active Blockers
 
-1. Install v0.1.5.3 and verify the repaired workbook and Form links in a fresh customer copy.
-2. Establish the Studio Google application identity, domain, public privacy policy, standard Cloud project and least-privilege scope inventory.
-3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
-4. Repeat clean-copy and ordinary-user QA after the link and OAuth architecture decisions are implemented.
+1. Establish the Studio Google application identity, domain, public privacy policy, standard Cloud project and least-privilege scope inventory.
+2. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
+3. Repeat clean-copy and ordinary-user QA after the OAuth architecture decisions are implemented.
 
 ## Next Action
 
-Install v0.1.5.3 and run the fresh-copy link regression, then compare the Cloud project identity in the master and customer copy. Build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.
+Inspect the live appsscript.json, confirm the exact requested scopes and compare the Cloud project identity in the master and customer copy. Decide whether automatic reset backups justify full Google Drive access, then build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.
