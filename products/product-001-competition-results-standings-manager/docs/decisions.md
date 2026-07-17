@@ -139,3 +139,9 @@ Decision: the prepared v0.1.5.4 manifest declares only current-workbook spreadsh
 Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
 
 Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.4 is installed, reauthorised and regression-tested in a disposable customer copy.
+
+## D026 - Blank reset restores usable scheduling defaults
+
+Decision: Reset to Blank Template clears customer competition data but restores safe Create Fixtures defaults instead of leaving required scheduling controls blank. The defaults are Every day, one 09:00 kick-off slot, one match at a time, a one-day minimum gap between rounds, zero return-leg break and the MD prefix.
+
+Consequence: a first-time organiser still chooses the format, teams and first match date, but is not blocked by a required Match Days value that the reset removed. Set Up Result Form installs the submission and approval triggers automatically. Trigger repair commands remain owner-only recovery tools rather than normal setup steps.

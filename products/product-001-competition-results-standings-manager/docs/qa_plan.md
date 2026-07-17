@@ -19,7 +19,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Area | Test | Pass condition |
 |---|---|---|
 | Reset | Clear Match Data - Keep Setup | Backup is created, competition setup remains, match data clears and no error occurs. |
-| Reset | Reset to Blank Template | Backup is created, editable setup clears, formulas and automation remain intact. |
+| Reset | Reset to Blank Template | Backup is created, editable setup clears, formulas and automation remain intact. Create Fixtures restores Every day, one 09:00 slot, one match at a time, a one-day round gap, zero return-leg break and the MD prefix. |
 | Setup | New competition configuration | Checks resolve after a name, 4 to 32 teams and one active venue are entered. |
 | Builder | Generate and transfer fixtures | Builder is Ready to review and Fixtures receives the correct fields and statuses. |
 | Group builder | Generate every registered group | Each group has complete internal pairings, no cross-group fixture exists and the combined count is within 200. |
@@ -30,6 +30,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Round spacing | Force one round across multiple dates | The next round starts from the final date used by the previous round plus the configured minimum gap. |
 | Return leg | Generate Double Round-robin with an added break | The extra break is applied once before the second leg and all 56 eight-team fixtures remain complete. |
 | Scheduling validation | Clear Match Days or enter an invalid break | Builder Status blocks transfer with a corrective message. |
+| Form setup | Run Set Up Result Form | The Form is created or repaired and both automatic triggers are installed without separate customer menu actions. |
 | Form sync | Sync eligible fixtures | Only valid Scheduled fixtures appear. |
 | Played | Submit and approve | Result Review, Fixtures, standings, Reports and Form eligibility update. |
 | Duplicate | Submit one fixture twice before approval | Manager can reject one and approve one while preserving both records. |
@@ -44,7 +45,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
-| Least-privilege authorisation | Install v0.1.5.4 with its manifest in a disposable copy and reauthorise | Consent requests current workbook access, Forms management and trigger management only. Full Drive access is absent. |
+| Least-privilege authorisation | Install v0.1.5.5 with its manifest in a disposable copy and reauthorise | Consent requests current workbook access, Forms management and trigger management only. Full Drive and account-wide Sheets access are absent. |
 | Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
 | Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
 | Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |

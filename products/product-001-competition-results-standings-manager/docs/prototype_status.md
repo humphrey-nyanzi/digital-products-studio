@@ -1,7 +1,7 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, least-privilege package prepared with OAuth release blockers
+Status: Working prototype v0.1.0, least-privilege customer test passed with clean-start reset fix prepared
 Last verified: 17 July 2026
 
 ## Verified Product State
@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed bound script is v0.1.5.3. The repository now contains prepared v0.1.5.4 code and manifest with explicit current-workbook, Forms and trigger scopes. v0.1.5.4 removes DriveApp, creates reset backups through Spreadsheet.copy and adds Repair Tools > Replace Result Form. It is not live until installed and tested.
+The installed master bound script remains v0.1.5.3. A disposable customer copy successfully reauthorised v0.1.5.4 with current-workbook, Forms and trigger scopes. Full Drive and account-wide Sheets access were absent. The clean-start reset then exposed that Match Days and other scheduling defaults were cleared. The repository now contains v0.1.5.5, which preserves the reduced scopes and restores safe Create Fixtures defaults after a full reset. It is not live until installed in the master.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -59,11 +59,11 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 ## Active Blockers
 
-1. Install and verify the prepared least-privilege scope package in a disposable customer copy.
+1. Install v0.1.5.5 and its reduced-scope manifest in the master, then verify Reset to Blank Template restores usable Create Fixtures defaults.
 2. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
 3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
 4. Repeat clean-copy and ordinary-user QA after the OAuth architecture decisions are implemented.
 
 ## Next Action
 
-Install v0.1.5.4 and its manifest in a disposable customer copy. Reauthorise and confirm that the consent screen no longer requests full Google Drive access. Test both reset backups and Replace Result Form, then continue the shared Studio identity, privacy and OAuth verification work. Keep the current master as the working prototype until the regression passes.
+Install v0.1.5.5 and its manifest in the master. Run Reset to Blank Template in a disposable copy and confirm that Match Days and the other starter scheduling values are restored. Then repeat fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.
