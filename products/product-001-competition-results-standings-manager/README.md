@@ -1,6 +1,6 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, customer-copy isolation passed, OAuth release gate pending
+Status: Working prototype v0.1.0, OAuth scope reduction prepared, live install and release gate pending
 Last verified: 17 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
@@ -12,6 +12,8 @@ The live workbook and linked Form are the implementation authority. The canonica
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
 - Installed script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs)
+- Prepared least-privilege checkpoint: [v0.1.5.4](scripts/product001_apps_script_automation_v0_1_5_4.gs)
+- Prepared manifest: [appsscript v0.1.5.4](scripts/appsscript_v0_1_5_4.json)
 
 
 ## Product Scope
@@ -68,4 +70,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Inspect the live appsscript.json, confirm the exact OAuth scopes and compare the Google Cloud project identity in the master and customer copy. Then decide whether automatic reset backups justify full Google Drive access before the Studio identity and verification work continues.
+Install v0.1.5.4 and its explicit manifest in a disposable customer copy. Reauthorise, confirm that full Google Drive access is no longer requested, test both reset backups and Replace Result Form, then repeat the clean-copy regression before changing the live master.

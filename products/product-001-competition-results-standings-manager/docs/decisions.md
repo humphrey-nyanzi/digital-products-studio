@@ -131,3 +131,11 @@ Decision: Apps Script v0.1.5.3 and the copy-local workbook formulas are the veri
 Evidence: on 17 July 2026, a fresh customer copy passed all seven approved steps covering internal workbook navigation, pre-setup Form prompts, customer-owned Form creation and both post-setup Form links.
 
 Consequence: customer-copy navigation is no longer a release blocker. OAuth consent trust, exact scopes, Cloud project identity and the final ordinary-user release gate remain open.
+
+## D025 - Least-privilege Apps Script scopes
+
+Decision: the prepared v0.1.5.4 manifest declares only current-workbook spreadsheet access, Forms management and trigger management. Full Google Drive access is removed.
+
+Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
+
+Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.4 is installed, reauthorised and regression-tested in a disposable customer copy.

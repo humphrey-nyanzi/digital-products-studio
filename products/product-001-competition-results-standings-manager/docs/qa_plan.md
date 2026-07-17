@@ -1,7 +1,7 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Customer-copy isolation passed, OAuth and final release checks remain
+Status: Customer-copy isolation passed, least-privilege package prepared, OAuth and final release checks remain
 Last verified: 17 July 2026
 
 ## Purpose
@@ -44,6 +44,9 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
+| Least-privilege authorisation | Install v0.1.5.4 with its manifest in a disposable copy and reauthorise | Consent requests current workbook access, Forms management and trigger management only. Full Drive access is absent. |
+| Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
+| Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
 | Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |
 | Cloud project | Compare master and customer-copy project numbers | The copied-script verification architecture is confirmed rather than assumed. |
 | Capacity | Run representative high-volume tests | Limits, performance and usable layout are confirmed. |

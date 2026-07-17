@@ -9,11 +9,13 @@
 ## Repository References
 
 - [Current prototype status](docs/prototype_status.md)
-- [Current Apps Script checkpoint](scripts/product001_apps_script_automation_v0_1_5_3.gs)
+- [Installed Apps Script checkpoint](scripts/product001_apps_script_automation_v0_1_5_3.gs)
+- [Prepared least-privilege checkpoint](scripts/product001_apps_script_automation_v0_1_5_4.gs)
+- [Prepared Apps Script manifest](scripts/appsscript_v0_1_5_4.json)
 - [Apps Script checkpoint notes](scripts/README.md)
 
 ## Important
 
-The workbook and Form are live implementation assets. The installed bound script is v0.1.5.3. It provisions a Form per workbook copy, hides Form-linked response tabs, rejects trashed or foreign Forms and supports the verified manager outcome and rescheduling lifecycle.
+The workbook and Form are live implementation assets. The installed bound script is v0.1.5.3. The prepared v0.1.5.4 package removes full Google Drive access, adds an owner-only Replace Result Form action and changes the manifest timezone to Africa/Kampala. It is not installed in the live workbook yet.
 
 The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. The 17 July 2026 fresh customer-copy regression passed all seven approved navigation and Form-isolation steps.

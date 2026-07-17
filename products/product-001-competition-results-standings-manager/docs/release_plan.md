@@ -1,7 +1,7 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Prototype v0.1.0, customer-copy isolation passed, OAuth release architecture required
+Status: Prototype v0.1.0, least-privilege package prepared, OAuth identity and final release gate required
 Last verified: 17 July 2026
 
 ## Product State
@@ -11,7 +11,7 @@ The working lifecycle, buyer-facing workbook redesign, simplified Form workflow,
 ## Required Before Packaging
 
 1. Record the completed v0.1.5.3 customer-copy isolation evidence in the release package.
-2. Confirm the exact manifest scopes and decide whether automatic reset backups justify full Google Drive access.
+2. Install and verify v0.1.5.4 with explicit current-workbook, Forms and trigger scopes. Confirm that full Google Drive access is absent.
 3. Choose the Studio distribution identity and low-cost domain route.
 4. Publish the Studio application homepage, privacy policy and support contact.
 5. Configure the production standard Google Cloud project and OAuth consent screen.
@@ -41,9 +41,9 @@ The v1.0 deliverable is a reusable workbook, linked Form, Apps Script automation
 
 ## Current Blocker
 
-Core product functionality and football logic are substantially verified. The clean-copy tests now pass workbook ownership, copied-script availability, customer-owned Form creation, hidden response-tab behaviour, isolated result processing and copy-local navigation. The remaining release blocker is the public trust architecture: exact scopes, Cloud project identity, Studio application identity, domain, privacy policy and OAuth verification route.
+Core product functionality and football logic are substantially verified. The clean-copy tests now pass workbook ownership, copied-script availability, customer-owned Form creation, hidden response-tab behaviour, isolated result processing and copy-local navigation. The exact least-privilege scopes are now decided and prepared. The remaining release blocker is the public trust architecture: live scope verification, Cloud project identity, Studio application identity, domain, privacy policy, OAuth verification route and final ordinary-user regression.
 
 ## Next Release Decision
 
-Do not blank or distribute the working master yet. Preserve it as current implementation evidence. Settle the OAuth and Cloud project architecture, then create a fresh disposable customer copy for the final authorisation and ordinary-user release gate. Test copies must not become the delivery file.
+Do not blank or distribute the working master yet. Preserve it as current implementation evidence. Install and test the scope-reduced checkpoint in a fresh disposable customer copy, then settle the standard Cloud project and public trust architecture before the final authorisation and ordinary-user release gate. Test copies must not become the delivery file.
 

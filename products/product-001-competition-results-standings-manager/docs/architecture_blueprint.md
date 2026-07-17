@@ -54,20 +54,21 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.3
+## Apps Script v0.1.5.4 Prepared Checkpoint
 
-The next installation checkpoint includes:
+The prepared checkpoint includes:
 
 - `Set Up Result Form`
 - `Publish Fixture List`
 - `Refresh Result Form`
 - `Reschedule Selected Fixture`
+- `Replace Result Form` under Repair Tools
 - `Process Unread Submissions`
 - `Refresh Approved Results`
 - `Check Competition Status`
 - owner-only reset actions
 
-The installer rejects a Form in the bin or linked to another workbook, then discovers, records and hides the actual response sheet. The response processor resolves duplicate historical headers by selecting the newest nonblank answer.
+The installer reuses a Form only when it can be opened and is linked to the current workbook. Replace Result Form is the explicit owner action when the stored Form is missing, in the bin or unusable. It creates a new Form and response sheet while preserving Result Review. The old Form is not deleted automatically.
 
 Customer-facing workbook navigation uses relative sheet links rather than master workbook URLs. On open and during Form setup, v0.1.5.3 repairs legacy links and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook. Start Here and Fixtures then read the copy-specific published Form URL from Setup.
 
@@ -75,20 +76,23 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 ## OAuth Scope Inventory
 
-The v0.1.5.3 source uses only SpreadsheetApp, FormApp, DriveApp, ScriptApp and Utilities. The candidate explicit manifest scopes are:
+The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
+
+The prepared v0.1.5.4 manifest explicitly declares only:
 
 | Scope | Product use |
 |---|---|
-| https://www.googleapis.com/auth/spreadsheets.currentonly | Read and update the bound competition workbook. |
+| https://www.googleapis.com/auth/spreadsheets.currentonly | Read, update and copy the current competition workbook. |
 | https://www.googleapis.com/auth/forms | Create, configure and update the workbook-specific Result Form. |
-| https://www.googleapis.com/auth/drive | Create the automatic workbook backup before a reset and inspect linked Form files. |
 | https://www.googleapis.com/auth/script.scriptapp | Create and repair Form-submit and approval-edit triggers. |
-| https://www.googleapis.com/auth/script.container.ui | Add Competition Tools menus, alerts and confirmation prompts. |
 
-No Gmail, Calendar, external-request or user-profile service is used. The full Drive scope is currently required by the automatic reset backup through DriveApp.makeCopy. Before verification, the Studio must decide whether that backup justifies the broad Drive permission or whether reset should require a manual owner-created backup so the script can be redesigned for narrower access. The final scope list must be confirmed against the live appsscript.json manifest and the authorisation screen.
+No Drive, Gmail, Calendar, external-request or user-profile scope is declared. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
+
+The scope reduction is prepared in the repository. It must still be installed, reauthorised and confirmed on the Google consent screen before it is treated as live evidence.
+
 ## Reset Boundary
 
-Reset is an owner-only workflow. It creates a full-workbook backup, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.
+Reset is an owner-only workflow. It creates a full-workbook backup in the owner account main My Drive area, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.
 
 ## Protection Boundary
 

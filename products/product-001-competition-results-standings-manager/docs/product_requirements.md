@@ -26,7 +26,8 @@ The product must support:
 - manager-controlled rescheduling that preserves the earlier postponement audit record;
 - derived official results, standings, Reports and validation;
 - audit preservation of raw Form responses and incorrect submissions;
-- owner-only reset actions with automatic backups.
+- owner-only reset actions with automatic backups;
+- owner-only replacement of a missing, binned or unusable Result Form without deleting Result Review history.
 
 ## Official Form Requirement
 
@@ -47,7 +48,7 @@ The manager records Official Outcome separately from the official's Match Status
 
 ## Reset Requirement
 
-The product offers Clear Match Data - Keep Setup and Reset to Blank Template. Both create a backup, require explicit confirmation and handle the connected Form safely. Reset, Form ownership and populated post-reset operation have passed live QA through Apps Script v0.1.5.0.
+The product offers Clear Match Data - Keep Setup and Reset to Blank Template. Both create a backup, require explicit confirmation and handle the connected Form safely. The least-privilege checkpoint creates the backup through the current workbook and places it in the owner account main My Drive area without requesting access to every Drive file. Reset, Form ownership and populated post-reset operation have passed live QA through Apps Script v0.1.5.0.
 
 ## Exclusions
 

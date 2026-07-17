@@ -1,7 +1,7 @@
 # Google Form Specification
 
 Product: Football Competition Results & Standings Manager  
-Status: Form workflow and customer-copy isolation verified in v0.1.5.3
+Status: Form workflow verified in v0.1.5.3, least-privilege repair workflow prepared in v0.1.5.4
 Last verified: 17 July 2026
 
 ## Purpose
@@ -12,7 +12,11 @@ The customer-facing Form title is Football Match Result Submission so its purpos
 
 ## Per-copy Form Ownership
 
-Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. The installer rejects a Form in the bin, a Form linked to another workbook and a missing response destination. It creates a new Form when no active linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
+Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
+
+## Form Replacement
+
+If the current Form is missing, in the bin or unusable, the workbook owner runs Competition Tools > Repair Tools > Replace Result Form. The action requires a warning confirmation and the exact text `REPLACE RESULT FORM`. It clears only the stored Form configuration, creates a new Form and hidden response sheet, and preserves existing Result Review records. The old Form is not deleted automatically and should be removed manually after the replacement has been checked.
 
 ## Eligibility
 
