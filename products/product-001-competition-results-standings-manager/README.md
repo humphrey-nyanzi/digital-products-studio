@@ -1,6 +1,6 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, least-privilege bound-project fix prepared, live install and release gate pending
+Status: Working prototype v0.1.0, copied-workbook technical regression passed on v0.1.5.9, final release gates pending
 Last verified: 17 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
@@ -11,9 +11,8 @@ The live workbook and linked Form are the implementation authority. The canonica
 
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
-- Installed script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs)
-- Prepared customer-copy checkpoint: [v0.1.5.9](scripts/product001_apps_script_automation_v0_1_5_9.gs)
-- Required master manifest: [appsscript v0.1.5.9](scripts/appsscript_v0_1_5_9.json)
+- Verified customer-copy checkpoint: [v0.1.5.9](scripts/product001_apps_script_automation_v0_1_5_9.gs)
+- Verified least-privilege manifest: [appsscript v0.1.5.9](scripts/appsscript_v0_1_5_9.json)
 
 
 ## Product Scope
@@ -50,7 +49,7 @@ Create Fixtures supports multi-group generation, balanced pairing orientation, p
 
 The customer workbook, Form, menu, dialogs and User Manual use the product name Football Competition Results & Standings Manager and task-based customer language. Product codes, batch names, QA evidence, implementation versions and migration details remain in repository and project records.
 
-The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.3 is installed. A fresh customer-copy regression confirmed copy-local navigation, customer-owned Form setup and customer-specific Form links across all seven approved steps.
+The live workbook title and Start Here page explicitly identify football. Visible tabs use Create Fixtures and Checks. Review decisions use Pending, Approved, Replaced, Needs Clarification and Rejected. Apps Script v0.1.5.9 is the installed technical baseline. Fresh customer-copy regression confirmed copy-local navigation, customer-owned Form setup, automatic timezone detection, hidden response handling, submission processing and approval outputs.
 
 ## Visual Standard
 
@@ -70,4 +69,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Install v0.1.5.9 and its explicit manifest once in the master bound project. Create a disposable customer copy and confirm the copied project retains the manifest without customer editing. Run Set Up Result Form, confirm automatic timezone detection, and verify that authorisation requests current-workbook access, Forms management, trigger management and permission to display the setup dialog only. Then repeat reset, fixture creation, submission and approval regression.
+Proceed to the final separate-account ordinary-user test and Google application identity gate. Confirm the consent screen, ownership, protections and delivery instructions with an account that did not build the product, then make the release decision.

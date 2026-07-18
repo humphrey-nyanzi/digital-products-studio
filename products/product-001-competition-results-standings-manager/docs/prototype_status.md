@@ -1,7 +1,7 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, least-privilege customer test passed with clean-start reset fix prepared
+Status: Working prototype v0.1.0, v0.1.5.9 copied-workbook technical regression passed
 Last verified: 17 July 2026
 
 ## Verified Product State
@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed master bound script remains v0.1.5.3 until the master is updated. A disposable customer copy verified current-workbook, Forms and trigger scopes without full Drive or account-wide Sheets access. The clean-start reset defect is fixed. The repository now contains v0.1.5.9 with an explicit least-privilege master manifest and automatic organiser browser timezone detection during Result Form setup. Customers do not edit the manifest, but clean-copy QA must confirm that the bound project inherits it. Live master installation and clean-copy regression remain.
+The v0.1.5.9 bound-project package has passed copied-workbook technical regression. The copy retained the least-privilege permission configuration, created its own Result Form, detected timezone automatically, hid the response tab, processed a Played submission and applied approval updates to Fixtures, standings and Reports. Full Drive and account-wide Sheets access are not part of the approved scope set.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -59,12 +59,11 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 ## Active Blockers
 
-1. Install v0.1.5.9 Code.gs and appsscript.json once in the master, then verify a copied project inherits the hidden manifest without customer editing.
-2. Verify Set Up Result Form detects and applies the organiser browser timezone while keeping the system timezone row hidden.
-3. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
-4. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
-5. Repeat clean-copy and ordinary-user QA after the OAuth architecture decisions are implemented.
+1. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
+2. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
+3. Complete the final separate-account ordinary-user test covering ownership, consent, protections and delivery instructions.
+4. Make an explicit release or controlled-pilot decision.
 
 ## Next Action
 
-Install v0.1.5.9 Code.gs and appsscript.json in the master. Create a disposable copy, confirm its hidden manifest contains the four approved scopes, then run Set Up Result Form and confirm automatic timezone detection plus current-workbook-only Sheets permission. Then repeat reset, fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.
+Run the final separate-account ordinary-user test using the verified v0.1.5.9 master. Record consent-screen identity, copied ownership, protection behaviour and whether the user can complete setup without technical guidance.

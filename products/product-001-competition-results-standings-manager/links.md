@@ -16,6 +16,6 @@
 
 ## Important
 
-The workbook and Form are live implementation assets. The installed bound script remains v0.1.5.3 until the master is updated. Prepared v0.1.5.9 uses an explicit least-privilege manifest in the master because Form creation requires full Forms access while spreadsheet access must remain current-workbook only. The manifest is part of the copied bound project and remains hidden from customers. Result Form setup also detects the organiser browser timezone.
+The workbook and Form are live implementation assets. Apps Script v0.1.5.9 and its explicit least-privilege manifest are the verified technical baseline. Form creation uses full Forms access while spreadsheet access remains current-workbook only. The manifest is part of the copied bound project and remains hidden from customers. Result Form setup detects the organiser browser timezone.
 
 The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. The 17 July 2026 fresh customer-copy regression passed all seven approved navigation and Form-isolation steps.

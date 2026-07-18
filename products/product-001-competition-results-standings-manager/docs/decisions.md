@@ -156,3 +156,10 @@ Consequence: dates, times, backups and Form operations use the organiser context
 Decision: @OnlyCurrentDoc cannot be used because it also reduces Forms access to forms.currentonly, while this product must create a separate Result Form. The master bound project therefore owns an explicit least-privilege manifest.
 
 Consequence: the Studio configures Code.gs and appsscript.json once in the master. Customers copy the bound project with the workbook and do not edit code or the hidden manifest. Clean-copy QA must confirm that the copied project retains current-workbook Sheets, Forms, trigger and container UI scopes without full Drive or account-wide Sheets access.
+## D029 - v0.1.5.9 copied-workbook technical regression passed
+
+Decision: v0.1.5.9 is the verified technical baseline for copied-workbook Form setup and result processing.
+
+Evidence: on 18 July 2026, a workbook copy successfully detected timezone, created its Result Form, hid the response tab, processed a Played submission and applied an approved result to Fixtures, standings and Reports.
+
+Consequence: copied-workbook technical operation is no longer the active blocker. Separate-account consent identity, protection behaviour, delivery usability and the final release decision remain open.

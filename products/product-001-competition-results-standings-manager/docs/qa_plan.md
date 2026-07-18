@@ -1,7 +1,7 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Customer-copy isolation passed, least-privilege package prepared, OAuth and final release checks remain
+Status: Copied-workbook technical regression passed on v0.1.5.9, separate-account OAuth and final release checks remain
 Last verified: 17 July 2026
 
 ## Purpose
@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Apps Script v0.1.5.3 repaired the navigation defect, and the 17 July fresh customer-copy regression passed all seven approved isolation steps. Public release remains blocked by the OAuth and Cloud project trust path.
+The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Apps Script v0.1.5.3 repaired the navigation defect, and the 17 July fresh customer-copy regression passed all seven approved isolation steps. The v0.1.5.9 copied-workbook regression also passed automatic timezone setup, hidden response-tab behaviour, Played submission processing and approval updates to Fixtures, standings and Reports. Public release remains blocked by the OAuth and Cloud project trust path plus the final separate-account ordinary-user gate.
 
 ## Required Regression
 

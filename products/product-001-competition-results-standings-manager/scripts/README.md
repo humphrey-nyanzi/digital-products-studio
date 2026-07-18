@@ -4,7 +4,7 @@ The live master workbook uses a spreadsheet-bound Apps Script project.
 
 ## Current Repository Checkpoint
 
-The prepared release package is:
+The verified technical baseline is:
 
 - product001_apps_script_automation_v0_1_5_9.gs
 - appsscript_v0_1_5_9.json
@@ -26,11 +26,11 @@ The manifest is part of the bound Apps Script project. Google hides appsscript.j
 
 No full Google Drive or account-wide Google Sheets scope is required.
 
-## Installation Status
+## Verification Status
 
-The live bound project remains on the previously installed checkpoint until both v0.1.5.9 files are installed in the master. After installation, create a disposable customer copy and inspect its hidden manifest before running Set Up Result Form.
+v0.1.5.9 passed copied-workbook technical regression on 18 July 2026. The copied project created its Result Form, detected timezone, hid the response tab, processed a Played submission and applied approval updates to Fixtures, standings and Reports.
 
-The copy must retain the four approved scopes. Form setup must request any missing consent before FormApp.create runs, detect the browser timezone, create the Result Form and install the automatic triggers.
+The verified scope set remains current-workbook Sheets, Forms, trigger management and bound-container UI. Full Drive and account-wide Sheets access are absent. The remaining release gate is a separate-account ordinary-user test plus the Studio Google application identity and consent-screen decision.
 
 ## Historical Files
 
