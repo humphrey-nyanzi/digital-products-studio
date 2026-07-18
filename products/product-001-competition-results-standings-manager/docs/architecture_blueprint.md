@@ -54,7 +54,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.7 Prepared Checkpoint
+## Apps Script v0.1.5.8 Prepared Checkpoint
 
 The prepared checkpoint includes:
 
@@ -78,7 +78,7 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
 
-The prepared v0.1.5.7 script places @OnlyCurrentDoc directly in Code.gs. This allows a copied bound project to infer current-workbook spreadsheet access without requiring the customer to install or edit an Apps Script manifest. Before Result Form setup continues, ScriptApp.requireScopes requests the exact current-workbook, Forms and trigger permissions so a copied project cannot reach Form creation with partial consent.
+The prepared v0.1.5.8 package uses an explicit manifest in the master bound project. This is required because @OnlyCurrentDoc also converts Forms access to forms.currentonly, which cannot create a new Result Form. The manifest combines current-workbook spreadsheet access with full Forms management and trigger management. ScriptApp.requireScopes remains as a runtime guard so Form setup cannot continue with partial consent.
 
 | Scope | Product use |
 |---|---|
@@ -90,7 +90,7 @@ No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets
 
 Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. If the browser returns an unsupported value, the existing workbook timezone is retained. Reset to Blank Template preserves the system timezone instead of clearing it.
 
-The script-only scope and timezone change is prepared in the repository. It must still be installed in the master and confirmed through clean-copy consent and timezone QA before it is treated as live release evidence.
+The bound-project scope and timezone package is prepared in the repository. Code.gs and appsscript.json must be installed once in the master. A fresh copy must then confirm that the hidden manifest is inherited and that consent and timezone behaviour match the release requirements.
 
 ## Reset Boundary
 

@@ -4,29 +4,33 @@ The live master workbook uses a spreadsheet-bound Apps Script project.
 
 ## Current Repository Checkpoint
 
-product001_apps_script_automation_v0_1_5_7.gs is the prepared customer-copy checkpoint. It includes all verified v0.1.5.5 behaviour and adds:
+The prepared release package is:
 
-- @OnlyCurrentDoc in Code.gs, so copied bound projects can infer current-workbook spreadsheet access without customer manifest work;
-- an explicit runtime permission check before Form setup, so copied projects request Forms and trigger access before FormApp.create runs;
-- automatic organiser timezone detection during Competition Tools > Set Up Result Form;
-- automatic application of that timezone to the workbook and hidden system setting Setup!D8;
-- preservation of the workbook timezone during Reset to Blank Template;
-- automatic hiding of the timezone row and Form response tabs from the customer workflow.
+- product001_apps_script_automation_v0_1_5_8.gs
+- appsscript_v0_1_5_8.json
 
-The expected authorisation scopes are:
+It includes all verified v0.1.5.5 behaviour, automatic organiser timezone detection, reset defaults and a runtime permission guard before Result Form setup.
+
+## Permission Architecture
+
+The master manifest explicitly declares:
 
 - https://www.googleapis.com/auth/spreadsheets.currentonly
 - https://www.googleapis.com/auth/forms
 - https://www.googleapis.com/auth/script.scriptapp
 
+An explicit manifest is necessary. @OnlyCurrentDoc also converts Forms access to forms.currentonly, but FormApp.create requires the full Forms scope to create the workbook-specific Result Form.
+
+The manifest is part of the bound Apps Script project. Google hides appsscript.json in the editor by default. The Studio installs it once in the master project, and customers should receive it through the copied bound project without viewing or editing it.
+
 No full Google Drive or account-wide Google Sheets scope is required.
 
 ## Installation Status
 
-The live bound project remains on the previously installed checkpoint until v0.1.5.7 is copied into the master Code.gs. The release no longer depends on installing or copying a prepared appsscript.json file. Earlier manifest files remain historical QA evidence only.
+The live bound project remains on the previously installed checkpoint until both v0.1.5.8 files are installed in the master. After installation, create a disposable customer copy and inspect its hidden manifest before running Set Up Result Form.
 
-After installing the script in the master, verify a new disposable customer copy. Run Set Up Result Form, confirm the detected timezone under File > Settings, and inspect Project OAuth Scopes. Account-wide Sheets access and full Drive access must be absent.
+The copy must retain the three approved scopes. Form setup must request any missing consent before FormApp.create runs, detect the browser timezone, create the Result Form and install the automatic triggers.
 
 ## Historical Files
 
-Earlier .gs and manifest files are historical checkpoints. Do not install them as the live Code.gs source. Script releases are stored as clean .gs files, not TXT wrappers.
+Earlier .gs and manifest files are historical checkpoints. Do not install them as the live project source. Script releases are stored as clean .gs files, not TXT wrappers.

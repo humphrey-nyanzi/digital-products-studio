@@ -11,7 +11,7 @@ The working lifecycle, buyer-facing workbook redesign, simplified Form workflow,
 ## Required Before Packaging
 
 1. Record the completed v0.1.5.3 customer-copy isolation evidence in the release package.
-2. Install and verify v0.1.5.7. Confirm the Code.gs current-document annotation produces current-workbook, Forms and trigger scopes without customer manifest work, and confirm that full Google Drive and account-wide Sheets access are absent.
+2. Install v0.1.5.8 Code.gs and its explicit least-privilege manifest in the master. Confirm a fresh copy inherits the hidden manifest without customer editing and requests current-workbook, Forms and trigger scopes only. Full Google Drive and account-wide Sheets access must be absent.
 3. Choose the Studio distribution identity and low-cost domain route.
 4. Publish the Studio application homepage, privacy policy and support contact.
 5. Configure the production standard Google Cloud project and OAuth consent screen.

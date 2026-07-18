@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed master bound script remains v0.1.5.3 until the master is updated. A disposable customer copy verified current-workbook, Forms and trigger scopes without full Drive or account-wide Sheets access. The clean-start reset defect is fixed. The repository now contains v0.1.5.7, which places the current-workbook restriction directly in Code.gs and detects the organiser browser timezone during Result Form setup. Customer copies no longer depend on an explicit manifest installation. Live master installation and clean-copy regression remain.
+The installed master bound script remains v0.1.5.3 until the master is updated. A disposable customer copy verified current-workbook, Forms and trigger scopes without full Drive or account-wide Sheets access. The clean-start reset defect is fixed. The repository now contains v0.1.5.8 with an explicit least-privilege master manifest and automatic organiser browser timezone detection during Result Form setup. Customers do not edit the manifest, but clean-copy QA must confirm that the bound project inherits it. Live master installation and clean-copy regression remain.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -59,7 +59,7 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 ## Active Blockers
 
-1. Install v0.1.5.7 in the master Code.gs and verify the copied project infers current-workbook access without customer manifest work.
+1. Install v0.1.5.8 Code.gs and appsscript.json once in the master, then verify a copied project inherits the hidden manifest without customer editing.
 2. Verify Set Up Result Form detects and applies the organiser browser timezone while keeping the system timezone row hidden.
 3. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
 4. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
@@ -67,4 +67,4 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 ## Next Action
 
-Install v0.1.5.7 in the master Code.gs. Create a disposable copy, run Set Up Result Form and confirm automatic timezone detection plus current-workbook-only Sheets permission. Then repeat reset, fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.
+Install v0.1.5.8 Code.gs and appsscript.json in the master. Create a disposable copy, confirm its hidden manifest contains the three approved scopes, then run Set Up Result Form and confirm automatic timezone detection plus current-workbook-only Sheets permission. Then repeat reset, fixture creation, Form setup, automatic submission processing and automatic approval updates before creating the next customer copy.
