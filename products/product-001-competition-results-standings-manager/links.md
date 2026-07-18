@@ -10,12 +10,12 @@
 
 - [Current prototype status](docs/prototype_status.md)
 - [Installed Apps Script checkpoint](scripts/product001_apps_script_automation_v0_1_5_3.gs)
-- [Prepared customer-copy Apps Script](scripts/product001_apps_script_automation_v0_1_5_8.gs)
-- [Required master manifest](scripts/appsscript_v0_1_5_8.json)
+- [Prepared customer-copy Apps Script](scripts/product001_apps_script_automation_v0_1_5_9.gs)
+- [Required master manifest](scripts/appsscript_v0_1_5_9.json)
 - [Apps Script checkpoint notes](scripts/README.md)
 
 ## Important
 
-The workbook and Form are live implementation assets. The installed bound script remains v0.1.5.3 until the master is updated. Prepared v0.1.5.8 uses an explicit least-privilege manifest in the master because Form creation requires full Forms access while spreadsheet access must remain current-workbook only. The manifest is part of the copied bound project and remains hidden from customers. Result Form setup also detects the organiser browser timezone.
+The workbook and Form are live implementation assets. The installed bound script remains v0.1.5.3 until the master is updated. Prepared v0.1.5.9 uses an explicit least-privilege manifest in the master because Form creation requires full Forms access while spreadsheet access must remain current-workbook only. The manifest is part of the copied bound project and remains hidden from customers. Result Form setup also detects the organiser browser timezone.
 
 The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. The 17 July 2026 fresh customer-copy regression passed all seven approved navigation and Form-isolation steps.

@@ -12,8 +12,8 @@ The live workbook and linked Form are the implementation authority. The canonica
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
 - User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
 - Installed script checkpoint: [v0.1.5.3](scripts/product001_apps_script_automation_v0_1_5_3.gs)
-- Prepared customer-copy checkpoint: [v0.1.5.8](scripts/product001_apps_script_automation_v0_1_5_8.gs)
-- Required master manifest: [appsscript v0.1.5.8](scripts/appsscript_v0_1_5_8.json)
+- Prepared customer-copy checkpoint: [v0.1.5.9](scripts/product001_apps_script_automation_v0_1_5_9.gs)
+- Required master manifest: [appsscript v0.1.5.9](scripts/appsscript_v0_1_5_9.json)
 
 
 ## Product Scope
@@ -70,4 +70,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Install v0.1.5.8 and its explicit manifest once in the master bound project. Create a disposable customer copy and confirm the copied project retains the manifest without customer editing. Run Set Up Result Form, confirm automatic timezone detection, and verify that authorisation requests current-workbook access, Forms management and trigger management only. Then repeat reset, fixture creation, submission and approval regression.
+Install v0.1.5.9 and its explicit manifest once in the master bound project. Create a disposable customer copy and confirm the copied project retains the manifest without customer editing. Run Set Up Result Form, confirm automatic timezone detection, and verify that authorisation requests current-workbook access, Forms management, trigger management and permission to display the setup dialog only. Then repeat reset, fixture creation, submission and approval regression.

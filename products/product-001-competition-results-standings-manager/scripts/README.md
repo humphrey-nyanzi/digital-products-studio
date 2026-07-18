@@ -6,8 +6,8 @@ The live master workbook uses a spreadsheet-bound Apps Script project.
 
 The prepared release package is:
 
-- product001_apps_script_automation_v0_1_5_8.gs
-- appsscript_v0_1_5_8.json
+- product001_apps_script_automation_v0_1_5_9.gs
+- appsscript_v0_1_5_9.json
 
 It includes all verified v0.1.5.5 behaviour, automatic organiser timezone detection, reset defaults and a runtime permission guard before Result Form setup.
 
@@ -18,6 +18,7 @@ The master manifest explicitly declares:
 - https://www.googleapis.com/auth/spreadsheets.currentonly
 - https://www.googleapis.com/auth/forms
 - https://www.googleapis.com/auth/script.scriptapp
+- https://www.googleapis.com/auth/script.container.ui
 
 An explicit manifest is necessary. @OnlyCurrentDoc also converts Forms access to forms.currentonly, but FormApp.create requires the full Forms scope to create the workbook-specific Result Form.
 
@@ -27,9 +28,9 @@ No full Google Drive or account-wide Google Sheets scope is required.
 
 ## Installation Status
 
-The live bound project remains on the previously installed checkpoint until both v0.1.5.8 files are installed in the master. After installation, create a disposable customer copy and inspect its hidden manifest before running Set Up Result Form.
+The live bound project remains on the previously installed checkpoint until both v0.1.5.9 files are installed in the master. After installation, create a disposable customer copy and inspect its hidden manifest before running Set Up Result Form.
 
-The copy must retain the three approved scopes. Form setup must request any missing consent before FormApp.create runs, detect the browser timezone, create the Result Form and install the automatic triggers.
+The copy must retain the four approved scopes. Form setup must request any missing consent before FormApp.create runs, detect the browser timezone, create the Result Form and install the automatic triggers.
 
 ## Historical Files
 

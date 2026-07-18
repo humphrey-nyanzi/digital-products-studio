@@ -54,7 +54,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.8 Prepared Checkpoint
+## Apps Script v0.1.5.9 Prepared Checkpoint
 
 The prepared checkpoint includes:
 
@@ -78,13 +78,14 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
 
-The prepared v0.1.5.8 package uses an explicit manifest in the master bound project. This is required because @OnlyCurrentDoc also converts Forms access to forms.currentonly, which cannot create a new Result Form. The manifest combines current-workbook spreadsheet access with full Forms management and trigger management. ScriptApp.requireScopes remains as a runtime guard so Form setup cannot continue with partial consent.
+The prepared v0.1.5.9 package uses an explicit manifest in the master bound project. This is required because @OnlyCurrentDoc also converts Forms access to forms.currentonly, which cannot create a new Result Form. The manifest combines current-workbook spreadsheet access with full Forms management, trigger management and bound-container dialog access. ScriptApp.requireScopes remains as a runtime guard so Form setup cannot continue with partial consent.
 
 | Scope | Product use |
 |---|---|
 | https://www.googleapis.com/auth/spreadsheets.currentonly | Read, update and copy the current competition workbook. |
 | https://www.googleapis.com/auth/forms | Create, configure and update the workbook-specific Result Form. |
 | https://www.googleapis.com/auth/script.scriptapp | Create and repair Form-submit and approval-edit triggers. |
+| https://www.googleapis.com/auth/script.container.ui | Display the bound setup dialog used to detect browser timezone. |
 
 No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets scope is required. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
 

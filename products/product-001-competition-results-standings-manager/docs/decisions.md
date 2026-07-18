@@ -134,11 +134,11 @@ Consequence: customer-copy navigation is no longer a release blocker. OAuth cons
 
 ## D025 - Least-privilege Apps Script scopes
 
-Decision: the prepared v0.1.5.8 master bound project declares current-workbook spreadsheet access, Forms management and trigger management through an explicit manifest. Full Google Drive and account-wide Sheets access are removed.
+Decision: the prepared v0.1.5.9 master bound project declares current-workbook spreadsheet access, Forms management, trigger management and bound-container dialog access through an explicit manifest. Full Google Drive and account-wide Sheets access are removed.
 
 Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
 
-Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.8 is installed, reauthorised and regression-tested in a disposable customer copy.
+Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.9 is installed, reauthorised and regression-tested in a disposable customer copy.
 
 ## D026 - Blank reset restores usable scheduling defaults
 
@@ -155,4 +155,4 @@ Consequence: dates, times, backups and Form operations use the organiser context
 
 Decision: @OnlyCurrentDoc cannot be used because it also reduces Forms access to forms.currentonly, while this product must create a separate Result Form. The master bound project therefore owns an explicit least-privilege manifest.
 
-Consequence: the Studio configures Code.gs and appsscript.json once in the master. Customers copy the bound project with the workbook and do not edit code or the hidden manifest. Clean-copy QA must confirm that the copied project retains current-workbook Sheets, Forms and trigger scopes without full Drive or account-wide Sheets access.
+Consequence: the Studio configures Code.gs and appsscript.json once in the master. Customers copy the bound project with the workbook and do not edit code or the hidden manifest. Clean-copy QA must confirm that the copied project retains current-workbook Sheets, Forms, trigger and container UI scopes without full Drive or account-wide Sheets access.
