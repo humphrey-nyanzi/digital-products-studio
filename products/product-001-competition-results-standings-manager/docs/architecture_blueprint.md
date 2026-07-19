@@ -96,7 +96,7 @@ The four-scope bound-project package is verified through ordinary-user operation
 
 ## Public Support Architecture
 
-The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are prepared as static files under `site/` for deployment to `freydigitalstudio.com`. The domain is release infrastructure and does not settle the final public brand name.
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is release infrastructure and does not settle the final public brand name.
 
 ## Reset Boundary
 

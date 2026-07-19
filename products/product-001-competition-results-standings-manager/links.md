@@ -8,10 +8,10 @@
 
 ## Public Support Foundation
 
-- Domain: `freydigitalstudio.com`, registered and awaiting site deployment
+- Domain: `freydigitalstudio.com`, active on Cloudflare Pages
 - Support: [support@freydigitalstudio.com](mailto:support@freydigitalstudio.com), routing verified
-- Planned product homepage: `https://freydigitalstudio.com/`
-- Planned privacy policy: `https://freydigitalstudio.com/privacy/`
+- [Public product homepage](https://freydigitalstudio.com/)
+- [Public privacy policy](https://freydigitalstudio.com/privacy/)
 
 ## Repository References
 

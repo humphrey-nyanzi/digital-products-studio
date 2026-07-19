@@ -193,3 +193,5 @@ Consequence: Google Sheets can visibly display the selected timezone while compe
 Decision: publish a small static product homepage and accurate privacy policy on the owned domain before configuring the production OAuth consent screen.
 
 Consequence: the site uses the product name and support contact only. The internal Studio name and undecided public brand are not presented as settled customer identity.
+
+Verification: on 19 July 2026, Cloudflare Pages served the homepage and privacy policy over HTTPS at `freydigitalstudio.com`. Both pages returned 200, linked to the support-owned User Manual and exposed the verified support address through Cloudflare email protection.

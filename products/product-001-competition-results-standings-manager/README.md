@@ -62,7 +62,7 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` routes successfully and is attached to the dedicated product-support Google account.
 
-The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. A small product homepage and privacy policy are prepared in the repository under `site/`, but they are not public until the Director approves deployment and connects the domain.
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. The product homepage and privacy policy are deployed from the repository `site/` folder through Cloudflare Pages. The custom domain, HTTPS pages, manual link and protected support email were verified publicly on 19 July 2026.
 
 ## Key Documents
 
@@ -76,4 +76,4 @@ The support account owns the canonical User Manual. The manual is available to a
 
 ## Next Action
 
-Publish the prepared product-support site, then configure the standard Google Cloud project and OAuth consent screen under the dedicated support identity. Confirm the Cloud project association in a fresh workbook copy before deciding whether another targeted consent regression is sufficient.
+Configure the standard Google Cloud project and OAuth consent screen under the dedicated support identity. Confirm the Cloud project association in a fresh workbook copy before deciding whether another targeted consent regression is sufficient.

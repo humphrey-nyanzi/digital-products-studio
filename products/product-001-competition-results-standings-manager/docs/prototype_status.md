@@ -79,16 +79,16 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - A dedicated support Google account owns the new canonical User Manual.
 - The manual is public read-only and passed an unsigned access check.
 - The master workbook Start Here link now opens the new manual.
-- The product homepage and privacy policy are prepared under `site/` but are not deployed.
+- The product homepage and privacy policy are deployed from `site/` through Cloudflare Pages.
+- `https://freydigitalstudio.com/` and `https://freydigitalstudio.com/privacy/` passed public HTTPS, content, manual-link and support-address checks on 19 July 2026.
 
 ## Active Blockers
 
-1. Publish the prepared product homepage and privacy policy on the owned domain.
-2. Configure the approved standard Google Cloud project and OAuth consent identity.
-3. Confirm whether a copied bound script retains the intended standard Cloud project and consent identity.
-4. Install and target-test v0.1.6.0 timezone display normalisation.
-5. Make an explicit release or controlled-pilot decision after the remaining gates.
+1. Configure the approved standard Google Cloud project and OAuth consent identity.
+2. Confirm whether a copied bound script retains the intended standard Cloud project and consent identity.
+3. Install and target-test v0.1.6.0 timezone display normalisation.
+4. Make an explicit release or controlled-pilot decision after the remaining gates.
 
 ## Next Action
 
-Deploy the prepared static support site to Cloudflare Pages after Director approval, connect `freydigitalstudio.com`, and verify the public homepage, privacy policy and support route before Cloud project configuration.
+Configure the standard Google Cloud project and production OAuth consent screen under the dedicated support identity. Then confirm the copied bound-project identity in a fresh workbook copy.
