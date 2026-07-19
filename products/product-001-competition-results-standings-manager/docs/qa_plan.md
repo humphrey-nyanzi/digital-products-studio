@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Copied-workbook technical regression passed on v0.1.5.9, separate-account OAuth and final release checks remain
-Last verified: 17 July 2026
+Status: Ordinary-user operational QA passed, OAuth identity and Cloud project checks remain
+Last verified: 19 July 2026
 
 ## Purpose
 
@@ -12,7 +12,18 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 July customer-account test passed copied-script availability, second-account ownership, per-copy Form creation, hidden response-tab behaviour and isolated result processing. It exposed an unverified OAuth consent screen and master-linked workbook navigation. Apps Script v0.1.5.3 repaired the navigation defect, and the 17 July fresh customer-copy regression passed all seven approved isolation steps. The v0.1.5.9 copied-workbook regression also passed automatic timezone setup, hidden response-tab behaviour, Played submission processing and approval updates to Fixtures, standings and Reports. Public release remains blocked by the OAuth and Cloud project trust path plus the final separate-account ordinary-user gate.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test then passed the complete operational customer workflow, ownership, isolation and protection checks. Public release remains blocked by OAuth application identity, standard Cloud project inheritance, public trust pages and packaging completion.
+
+## 18 July Ordinary-user QA Result
+
+| Gate | Result | Evidence |
+|---|---|---|
+| Technical operation | Passed | Copied script, menu, customer Form, fixture creation, submission, approval, standings, Reports and Checks worked. |
+| Permission and ownership | Passed | The customer account owned the copy and Form. Consent showed only the four approved permission categories. Full Drive and account-wide Sheets access were absent. |
+| Ordinary-user usability | Partial pass | The main workflow and reset wording were understandable. Timezone behaviour was correct, but the Settings control did not visibly show Africa/Kampala. |
+| OAuth identity | Failed | Google showed an unverified warning, the application name `Competitions` and a personal developer identity. |
+| Documentation and packaging | Failed, remediation prepared | The original User Manual required access. A support-owned public copy now passes unsigned viewing and the master link is repaired. |
+| Public release | Hold | Standard Cloud project, verified consent identity and published privacy surface remain open. |
 
 ## Required Regression
 
@@ -31,7 +42,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 | Return leg | Generate Double Round-robin with an added break | The extra break is applied once before the second leg and all 56 eight-team fixtures remain complete. |
 | Scheduling validation | Clear Match Days or enter an invalid break | Builder Status blocks transfer with a corrective message. |
 | Form setup | Run Set Up Result Form | The Form is created or repaired and both automatic triggers are installed without separate customer menu actions. |
-| Timezone | Run Set Up Result Form from a customer account in the intended location | The browser timezone is applied to the workbook automatically, the hidden Setup timezone value matches it and the customer is not asked to choose a timezone. |
+| Timezone | Run Set Up Result Form from a customer account in the intended location | The browser timezone is applied automatically. Equivalent East Africa zones display as Africa/Nairobi in Google Sheets Settings and retain GMT+3 behaviour. |
 | Form sync | Sync eligible fixtures | Only valid Scheduled fixtures appear. |
 | Played | Submit and approve | Result Review, Fixtures, standings, Reports and Form eligibility update. |
 | Duplicate | Submit one fixture twice before approval | Manager can reject one and approve one while preserving both records. |
@@ -67,7 +78,7 @@ The 16 July customer-account test passed copied-script availability, second-acco
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. Customer ownership and operational isolation passed, while OAuth trust and navigation isolation failed. The 17 July fresh-copy regression closed the navigation-isolation failure. A controlled pilot may be considered only through an explicit Director decision; public release still requires the OAuth, Cloud identity and final ordinary-user gates to pass.
+The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates while confirming that OAuth identity and documentation access were release blockers. The manual defect is now repaired at document and master-link level. A targeted link check is sufficient for that repair. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow.
 
 
 

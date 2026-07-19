@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, copied-workbook technical regression passed on v0.1.5.9, final release gates pending
-Last verified: 17 July 2026
+Status: Working prototype v0.1.0, ordinary-user operational QA passed, OAuth and Cloud project release gates pending
+Last verified: 19 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -10,9 +10,10 @@ Product 001 is a football-first Google Sheets and Google Forms system for small 
 The live workbook and linked Form are the implementation authority. The canonical customer guide is the Google Doc User Manual. This repository holds the product requirements, architecture, decisions, QA plan and Apps Script checkpoints.
 
 - Master workbook: [open](https://docs.google.com/spreadsheets/d/1a-oUlX_yVpSRbito9zdNWfFXj3x8GOcJOSIrnrlZqDg/edit)
-- User Manual: [open](https://docs.google.com/document/d/175zrNdp8QMkO5hCle0QyVysWicAMdKVIFdfSBfRQR5o/edit)
+- User Manual: [open](https://docs.google.com/document/d/1Ames7P4PMyqcGbKgfSXJlSuO-zqL8-kSi2SFXSGevGs/edit)
 - Verified customer-copy checkpoint: [v0.1.5.9](scripts/product001_apps_script_automation_v0_1_5_9.gs)
 - Verified least-privilege manifest: [appsscript v0.1.5.9](scripts/appsscript_v0_1_5_9.json)
+- Prepared timezone-display checkpoint: [v0.1.6.0](scripts/product001_apps_script_automation_v0_1_6_0.gs)
 
 
 ## Product Scope
@@ -57,6 +58,12 @@ Arial is the approved product font for the workbook and User Manual. It provides
 
 The canonical Google Doc User Manual was reformatted on 15 July 2026. It now uses Arial throughout, native numbered and bulleted lists, corrected heading levels and clearer operational subsections.
 
+## Public Support Foundation
+
+The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` routes successfully and is attached to the dedicated product-support Google account.
+
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. A small product homepage and privacy policy are prepared in the repository under `site/`, but they are not public until the Director approves deployment and connects the domain.
+
 ## Key Documents
 
 - [Prototype Status](docs/prototype_status.md)
@@ -69,4 +76,4 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Next Action
 
-Proceed to the final separate-account ordinary-user test and Google application identity gate. Confirm the consent screen, ownership, protections and delivery instructions with an account that did not build the product, then make the release decision.
+Publish the prepared product-support site, then configure the standard Google Cloud project and OAuth consent screen under the dedicated support identity. Confirm the Cloud project association in a fresh workbook copy before deciding whether another targeted consent regression is sufficient.

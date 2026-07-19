@@ -1,7 +1,8 @@
 # Architecture Blueprint
 
 Product: Football Competition Results & Standings Manager  
-Status: Live workbook architecture, verified 16 July 2026
+Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 timezone display repair prepared
+Last verified: 19 July 2026
 
 ## Components
 
@@ -54,7 +55,7 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.9 Prepared Checkpoint
+## Apps Script v0.1.5.9 Verified Baseline And v0.1.6.0 Prepared Repair
 
 The prepared checkpoint includes:
 
@@ -89,9 +90,13 @@ The prepared v0.1.5.9 package uses an explicit manifest in the master bound proj
 
 No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets scope is required. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
 
-Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. If the browser returns an unsupported value, the existing workbook timezone is retained. Reset to Blank Template preserves the system timezone instead of clearing it.
+Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
 
-The bound-project scope and timezone package is prepared in the repository. Code.gs and appsscript.json must be installed once in the master. A fresh copy must then confirm that the hidden manifest is inherited and that consent and timezone behaviour match the release requirements.
+The four-scope bound-project package is verified through ordinary-user operation. The tested copy still used a default Cloud project and displayed an unverified application name and personal developer identity. A standard Cloud project must be connected to the master, and a fresh copy must confirm whether that association and consent identity are inherited rather than assumed.
+
+## Public Support Architecture
+
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are prepared as static files under `site/` for deployment to `freydigitalstudio.com`. The domain is release infrastructure and does not settle the final public brand name.
 
 ## Reset Boundary
 
@@ -99,6 +104,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells must be distinct from formula and ID areas. Hidden sheets, technical columns and Form response records are protected operational layers. A final clean-copy, non-owner test remains required before release.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. OAuth identity and copied standard Cloud project behaviour remain separate release gates.
 
 

@@ -163,3 +163,33 @@ Decision: v0.1.5.9 is the verified technical baseline for copied-workbook Form s
 Evidence: on 18 July 2026, a workbook copy successfully detected timezone, created its Result Form, hid the response tab, processed a Played submission and applied an approved result to Fixtures, standings and Reports.
 
 Consequence: copied-workbook technical operation is no longer the active blocker. Separate-account consent identity, protection behaviour, delivery usability and the final release decision remain open.
+
+## D030 - Final ordinary-user operational QA passed
+
+Decision: the 18 July 2026 separate-account test passes technical operation and permission ownership, partially passes usability, and fails OAuth identity and documentation packaging.
+
+Consequence: public release remains on hold. The tested operational workflow does not need a full repeat unless a later change affects it. Targeted regressions will cover repaired links, timezone display and Cloud project identity.
+
+## D031 - Dedicated support identity and owned domain
+
+Decision: `freydigitalstudio.com` is the release infrastructure domain and `support@freydigitalstudio.com` is the support and Google application account. The domain does not settle the final public brand name.
+
+Consequence: the personal developer identity can be removed from customer-facing ownership and OAuth surfaces without forcing a premature Studio rebrand.
+
+## D032 - Public support-owned User Manual
+
+Decision: the canonical User Manual is owned by the dedicated support Google account and shared to anyone with the link as Viewer. The master workbook links to this document as an explicitly public support resource.
+
+Consequence: customer workbook copies can open the manual without requesting access, while editing remains controlled by the support identity.
+
+## D033 - Visible East Africa timezone normalisation
+
+Decision: repository-prepared v0.1.6.0 maps equivalent East Africa GMT+3 browser timezone identifiers to Africa/Nairobi before applying the spreadsheet timezone. Other timezone identifiers pass through unchanged.
+
+Consequence: Google Sheets can visibly display the selected timezone while competition dates and times retain the verified GMT+3 behaviour. Installation and a targeted live check remain required.
+
+## D034 - Product support site before OAuth configuration
+
+Decision: publish a small static product homepage and accurate privacy policy on the owned domain before configuring the production OAuth consent screen.
+
+Consequence: the site uses the product name and support contact only. The internal Studio name and undecided public brand are not presented as settled customer identity.

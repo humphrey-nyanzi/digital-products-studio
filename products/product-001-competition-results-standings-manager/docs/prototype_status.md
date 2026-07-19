@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, v0.1.5.9 copied-workbook technical regression passed
-Last verified: 17 July 2026
+Status: Working prototype v0.1.0, ordinary-user operational QA passed, public release on hold
+Last verified: 19 July 2026
 
 ## Verified Product State
 
@@ -57,13 +57,38 @@ The first test exposed two release blockers:
 
 On 17 July 2026, a fresh customer copy passed all seven approved regression steps. Internal navigation stayed within the customer workbook, both Form buttons prompted setup before a customer Form existed, Set Up Result Form created the customer-owned Form and both buttons then opened that Form. Customer-copy navigation isolation is no longer a release blocker.
 
+## Final Ordinary-user QA
+
+On 18 July 2026, an account that did not build the product completed the customer workflow in a fresh owned copy. The copied menu appeared without code editing, the approved four-scope consent set was shown, the customer-owned Form was created, response tabs stayed hidden, reset created a backup, a four-team competition generated six fixtures, one Played result was submitted and approved, and Fixtures, standings, Reports and Checks updated only in the customer copy. Editing a protected automatic cell was blocked.
+
+The outcome is separated by gate:
+
+- Technical operation: passed.
+- Permission and ownership: passed.
+- Ordinary-user usability: partial pass.
+- OAuth identity: failed because the application was unverified and used an unsuitable personal identity.
+- Documentation and packaging: failed because the original User Manual required access.
+- Public release: hold.
+
+The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This change is not installed or live-tested yet.
+
+## Remediation Foundation
+
+- `freydigitalstudio.com` is registered as infrastructure while the final public brand remains undecided.
+- `support@freydigitalstudio.com` routing is verified.
+- A dedicated support Google account owns the new canonical User Manual.
+- The manual is public read-only and passed an unsigned access check.
+- The master workbook Start Here link now opens the new manual.
+- The product homepage and privacy policy are prepared under `site/` but are not deployed.
+
 ## Active Blockers
 
-1. Establish the Studio Google application identity, domain, public privacy policy and standard Cloud project.
-2. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
-3. Complete the final separate-account ordinary-user test covering ownership, consent, protections and delivery instructions.
-4. Make an explicit release or controlled-pilot decision.
+1. Publish the prepared product homepage and privacy policy on the owned domain.
+2. Configure the approved standard Google Cloud project and OAuth consent identity.
+3. Confirm whether a copied bound script retains the intended standard Cloud project and consent identity.
+4. Install and target-test v0.1.6.0 timezone display normalisation.
+5. Make an explicit release or controlled-pilot decision after the remaining gates.
 
 ## Next Action
 
-Run the final separate-account ordinary-user test using the verified v0.1.5.9 master. Record consent-screen identity, copied ownership, protection behaviour and whether the user can complete setup without technical guidance.
+Deploy the prepared static support site to Cloudflare Pages after Director approval, connect `freydigitalstudio.com`, and verify the public homepage, privacy policy and support route before Cloud project configuration.

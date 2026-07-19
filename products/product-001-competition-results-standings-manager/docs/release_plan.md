@@ -1,24 +1,24 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Prototype v0.1.0, least-privilege package prepared, OAuth identity and final release gate required
-Last verified: 17 July 2026
+Status: Prototype v0.1.0, ordinary-user operational QA passed, OAuth and Cloud project release gates required
+Last verified: 19 July 2026
 
 ## Product State
 
-The working lifecycle, buyer-facing workbook redesign, simplified Form workflow, reset path, populated post-reset regression, multi-group generation and bounded practical scheduling are substantially complete. A clean customer-account test proved that the copied script, customer-owned Form and isolated response flow work. Apps Script v0.1.5.3 and the 17 July fresh customer-copy regression closed the copy-local navigation defect. Public packaging remains blocked until the OAuth consent, Cloud project and public trust requirements are resolved.
+The working lifecycle, customer interface, reset path, fixture generation and result workflow are substantially complete. The 18 July ordinary-user test passed ownership, copied automation, customer Form creation, end-to-end result processing, output isolation and protected areas. Public packaging remains blocked by the standard Cloud project, OAuth identity, published public trust pages and final packaging decision.
 
 ## Required Before Packaging
 
-1. Record the completed v0.1.5.3 customer-copy isolation evidence in the release package.
-2. Install v0.1.5.9 Code.gs and its explicit least-privilege manifest in the master. Confirm a fresh copy inherits the hidden manifest without customer editing and requests current-workbook, Forms, trigger and bound-container UI scopes only. Full Google Drive and account-wide Sheets access must be absent.
-3. Choose the Studio distribution identity and low-cost domain route.
-4. Publish the Studio application homepage, privacy policy and support contact.
-5. Configure the production standard Google Cloud project and OAuth consent screen.
-6. Compare the master and customer-copy Cloud project identities and decide the verified distribution architecture.
-7. Complete the applicable Google verification process.
-8. Repeat the clean customer-copy, consent, permissions, navigation and ordinary-user regression.
-9. Decide the support boundary, price, listing channel and first buyer test.
+1. Completed: record the customer-copy and ordinary-user operational evidence.
+2. Completed: verify v0.1.5.9 and its four-scope manifest in a fresh customer copy.
+3. Completed: register `freydigitalstudio.com`, verify `support@freydigitalstudio.com` routing and create the dedicated support Google identity.
+4. Completed: move the canonical User Manual to the support identity, publish it as Viewer and repair the master workbook link.
+5. Pending: deploy the prepared product homepage and privacy policy to the owned domain.
+6. Pending: configure the production standard Google Cloud project and OAuth consent screen.
+7. Pending: compare the master and customer-copy Cloud project identities and decide the verified distribution architecture.
+8. Pending: complete the applicable Google verification process and targeted consent regression.
+9. Pending: decide the support boundary, price, listing channel and first buyer test.
 
 ## Release Timeline
 
@@ -26,7 +26,7 @@ The working lifecycle, buyer-facing workbook redesign, simplified Form workflow,
 |---|---|---|
 | 16 July 2026 | First customer-copy QA | Ownership, copied script, customer Form and isolated response flow passed. Unverified OAuth and master-linked navigation were recorded as blockers. |
 | 17 July 2026 | Copy-link repair and OAuth architecture check | Copy-link regression passed. Inspect the live manifest, confirm scopes and compare master versus copy Cloud project identity. |
-| 24 July 2026 | Studio Google identity, domain and privacy foundation | Distribution identity, domain route, public policy content and support contact are decided. |
+| 24 July 2026 | Support identity, domain and privacy foundation | Identity, domain, email routing and policy content are prepared. Public deployment remains. |
 | 28 July 2026 | OAuth and clean-copy release gate | Consent configuration, verification route and a fresh copy regression determine pilot or hold status. |
 | 31 July 2026 | Pricing and buyer comparison | Evidence-backed price range and buyer comparison completed only after the delivery architecture is credible. |
 | 7 August 2026 | Packaging and demo release QA | Delivery package, manual export, screenshots and demo assets pass final QA. |
@@ -41,9 +41,9 @@ The v1.0 deliverable is a reusable workbook, linked Form, Apps Script automation
 
 ## Current Blocker
 
-Core product functionality and football logic are substantially verified. The clean-copy tests now pass workbook ownership, copied-script availability, customer-owned Form creation, hidden response-tab behaviour, isolated result processing and copy-local navigation. The exact least-privilege scopes are now decided and prepared. The remaining release blocker is the public trust architecture: live scope verification, Cloud project identity, Studio application identity, domain, privacy policy, OAuth verification route and final ordinary-user regression.
+Core product functionality, football logic, ordinary-user operation, ownership, isolation and protections are substantially verified. The domain, support route and support-owned public manual are established. The remaining release blocker is public trust architecture: deploy the homepage and privacy policy, configure the standard Cloud project, replace the unverified personal consent identity and confirm copied-project behaviour.
 
 ## Next Release Decision
 
-Do not blank or distribute the working master yet. Preserve it as current implementation evidence. Install and test the scope-reduced checkpoint in a fresh disposable customer copy, then settle the standard Cloud project and public trust architecture before the final authorisation and ordinary-user release gate. Test copies must not become the delivery file.
+Do not blank or distribute the working master yet. Preserve it as implementation evidence. Publish and verify the support site, then settle the standard Cloud project and consent identity. Use targeted regressions for the repaired manual link, timezone display and copied Cloud project identity. Do not repeat the full operational QA without a concrete workflow-impact reason.
 

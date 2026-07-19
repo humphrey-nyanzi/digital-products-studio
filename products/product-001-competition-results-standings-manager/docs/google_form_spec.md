@@ -1,8 +1,8 @@
 # Google Form Specification
 
 Product: Football Competition Results & Standings Manager  
-Status: Form workflow verified in v0.1.5.3, bound-project least-privilege and automatic-timezone workflow prepared in v0.1.5.9
-Last verified: 17 July 2026
+Status: Form workflow and least-privilege setup verified in v0.1.5.9, timezone display repair prepared in v0.1.6.0
+Last verified: 19 July 2026
 
 ## Purpose
 
@@ -12,7 +12,7 @@ The customer-facing Form title is Football Match Result Submission so its purpos
 
 ## Per-copy Form Ownership
 
-Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. Setup detects the organiser browser timezone, applies it to the workbook and stores it in the hidden system settings. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
+Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. Setup detects the organiser browser timezone, applies it to the workbook and stores it in the hidden system settings. Repository-prepared v0.1.6.0 normalises equivalent East Africa zones to Africa/Nairobi so Google Sheets displays the selected GMT+3 value. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
 
 ## Form Replacement
 
@@ -81,5 +81,6 @@ Use a restrained navy and pale-blue theme, the closest clean Basic sans-serif fo
 7. Confirm Abandoned preserves the submitted status while the manager records a separate Official Outcome.
 8. Confirm no official sees an internal identifier or scorer field.
 9. Confirm the raw response sheet, Result Review, Fixtures, Reports and Checks behave correctly.
+10. In an East Africa customer context, confirm Google Sheets Settings visibly shows Africa/Nairobi and fixture times remain correct.
 
 
