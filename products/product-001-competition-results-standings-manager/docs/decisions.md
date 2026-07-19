@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 16 July 2026
+Last updated: 17 July 2026
 
 ## D001 - Football-first self-service scope
 
@@ -123,3 +123,75 @@ Consequence: the master remains implementation evidence and the current QA copy 
 Decision: customer-facing workbook navigation uses relative sheet links. Form buttons read the configured published Form URL from Setup. Apps Script repairs legacy navigation and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook.
 
 Consequence: a copied workbook does not navigate back to the Studio master, and it does not expose the master Form before the customer owner sets up a copy-specific Result Form.
+
+## D024 - Customer-copy navigation isolation passed
+
+Decision: Apps Script v0.1.5.3 and the copy-local workbook formulas are the verified navigation baseline for the current prototype.
+
+Evidence: on 17 July 2026, a fresh customer copy passed all seven approved steps covering internal workbook navigation, pre-setup Form prompts, customer-owned Form creation and both post-setup Form links.
+
+Consequence: customer-copy navigation is no longer a release blocker. OAuth consent trust, exact scopes, Cloud project identity and the final ordinary-user release gate remain open.
+
+## D025 - Least-privilege Apps Script scopes
+
+Decision: the prepared v0.1.5.9 master bound project declares current-workbook spreadsheet access, Forms management, trigger management and bound-container dialog access through an explicit manifest. Full Google Drive and account-wide Sheets access are removed.
+
+Consequence: reset backups use Spreadsheet.copy and are created in the owner account main My Drive area. The script no longer checks the bin state through DriveApp. A missing, binned or unusable Result Form is replaced through the owner-only Repair Tools > Replace Result Form action, which preserves Result Review and leaves old Form deletion to the owner.
+
+Verification boundary: this decision is implemented in the repository package but is not live evidence until v0.1.5.9 is installed, reauthorised and regression-tested in a disposable customer copy.
+
+## D026 - Blank reset restores usable scheduling defaults
+
+Decision: Reset to Blank Template clears customer competition data but restores safe Create Fixtures defaults instead of leaving required scheduling controls blank. The defaults are Every day, one 09:00 kick-off slot, one match at a time, a one-day minimum gap between rounds, zero return-leg break and the MD prefix.
+
+Consequence: a first-time organiser still chooses the format, teams and first match date, but is not blocked by a required Match Days value that the reset removed. Set Up Result Form installs the submission and approval triggers automatically. Trigger repair commands remain owner-only recovery tools rather than normal setup steps.
+## D027 - Automatic competition timezone
+
+Decision: competition organisers do not choose a timezone from a limited workbook list. Set Up Result Form detects the organiser browser timezone, applies it to the workbook and stores it as a hidden system setting.
+
+Consequence: dates, times, backups and Form operations use the organiser context without adding setup burden. If detection fails, the workbook retains its existing timezone.
+
+## D028 - Bound-project permission boundary
+
+Decision: @OnlyCurrentDoc cannot be used because it also reduces Forms access to forms.currentonly, while this product must create a separate Result Form. The master bound project therefore owns an explicit least-privilege manifest.
+
+Consequence: the Studio configures Code.gs and appsscript.json once in the master. Customers copy the bound project with the workbook and do not edit code or the hidden manifest. Clean-copy QA must confirm that the copied project retains current-workbook Sheets, Forms, trigger and container UI scopes without full Drive or account-wide Sheets access.
+## D029 - v0.1.5.9 copied-workbook technical regression passed
+
+Decision: v0.1.5.9 is the verified technical baseline for copied-workbook Form setup and result processing.
+
+Evidence: on 18 July 2026, a workbook copy successfully detected timezone, created its Result Form, hid the response tab, processed a Played submission and applied an approved result to Fixtures, standings and Reports.
+
+Consequence: copied-workbook technical operation is no longer the active blocker. Separate-account consent identity, protection behaviour, delivery usability and the final release decision remain open.
+
+## D030 - Final ordinary-user operational QA passed
+
+Decision: the 18 July 2026 separate-account test passes technical operation and permission ownership, partially passes usability, and fails OAuth identity and documentation packaging.
+
+Consequence: public release remains on hold. The tested operational workflow does not need a full repeat unless a later change affects it. Targeted regressions will cover repaired links, timezone display and Cloud project identity.
+
+## D031 - Dedicated support identity and owned domain
+
+Decision: `freydigitalstudio.com` is the release infrastructure domain and `support@freydigitalstudio.com` is the support and Google application account. The domain does not settle the final public brand name.
+
+Consequence: the personal developer identity can be removed from customer-facing ownership and OAuth surfaces without forcing a premature Studio rebrand.
+
+## D032 - Public support-owned User Manual
+
+Decision: the canonical User Manual is owned by the dedicated support Google account and shared to anyone with the link as Viewer. The master workbook links to this document as an explicitly public support resource.
+
+Consequence: customer workbook copies can open the manual without requesting access, while editing remains controlled by the support identity.
+
+## D033 - Visible East Africa timezone normalisation
+
+Decision: repository-prepared v0.1.6.0 maps equivalent East Africa GMT+3 browser timezone identifiers to Africa/Nairobi before applying the spreadsheet timezone. Other timezone identifiers pass through unchanged.
+
+Consequence: Google Sheets can visibly display the selected timezone while competition dates and times retain the verified GMT+3 behaviour. Installation and a targeted live check remain required.
+
+## D034 - Product support site before OAuth configuration
+
+Decision: publish a small static product homepage and accurate privacy policy on the owned domain before configuring the production OAuth consent screen.
+
+Consequence: the site uses the product name and support contact only. The internal Studio name and undecided public brand are not presented as settled customer identity.
+
+Verification: on 19 July 2026, Cloudflare Pages served the homepage and privacy policy over HTTPS at `freydigitalstudio.com`. Both pages returned 200, linked to the support-owned User Manual and exposed the verified support address through Cloudflare email protection.

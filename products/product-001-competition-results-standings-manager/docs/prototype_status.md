@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, clean-copy QA partially passed with release blockers
-Last verified: 16 July 2026
+Status: Working prototype v0.1.0, ordinary-user operational QA passed, public release on hold
+Last verified: 19 July 2026
 
 ## Verified Product State
 
@@ -25,7 +25,7 @@ The workbook title and first page explicitly identify football and no longer exp
 
 ## Current Form And Automation
 
-The installed bound script is v0.1.5.2. Apps Script v0.1.5.3 is prepared in the repository and must be installed to repair legacy customer-copy links and clear inherited Form configuration when a copied workbook first opens.
+The v0.1.5.9 bound-project package has passed copied-workbook technical regression. The copy retained the least-privilege permission configuration, created its own Result Form, detected timezone automatically, hid the response tab, processed a Played submission and applied approval updates to Fixtures, standings and Reports. Full Drive and account-wide Sheets access are not part of the approved scope set.
 
 The Form collects fixture, submitter, optional message and Match Status. Played collects two scores, Walkover selects Home team or Away team, and Postponed or Abandoned collects a reason.
 
@@ -50,18 +50,45 @@ The first customer-account test confirmed:
 - a submitted result reached only the customer copy;
 - the Start Here Form link resolved to the new customer Form.
 
-The same test exposed two release blockers:
+The first test exposed two release blockers:
 
 - the Google authorisation flow displayed an unverified-app warning and the temporary Apps Script project name `Computations`;
-- the first customer copy exposed master workbook and master Form links. The master formulas are now repaired, but a fresh copy regression is still required.
+- the first customer copy exposed master workbook and master Form links.
+
+On 17 July 2026, a fresh customer copy passed all seven approved regression steps. Internal navigation stayed within the customer workbook, both Form buttons prompted setup before a customer Form existed, Set Up Result Form created the customer-owned Form and both buttons then opened that Form. Customer-copy navigation isolation is no longer a release blocker.
+
+## Final Ordinary-user QA
+
+On 18 July 2026, an account that did not build the product completed the customer workflow in a fresh owned copy. The copied menu appeared without code editing, the approved four-scope consent set was shown, the customer-owned Form was created, response tabs stayed hidden, reset created a backup, a four-team competition generated six fixtures, one Played result was submitted and approved, and Fixtures, standings, Reports and Checks updated only in the customer copy. Editing a protected automatic cell was blocked.
+
+The outcome is separated by gate:
+
+- Technical operation: passed.
+- Permission and ownership: passed.
+- Ordinary-user usability: partial pass.
+- OAuth identity: failed because the application was unverified and used an unsuitable personal identity.
+- Documentation and packaging: failed because the original User Manual required access.
+- Public release: hold.
+
+The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This change is not installed or live-tested yet.
+
+## Remediation Foundation
+
+- `freydigitalstudio.com` is registered as infrastructure while the final public brand remains undecided.
+- `support@freydigitalstudio.com` routing is verified.
+- A dedicated support Google account owns the new canonical User Manual.
+- The manual is public read-only and passed an unsigned access check.
+- The master workbook Start Here link now opens the new manual.
+- The product homepage and privacy policy are deployed from `site/` through Cloudflare Pages.
+- `https://freydigitalstudio.com/` and `https://freydigitalstudio.com/privacy/` passed public HTTPS, content, manual-link and support-address checks on 19 July 2026.
 
 ## Active Blockers
 
-1. Install v0.1.5.3 and verify the repaired workbook and Form links in a fresh customer copy.
-2. Establish the Studio Google application identity, domain, public privacy policy, standard Cloud project and least-privilege scope inventory.
-3. Confirm whether a copied bound script retains the intended standard Cloud project and verified consent identity.
-4. Repeat clean-copy and ordinary-user QA after the link and OAuth architecture decisions are implemented.
+1. Configure the approved standard Google Cloud project and OAuth consent identity.
+2. Confirm whether a copied bound script retains the intended standard Cloud project and consent identity.
+3. Install and target-test v0.1.6.0 timezone display normalisation.
+4. Make an explicit release or controlled-pilot decision after the remaining gates.
 
 ## Next Action
 
-Install v0.1.5.3 and run the fresh-copy link regression, then compare the Cloud project identity in the master and customer copy. Build the shared Studio identity and privacy foundation before OAuth verification and the final clean-copy release gate. Keep the current master as the working prototype and use disposable copies for reset and delivery testing.
+Configure the standard Google Cloud project and production OAuth consent screen under the dedicated support identity. Then confirm the copied bound-project identity in a fresh workbook copy.

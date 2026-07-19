@@ -3,7 +3,7 @@
 Owner: Humphrey Nyanzi  
 Product: Football Competition Results & Standings Manager  
 Status: Working prototype asset map  
-Last reconciled: 2026-07-16
+Last reconciled: 2026-07-19
 
 ## Current Assets
 
@@ -11,17 +11,19 @@ Last reconciled: 2026-07-16
 |---|---|---|
 | Live master workbook | Google Drive, see `links.md` | Current implementation authority. Populated eight-team QA state with 28 fixtures. |
 | Linked result Form | Google Forms, see `links.md` | Simplified status-based flow with per-copy ownership and verified response-tab privacy. |
-| Canonical user manual | Google Docs, see `links.md` | Updated and reformatted through 15 July 2026 using Arial, native lists and corrected heading levels. |
+| Canonical user manual | Google Docs, see `links.md` | Support-owned, public Viewer access verified and linked from the master workbook. |
+| Product support site | Repository root `site/` and `https://freydigitalstudio.com/` | Homepage, privacy policy, support contact and security headers deployed through Cloudflare Pages and publicly verified. |
 
-| Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_3.gs | Next installation source. Parses successfully and repairs copy-local workbook and Form navigation. |
+| Installed and verified Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_9.gs and scripts/appsscript_v0_1_5_9.json | Copied-workbook permissions, timezone behaviour, Form setup, hidden response tab, Played submission and approval-output regression passed on 18 July 2026. |
+| Prepared timezone-display checkpoint | scripts/product001_apps_script_automation_v0_1_6_0.gs and scripts/appsscript_v0_1_6_0.json | East Africa equivalent zones normalise to Africa/Nairobi. Syntax and helper tests pass. Live installation remains. |
 | Legacy script files | `scripts/form_setup_installer.gs`, `scripts/form_fixture_sync.gs`, v0.1.2 files | Historical only. Do not install as current automation. |
 
 ## Planned Release Assets
 
 | Asset | Purpose | Status |
 |---|---|---|
-| Final bound Apps Script export | Preserve the final release source | v0.1.5.3 prepared; live installation and clean-copy QA pending. |
-| User manual Google Doc | Canonical buyer instructions | Current and structurally repaired in Arial. |
+| Final bound Apps Script export | Preserve the final release source | v0.1.5.9 operational baseline passed. v0.1.6.0 targeted timezone display check remains. |
+| User manual Google Doc | Canonical buyer instructions | Support-owned public Viewer copy is current and accessible. |
 | User manual Word export | Marketplace delivery document | Regenerate after the 16 and 17 July release gates. |
 | Buyer quick-start guide | Short setup path | Pending packaging. |
 | Product screenshots | Listing and manual support | Pending final UI and clean-copy QA. |
@@ -34,5 +36,5 @@ Goal scorer tracking and Top Scorers are not v1.0 release assets. The hidden Goa
 
 ## Current Constraint
 
-Reset tools are owner-only. Per-copy Form provisioning, response-tab hiding and populated post-reset operation have passed live QA. Apps Script v0.1.5.2 is installed. The master navigation formulas are now copy-local and v0.1.5.3 adds automatic repair for inherited workbook and Form links. Fresh-copy QA remains pending.
+Reset tools are owner-only. Per-copy Form provisioning, response-tab hiding, reset, copy-local navigation, result processing and protected automatic areas passed ordinary-user QA. The four-scope least-privilege package is verified technically. Consent identity, copied Cloud project architecture and OAuth verification remain release constraints.
 

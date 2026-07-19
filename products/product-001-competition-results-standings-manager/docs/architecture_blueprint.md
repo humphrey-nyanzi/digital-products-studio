@@ -1,7 +1,8 @@
 # Architecture Blueprint
 
 Product: Football Competition Results & Standings Manager  
-Status: Live workbook architecture, verified 16 July 2026
+Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 timezone display repair prepared
+Last verified: 19 July 2026
 
 ## Components
 
@@ -54,20 +55,21 @@ The builder blocks incomplete group assignments, groups outside the supported si
 
 The date engine applies a permitted-day pattern to every generated date. Match Days supports every day, weekdays, weekends or one named weekday. Minimum Days Between Rounds is measured from the final fixture date used by one round to the first permitted date of the next. Return Leg Break Days adds an optional calendar-day pause before the second leg of a Double Round-robin. This is a date-level scheduling aid, not exact-hour recovery, venue or travel optimisation.
 
-## Apps Script v0.1.5.3
+## Apps Script v0.1.5.9 Verified Baseline And v0.1.6.0 Prepared Repair
 
-The next installation checkpoint includes:
+The prepared checkpoint includes:
 
 - `Set Up Result Form`
 - `Publish Fixture List`
 - `Refresh Result Form`
 - `Reschedule Selected Fixture`
+- `Replace Result Form` under Repair Tools
 - `Process Unread Submissions`
 - `Refresh Approved Results`
 - `Check Competition Status`
 - owner-only reset actions
 
-The installer rejects a Form in the bin or linked to another workbook, then discovers, records and hides the actual response sheet. The response processor resolves duplicate historical headers by selecting the newest nonblank answer.
+The installer reuses a Form only when it can be opened and is linked to the current workbook. Replace Result Form is the explicit owner action when the stored Form is missing, in the bin or unusable. It creates a new Form and response sheet while preserving Result Review. The old Form is not deleted automatically.
 
 Customer-facing workbook navigation uses relative sheet links rather than master workbook URLs. On open and during Form setup, v0.1.5.3 repairs legacy links and clears inherited Form configuration when the stored linked spreadsheet ID belongs to another workbook. Start Here and Fixtures then read the copy-specific published Form URL from Setup.
 
@@ -75,23 +77,33 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 ## OAuth Scope Inventory
 
-The v0.1.5.3 source uses only SpreadsheetApp, FormApp, DriveApp, ScriptApp and Utilities. The candidate explicit manifest scopes are:
+The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
+
+The prepared v0.1.5.9 package uses an explicit manifest in the master bound project. This is required because @OnlyCurrentDoc also converts Forms access to forms.currentonly, which cannot create a new Result Form. The manifest combines current-workbook spreadsheet access with full Forms management, trigger management and bound-container dialog access. ScriptApp.requireScopes remains as a runtime guard so Form setup cannot continue with partial consent.
 
 | Scope | Product use |
 |---|---|
-| https://www.googleapis.com/auth/spreadsheets.currentonly | Read and update the bound competition workbook. |
+| https://www.googleapis.com/auth/spreadsheets.currentonly | Read, update and copy the current competition workbook. |
 | https://www.googleapis.com/auth/forms | Create, configure and update the workbook-specific Result Form. |
-| https://www.googleapis.com/auth/drive | Create the automatic workbook backup before a reset and inspect linked Form files. |
 | https://www.googleapis.com/auth/script.scriptapp | Create and repair Form-submit and approval-edit triggers. |
-| https://www.googleapis.com/auth/script.container.ui | Add Competition Tools menus, alerts and confirmation prompts. |
+| https://www.googleapis.com/auth/script.container.ui | Display the bound setup dialog used to detect browser timezone. |
 
-No Gmail, Calendar, external-request or user-profile service is used. The full Drive scope is currently required by the automatic reset backup through DriveApp.makeCopy. Before verification, the Studio must decide whether that backup justifies the broad Drive permission or whether reset should require a manual owner-created backup so the script can be redesigned for narrower access. The final scope list must be confirmed against the live appsscript.json manifest and the authorisation screen.
+No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets scope is required. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
+
+Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
+
+The four-scope bound-project package is verified through ordinary-user operation. The tested copy still used a default Cloud project and displayed an unverified application name and personal developer identity. A standard Cloud project must be connected to the master, and a fresh copy must confirm whether that association and consent identity are inherited rather than assumed.
+
+## Public Support Architecture
+
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is release infrastructure and does not settle the final public brand name.
+
 ## Reset Boundary
 
-Reset is an owner-only workflow. It creates a full-workbook backup, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.
+Reset is an owner-only workflow. It creates a full-workbook backup in the owner account main My Drive area, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.
 
 ## Protection Boundary
 
-Buyer-editable cells must be distinct from formula and ID areas. Hidden sheets, technical columns and Form response records are protected operational layers. A final clean-copy, non-owner test remains required before release.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. OAuth identity and copied standard Cloud project behaviour remain separate release gates.
 
 
