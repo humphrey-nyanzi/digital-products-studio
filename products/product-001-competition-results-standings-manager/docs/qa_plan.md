@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Ordinary-user operational QA passed, OAuth identity and Cloud project checks remain
-Last verified: 19 July 2026
+Status: Controlled delivery QA passed, OAuth verification checks remain
+Last verified: 20 July 2026
 
 ## Purpose
 
@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test then passed the complete operational customer workflow, ownership, isolation and protection checks. Public release remains blocked by OAuth application identity, standard Cloud project inheritance, public trust pages and packaging completion.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Public release remains blocked by branding reverification, data-access verification and packaging completion.
 
 ## 18 July Ordinary-user QA Result
 
@@ -57,11 +57,11 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
-| Least-privilege authorisation | Install v0.1.5.9 Code.gs and manifest in the master, create a disposable copy and reauthorise | The copied project inherits the hidden manifest without customer editing. Consent requests current workbook access, Forms management, trigger management and permission to display the setup dialog only. Full Drive and account-wide Sheets access are absent. |
+| Least-privilege authorisation | Prepare a controlled delivery workbook, associate the standard project, transfer ownership and reauthorise | The transferred bound project retains the hidden manifest and standard Cloud project without customer editing. Consent requests current workbook access, Forms management, trigger management and permission to display the setup dialog only. Full Drive and account-wide Sheets access are absent. |
 | Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
 | Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
 | Copy navigation | Open every navigation and Form link in a customer copy | Every destination belongs to the customer copy or its configured Form. No master URL opens. |
-| Cloud project | Compare master and customer-copy project numbers | The copied-script verification architecture is confirmed rather than assumed. |
+| Cloud project | Compare support-prepared delivery and transferred-buyer project numbers | The controlled delivery workbook retains standard Cloud project 364546476326 after ownership transfer. |
 | Capacity | Run representative high-volume tests | Limits, performance and usable layout are confirmed. |
 
 ## Evidence To Retain
@@ -78,7 +78,7 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates while confirming that OAuth identity and documentation access were release blockers. The manual defect is now repaired at document and master-link level. A targeted link check is sufficient for that repair. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow.
+The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer. Target only the trust-page, OAuth and timezone changes that remain. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow.
 
 
 

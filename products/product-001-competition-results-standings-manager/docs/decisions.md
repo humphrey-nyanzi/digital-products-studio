@@ -195,3 +195,11 @@ Decision: publish a small static product homepage and accurate privacy policy on
 Consequence: the site uses the product name and support contact only. The internal Studio name and undecided public brand are not presented as settled customer identity.
 
 Verification: on 19 July 2026, Cloudflare Pages served the homepage and privacy policy over HTTPS at `freydigitalstudio.com`. Both pages returned 200, linked to the support-owned User Manual and exposed the verified support address through Cloudflare email protection.
+
+## D035 - Stable product routes on a shared release domain
+
+Decision: `freydigitalstudio.com` remains shared infrastructure for multiple products. Product 001 uses `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/` as its stable OAuth homepage and privacy routes.
+
+Consequence: the domain root can later become a product catalogue or public brand page without changing Product 001 trust URLs or repeating verification solely because the root purpose changes.
+
+Status: repository-prepared on 20 July 2026. Deployment, OAuth URL updates and Google reverification remain pending.

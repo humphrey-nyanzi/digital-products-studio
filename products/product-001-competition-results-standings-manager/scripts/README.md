@@ -37,7 +37,7 @@ No full Google Drive or account-wide Google Sheets scope is required.
 
 v0.1.5.9 passed copied-workbook technical regression on 18 July 2026. The copied project created its Result Form, detected timezone, hid the response tab, processed a Played submission and applied approval updates to Fixtures, standings and Reports.
 
-The verified scope set remains current-workbook Sheets, Forms, trigger management and bound-container UI. Full Drive and account-wide Sheets access are absent. The separate-account ordinary-user operational workflow passed on 18 July 2026. The consent screen still showed an unverified application under an unsuitable personal identity, so public release remains blocked by the standard Cloud project, OAuth identity and verification route.
+The verified scope set remains current-workbook Sheets, Forms, trigger management and bound-container UI. Full Drive and account-wide Sheets access are absent. The separate-account ordinary-user operational workflow passed on 18 July 2026. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and showed the approved product identity and four permissions. Public release remains blocked by branding and data-access verification.
 
 ## Historical Files
 
