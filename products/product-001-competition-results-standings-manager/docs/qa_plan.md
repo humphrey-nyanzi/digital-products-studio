@@ -1,7 +1,7 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Controlled delivery QA passed, OAuth verification checks remain
+Status: Controlled delivery QA passed, Google data-access verification under review
 Last verified: 20 July 2026
 
 ## Purpose
@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Public release remains blocked by branding reverification, data-access verification and packaging completion.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding, and the four-scope data-access submission is under review. Public release remains blocked by that review and packaging completion.
 
 ## 18 July Ordinary-user QA Result
 
@@ -24,6 +24,8 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 | OAuth identity | Failed | Google showed an unverified warning, the application name `Competitions` and a personal developer identity. |
 | Documentation and packaging | Failed, remediation prepared | The original User Manual required access. A support-owned public copy now passes unsigned viewing and the master link is repaired. |
 | Public release | Hold | Standard Cloud project, verified consent identity and published privacy surface remain open. |
+
+The table records the state observed during the 18 July test. By 20 July, the documentation defect, standard Cloud project, public trust routes and branding identity were repaired. Branding is verified and shown to users. Data-access verification remains under review, so public-release approval is still withheld.
 
 ## Required Regression
 
@@ -78,7 +80,7 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer. Target only the trust-page, OAuth and timezone changes that remain. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow.
+The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer, and branding verification passed. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow. After Google completes the data-access review, run only the smallest consent and identity regression needed to confirm the approved state.
 
 
 
