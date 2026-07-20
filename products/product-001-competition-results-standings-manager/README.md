@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, ordinary-user operational QA passed, OAuth and Cloud project release gates pending
-Last verified: 19 July 2026
+Status: Working prototype v0.1.0, controlled delivery QA passed, OAuth verification pending
+Last verified: 20 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -62,7 +62,7 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` routes successfully and is attached to the dedicated product-support Google account.
 
-The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. The product homepage and privacy policy are deployed from the repository `site/` folder through Cloudflare Pages. The custom domain, HTTPS pages, manual link and protected support email were verified publicly on 19 July 2026.
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. The repository prepares stable Product 001 routes at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs. Deployment and live verification of the new routes remain pending.
 
 ## Key Documents
 
@@ -76,4 +76,4 @@ The support account owns the canonical User Manual. The manual is available to a
 
 ## Next Action
 
-Configure the standard Google Cloud project and OAuth consent screen under the dedicated support identity. Confirm the Cloud project association in a fresh workbook copy before deciding whether another targeted consent regression is sufficient.
+Deploy and verify the stable Product 001 trust routes. Update the OAuth homepage and privacy URLs to those routes, then request branding reverification. Prepare the required scope justifications and demo video before submitting data-access verification.

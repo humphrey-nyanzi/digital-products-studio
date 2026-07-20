@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, ordinary-user operational QA passed, public release on hold
-Last verified: 19 July 2026
+Status: Working prototype v0.1.0, controlled delivery QA passed, public release on hold
+Last verified: 20 July 2026
 
 ## Verified Product State
 
@@ -80,15 +80,16 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - The manual is public read-only and passed an unsigned access check.
 - The master workbook Start Here link now opens the new manual.
 - The product homepage and privacy policy are deployed from `site/` through Cloudflare Pages.
-- `https://freydigitalstudio.com/` and `https://freydigitalstudio.com/privacy/` passed public HTTPS, content, manual-link and support-address checks on 19 July 2026.
+- The original root homepage and privacy routes passed public HTTPS, content, manual-link and support-address checks on 19 July 2026. Stable Product 001 routes are repository-prepared at `/products/football-competition-manager/` and its `/privacy/` child route, but are not yet deployed or live-verified.
 
 ## Active Blockers
 
-1. Configure the approved standard Google Cloud project and OAuth consent identity.
-2. Confirm whether a copied bound script retains the intended standard Cloud project and consent identity.
-3. Install and target-test v0.1.6.0 timezone display normalisation.
-4. Make an explicit release or controlled-pilot decision after the remaining gates.
+1. Deploy and live-verify the stable Product 001 homepage and privacy routes.
+2. Update OAuth branding to the stable routes and request branding reverification.
+3. Prepare scope justifications and a demo video for data-access verification.
+4. Install and target-test v0.1.6.0 timezone display normalisation.
+5. Make an explicit release or controlled-pilot decision after the remaining gates.
 
 ## Next Action
 
-Configure the standard Google Cloud project and production OAuth consent screen under the dedicated support identity. Then confirm the copied bound-project identity in a fresh workbook copy.
+Deploy the stable Product 001 routes, update the OAuth branding URLs and request branding reverification. Do not submit data-access verification until the scope justifications and demo video are complete.

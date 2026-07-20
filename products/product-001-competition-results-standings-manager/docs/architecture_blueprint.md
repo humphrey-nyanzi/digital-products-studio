@@ -92,11 +92,11 @@ No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets
 
 Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
 
-The four-scope bound-project package is verified through ordinary-user operation. The tested copy still used a default Cloud project and displayed an unverified application name and personal developer identity. A standard Cloud project must be connected to the master, and a fresh copy must confirm whether that association and consent identity are inherited rather than assumed.
+The four-scope bound-project package is verified through ordinary-user operation. A customer-created File > Make a copy received a new default Cloud project and did not inherit the source standard project. A support-prepared delivery workbook retained standard Cloud project `364546476326` after ownership transfer to the ordinary user. Controlled support preparation and ownership transfer is therefore the verified delivery architecture. Self-service customer copying is not approved for release.
 
 ## Public Support Architecture
 
-The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is release infrastructure and does not settle the final public brand name.
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
 
 ## Reset Boundary
 
@@ -104,6 +104,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. OAuth identity and copied standard Cloud project behaviour remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. Branding and data-access verification remain separate release gates.
 
 
