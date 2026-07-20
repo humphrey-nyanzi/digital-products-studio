@@ -2,7 +2,7 @@
 
 Product: Football Competition Results & Standings Manager  
 Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 timezone display repair prepared
-Last verified: 19 July 2026
+Last verified: 20 July 2026
 
 ## Components
 
@@ -77,7 +77,7 @@ Result Review stores submitted Match Status separately from Official Outcome. Th
 
 ## OAuth Scope Inventory
 
-The master and tested customer copy currently use separate bound Script projects with default Google Cloud projects. Their inferred v0.1.5.3 authorisation requested broad spreadsheet and Drive access plus Forms and trigger management.
+Historical v0.1.5.3 copies used default Google Cloud projects and inferred broader spreadsheet and Drive access. That configuration is not the approved release architecture.
 
 The prepared v0.1.5.9 package uses an explicit manifest in the master bound project. This is required because @OnlyCurrentDoc also converts Forms access to forms.currentonly, which cannot create a new Result Form. The manifest combines current-workbook spreadsheet access with full Forms management, trigger management and bound-container dialog access. ScriptApp.requireScopes remains as a runtime guard so Form setup cannot continue with partial consent.
 
@@ -94,6 +94,8 @@ Set Up Result Form opens a short bound dialog that reads the browser IANA timezo
 
 The four-scope bound-project package is verified through ordinary-user operation. A customer-created File > Make a copy received a new default Cloud project and did not inherit the source standard project. A support-prepared delivery workbook retained standard Cloud project `364546476326` after ownership transfer to the ordinary user. Controlled support preparation and ownership transfer is therefore the verified delivery architecture. Self-service customer copying is not approved for release.
 
+The standard project is `decoded-vision-502911-q6`, project number `364546476326`. Google verified and published the Product 001 branding on 20 July 2026. The four-scope data-access submission is under review. This review state does not change the verified workbook and Form ownership model.
+
 ## Public Support Architecture
 
 The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
@@ -104,6 +106,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. Branding and data-access verification remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. Branding verification has passed. Data-access verification and the Director release decision remain separate release gates.
 
 

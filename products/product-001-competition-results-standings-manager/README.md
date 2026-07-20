@@ -1,6 +1,6 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, controlled delivery QA passed, OAuth verification pending
+Status: Working prototype v0.1.0, controlled delivery QA passed, Google data-access verification under review
 Last verified: 20 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
@@ -62,7 +62,9 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` routes successfully and is attached to the dedicated product-support Google account.
 
-The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. The repository prepares stable Product 001 routes at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs. Deployment and live verification of the new routes remain pending.
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs.
+
+Google verified and published the Product 001 branding on 20 July 2026. The four-scope data-access submission is under review. Google states that the first Trust and Safety contact is normally expected within 3 to 5 days and that the full review may take up to 4 to 6 weeks. Public release remains on hold while that review and the commercial packaging decision remain open.
 
 ## Key Documents
 
@@ -76,4 +78,4 @@ The support account owns the canonical User Manual. The manual is available to a
 
 ## Next Action
 
-Deploy and verify the stable Product 001 trust routes. Update the OAuth homepage and privacy URLs to those routes, then request branding reverification. Prepare the required scope justifications and demo video before submitting data-access verification.
+Monitor the Google Verification Centre and `support@freydigitalstudio.com` for review requests. Do not change the approved branding, scopes or Cloud project while review is active unless Google requires a correction. Continue the controlled-pilot delivery, pricing, packaging and revenue decisions without repeating completed operational QA.

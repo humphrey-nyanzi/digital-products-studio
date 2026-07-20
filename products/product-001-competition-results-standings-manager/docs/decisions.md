@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 17 July 2026
+Last updated: 20 July 2026
 
 ## D001 - Football-first self-service scope
 
@@ -202,4 +202,20 @@ Decision: `freydigitalstudio.com` remains shared infrastructure for multiple pro
 
 Consequence: the domain root can later become a product catalogue or public brand page without changing Product 001 trust URLs or repeating verification solely because the root purpose changes.
 
-Status: repository-prepared on 20 July 2026. Deployment, OAuth URL updates and Google reverification remain pending.
+Status: deployed and live-verified on 20 July 2026. Google verified and published the Product 001 branding using these stable routes.
+
+## D036 - Controlled delivery is the verified pilot architecture
+
+Decision: prepare each pilot delivery workbook through the support account, associate its bound script with standard Cloud project `364546476326`, then transfer workbook ownership to the customer. The customer owns the workbook and the Form created from it.
+
+Evidence: on 20 July 2026, the transferred workbook retained the standard Cloud project and passed consent, Form creation, submission, approval, isolation and protection checks. A customer-created File > Make a copy received a default Cloud project instead.
+
+Consequence: direct self-service copying is not the approved release route. A Google Sheets Editor add-on remains a possible future distribution architecture only after pilot demand justifies the extra build, review and support burden.
+
+## D037 - Branding passed and data-access verification entered review
+
+Decision: publish the verified Product 001 branding and submit the four approved scopes for Google data-access verification under standard project `decoded-vision-502911-q6`.
+
+Evidence: on 20 July 2026, Google confirmed that branding is verified and shown to users. The Verification Centre confirmed receipt of the data-access submission. The submission includes scope justifications and the workflow demonstration at `https://youtu.be/DZ81Cq88wOo`.
+
+Consequence: public release remains on hold during review. Preserve the submitted app name, domains, scopes and Cloud project unless Google requests a correction. Commercial preparation may continue privately.

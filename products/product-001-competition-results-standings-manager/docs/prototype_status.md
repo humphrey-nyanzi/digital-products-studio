@@ -1,7 +1,7 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, controlled delivery QA passed, public release on hold
+Status: Working prototype v0.1.0, Google data-access verification under review, public release on hold
 Last verified: 20 July 2026
 
 ## Verified Product State
@@ -61,7 +61,7 @@ On 17 July 2026, a fresh customer copy passed all seven approved regression step
 
 On 18 July 2026, an account that did not build the product completed the customer workflow in a fresh owned copy. The copied menu appeared without code editing, the approved four-scope consent set was shown, the customer-owned Form was created, response tabs stayed hidden, reset created a backup, a four-team competition generated six fixtures, one Played result was submitted and approved, and Fixtures, standings, Reports and Checks updated only in the customer copy. Editing a protected automatic cell was blocked.
 
-The outcome is separated by gate:
+The 18 July outcome is preserved by gate:
 
 - Technical operation: passed.
 - Permission and ownership: passed.
@@ -69,6 +69,8 @@ The outcome is separated by gate:
 - OAuth identity: failed because the application was unverified and used an unsuitable personal identity.
 - Documentation and packaging: failed because the original User Manual required access.
 - Public release: hold.
+
+On 20 July 2026, the OAuth remediation passed its next gates. The standard Cloud project used the exact product application name, the owned domain, the public product homepage and privacy policy, and the dedicated support identity. Google verified and published the branding. The four approved scopes, their justifications and the unlisted workflow demonstration were submitted for data-access verification. Google confirmed that the submission is under review.
 
 The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This change is not installed or live-tested yet.
 
@@ -80,16 +82,18 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - The manual is public read-only and passed an unsigned access check.
 - The master workbook Start Here link now opens the new manual.
 - The product homepage and privacy policy are deployed from `site/` through Cloudflare Pages.
-- The original root homepage and privacy routes passed public HTTPS, content, manual-link and support-address checks on 19 July 2026. Stable Product 001 routes are repository-prepared at `/products/football-competition-manager/` and its `/privacy/` child route, but are not yet deployed or live-verified.
+- The stable Product 001 homepage and privacy routes are deployed and passed public HTTPS, content, manual-link and support-address checks.
+- Google verified and published the Product 001 branding on 20 July 2026.
+- The data-access verification submission includes the four approved scopes and the workflow demonstration at `https://youtu.be/DZ81Cq88wOo`.
 
 ## Active Blockers
 
-1. Deploy and live-verify the stable Product 001 homepage and privacy routes.
-2. Update OAuth branding to the stable routes and request branding reverification.
-3. Prepare scope justifications and a demo video for data-access verification.
-4. Install and target-test v0.1.6.0 timezone display normalisation.
-5. Make an explicit release or controlled-pilot decision after the remaining gates.
+1. Complete Google data-access verification. The submission is under review.
+2. Run a targeted post-review consent check only if Google changes the approved state or asks for a correction.
+3. Install and target-test v0.1.6.0 timezone display normalisation.
+4. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
+5. Make an explicit public-release or hold decision after verification and packaging pass.
 
 ## Next Action
 
-Deploy the stable Product 001 routes, update the OAuth branding URLs and request branding reverification. Do not submit data-access verification until the scope justifications and demo video are complete.
+Monitor the Google Verification Centre and the support inbox for the first reviewer contact. Preserve the submitted application identity, scopes and Cloud project unless Google requests a change. Continue private pricing and packaging work while public release remains on hold.

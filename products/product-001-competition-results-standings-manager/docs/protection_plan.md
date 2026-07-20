@@ -2,9 +2,9 @@
 
 Owner: Humphrey Nyanzi  
 Product: Football Competition Results & Standings Manager  
-Status: Release-readiness verification required  
+Status: Ordinary-user protection verification passed
 Repository document version: 0.4.0  
-Last reconciled: 2026-07-10
+Last reconciled: 2026-07-20
 
 ## Purpose
 
@@ -35,9 +35,11 @@ The July UX pass hides most internal tabs and several helper columns. Hiding is 
 - Keep editable cells visually distinct from automatic cells.
 - Keep an unchanged master copy before major structural changes.
 
-## Current Caveat
+## Verified Ordinary-user Result
 
-The workflow has passed owner-led functional testing, but normal-user protection behaviour has not yet been fully verified. Do not claim release readiness until that test passes.
+On 18 July 2026, an ordinary-user account completed setup, fixture creation, Form submission, approval and reporting in its own workbook. Editing a protected automatic area was blocked. The protection gate therefore passed for the tested customer workflow.
+
+This result does not by itself approve public release. Google data-access verification, packaging, support boundaries and the Director release decision remain open.
 
 ## Change Log
 
