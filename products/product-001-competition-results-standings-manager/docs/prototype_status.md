@@ -91,11 +91,10 @@ The test also found that Google Sheets did not visibly select the detected Afric
 ## Active Blockers
 
 1. Deploy and live-verify the expanded privacy policy at the existing verified URL.
-2. Update the User Manual. The master Start Here notice is live, and the Result Form remains unchanged during review.
-3. Keep v0.1.6.0 uninstalled until Google completes the active review or explicitly requests an application change.
-4. Resubmit the unchanged four-scope application and reply directly to the Google review email.
-5. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
-6. Make an explicit public-release or hold decision after verification and packaging pass.
+2. Keep v0.1.6.0 uninstalled until Google completes the active review or explicitly requests an application change.
+3. Resubmit the unchanged four-scope application and reply directly to the Google review email.
+4. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
+5. Make an explicit public-release or hold decision after verification and packaging pass.
 
 ## Next Action
 

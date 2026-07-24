@@ -78,4 +78,4 @@ Google verified and published the Product 001 branding on 20 July 2026. On 23 Ju
 
 ## Next Action
 
-Deploy and verify the expanded privacy policy at the existing verified URL. The master Start Here page now includes the privacy and data-use notice. Update the User Manual, confirm support access is removed after ownership transfer, resubmit the unchanged four-scope application and reply directly to Google confirming the correction. Keep the live Apps Script and OAuth configuration unchanged during review.
+Deploy and verify the expanded privacy policy at the existing verified URL. The master Start Here page and canonical User Manual now include the privacy, ownership and support-access guidance. Confirm support access is removed after ownership transfer, resubmit the unchanged four-scope application and reply directly to Google confirming the correction. Keep the live Apps Script and OAuth configuration unchanged during review.

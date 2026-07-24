@@ -11,7 +11,7 @@ Last reconciled: 2026-07-24
 |---|---|---|
 | Live master workbook | Google Drive, see `links.md` | Current implementation authority. Populated eight-team QA state with 28 fixtures. |
 | Linked result Form | Google Forms, see `links.md` | Simplified status-based flow with per-copy ownership and verified response-tab privacy. |
-| Canonical user manual | Google Docs, see `links.md` | Support-owned, public Viewer access verified. Privacy and support-access guidance correction pending live update. |
+| Canonical user manual | Google Docs, see `links.md` | Support-owned, public Viewer access verified. Privacy, ownership and support-access guidance was updated and read back on 24 July 2026. |
 | Product support site | Repository root `site/` and stable route `/products/football-competition-manager/` | Verified OAuth routes are unchanged. Expanded data protection disclosures are repository-prepared for deployment at the same privacy URL. |
 
 | Installed and verified Apps Script checkpoint | scripts/product001_apps_script_automation_v0_1_5_9.gs and scripts/appsscript_v0_1_5_9.json | Copied-workbook permissions, timezone behaviour, Form setup, hidden response tab, Played submission and approval-output regression passed on 18 July 2026. |

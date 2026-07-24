@@ -18,7 +18,7 @@ The working lifecycle, customer interface, reset path, fixture generation and re
 6. Completed: configure the production standard Google Cloud project and OAuth consent screen.
 7. Completed: verify controlled support preparation and ownership transfer as the release delivery architecture. Customer File > Make a copy is not approved because it receives a default Cloud project.
 8. Completed: deploy stable product-specific trust routes, verify and publish branding, provide scope justifications and the demo video, and submit data-access verification.
-9. In progress: the expanded privacy policy is repository-prepared, the master Start Here notice is live, and support access, retention and incident-response controls are documented. The User Manual update remains, while Apps Script and Result Form changes are deferred during review.
+9. In progress: the expanded privacy policy is repository-prepared, the master Start Here notice is live, the canonical User Manual privacy guidance is updated and support access, retention and incident-response controls are documented. Apps Script and Result Form changes are deferred during review.
 10. Pending: deploy and verify the correction, resubmit the unchanged OAuth application and reply directly to Google.
 11. Pending: complete a targeted post-review consent check.
 12. Pending: decide the support boundary, price, payment route, unit economics, listing channel, first revenue target and first buyer test.
@@ -60,5 +60,5 @@ The correction does not require a scope, app-name, homepage, privacy-URL or Clou
 
 ## Next Release Decision
 
-Do not blank or distribute the working master. Preserve it as implementation evidence. The master Start Here notice is live. Deploy the expanded policy at the unchanged verified URL, update the manual, and target-test those surfaces plus ownership-transfer support removal. Keep the live Apps Script and Result Form unchanged during review. Then resubmit and reply directly to Google. Do not change the app name, homepage URL, privacy URL, scopes, OAuth client or Cloud project. Do not repeat the full operational QA without a concrete workflow-impact reason.
+Do not blank or distribute the working master. Preserve it as implementation evidence. The master Start Here notice and canonical User Manual privacy guidance are live. Deploy the expanded policy at the unchanged verified URL, then target-test the policy and ownership-transfer support removal. Keep the live Apps Script and Result Form unchanged during review. Then resubmit and reply directly to Google. Do not change the app name, homepage URL, privacy URL, scopes, OAuth client or Cloud project. Do not repeat the full operational QA without a concrete workflow-impact reason.
 
