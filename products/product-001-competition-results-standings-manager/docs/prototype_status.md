@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, Google data-access verification under review, public release on hold
-Last verified: 20 July 2026
+Status: Working prototype v0.1.0, Google privacy correction required, public release on hold
+Last verified: 24 July 2026
 
 ## Verified Product State
 
@@ -70,9 +70,11 @@ The 18 July outcome is preserved by gate:
 - Documentation and packaging: failed because the original User Manual required access.
 - Public release: hold.
 
-On 20 July 2026, the OAuth remediation passed its next gates. The standard Cloud project used the exact product application name, the owned domain, the public product homepage and privacy policy, and the dedicated support identity. Google verified and published the branding. The four approved scopes, their justifications and the unlisted workflow demonstration were submitted for data-access verification. Google confirmed that the submission is under review.
+On 20 July 2026, the OAuth remediation passed its next gates. The standard Cloud project used the exact product application name, the owned domain, the public product homepage and privacy policy, and the dedicated support identity. Google verified and published the branding. The four approved scopes, their justifications and the unlisted workflow demonstration were submitted for data-access verification.
 
-The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This change is not installed or live-tested yet.
+On 23 July 2026, Google requested one correction: the privacy policy must specify data protection mechanisms for sensitive data. The scope set, branding, homepage and Cloud project were not rejected. The correction batch expands the existing privacy policy, adds in-product privacy notices and formalises temporary support access, deletion and incident-response controls before resubmission. On 24 July 2026, the master workbook Start Here page received a visible privacy and data-use panel linked to the stable product-specific privacy URL.
+
+The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value and adds the verified privacy URL plus a data-minimisation warning to the Result Form description. This checkpoint is not installed or live-tested yet.
 
 ## Remediation Foundation
 
@@ -88,12 +90,13 @@ The test also found that Google Sheets did not visibly select the detected Afric
 
 ## Active Blockers
 
-1. Complete Google data-access verification. The submission is under review.
-2. Run a targeted post-review consent check only if Google changes the approved state or asks for a correction.
-3. Install and target-test v0.1.6.0 timezone display normalisation.
-4. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
-5. Make an explicit public-release or hold decision after verification and packaging pass.
+1. Deploy and live-verify the expanded privacy policy at the existing verified URL.
+2. Install and verify the Result Form privacy notice, and update the User Manual. The master Start Here notice is live.
+3. Install and target-test v0.1.6.0 privacy and timezone changes without repeating the completed operational QA.
+4. Resubmit the unchanged four-scope application and reply directly to the Google review email.
+5. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
+6. Make an explicit public-release or hold decision after verification and packaging pass.
 
 ## Next Action
 
-Monitor the Google Verification Centre and the support inbox for the first reviewer contact. Preserve the submitted application identity, scopes and Cloud project unless Google requests a change. Continue private pricing and packaging work while public release remains on hold.
+Complete the privacy correction batch, verify the affected public and in-product surfaces, resubmit the unchanged OAuth configuration and reply directly to Google. Preserve the approved app name, homepage URL, privacy URL, scope set and Cloud project. Continue private pricing and packaging work while public release remains on hold.

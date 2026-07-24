@@ -2,9 +2,9 @@
 
 Owner: Humphrey Nyanzi  
 Product: Football Competition Results & Standings Manager  
-Status: Ordinary-user protection verification passed
-Repository document version: 0.4.0  
-Last reconciled: 2026-07-20
+Status: Ordinary-user protection verification passed, support data controls prepared
+Repository document version: 0.5.0
+Last reconciled: 2026-07-24
 
 ## Purpose
 
@@ -39,9 +39,33 @@ The July UX pass hides most internal tabs and several helper columns. Hiding is 
 
 On 18 July 2026, an ordinary-user account completed setup, fixture creation, Form submission, approval and reporting in its own workbook. Editing a protected automatic area was blocked. The protection gate therefore passed for the tested customer workflow.
 
-This result does not by itself approve public release. Google data-access verification, packaging, support boundaries and the Director release decision remain open.
+This result does not by itself approve public release. Google privacy correction, data-access verification, packaging, support boundaries and the Director release decision remain open.
+
+## Controlled Delivery And Support Access
+
+1. The support account may prepare a delivery workbook and associate the standard Cloud project before ownership transfer.
+2. The customer becomes the workbook owner and owns the Result Form created from that workbook.
+3. The support account is removed after ownership transfer unless the customer explicitly requests temporary support access.
+4. Temporary access is limited to the named file, the stated support purpose and the time needed to resolve the request.
+5. When the support case closes, remove the support account and delete any downloaded support copy within 30 days unless a longer period is required by law or requested by the customer.
+6. Record the ownership transfer, support removal and any approved temporary exception in the delivery checklist.
+
+## Security Incident Response
+
+If unauthorised access, disclosure, modification or loss involving Google user data is suspected:
+
+1. contain the issue and revoke access that is not required;
+2. preserve relevant evidence without copying more customer data than necessary;
+3. identify the affected workbook, Form, account, customer and time window;
+4. investigate the cause and correct the failed control;
+5. notify affected customers and Google when appropriate or required; and
+6. document closure and any follow-up prevention work in the owning Studio system.
 
 ## Change Log
+
+### 0.5.0 - 2026-07-24
+
+Added controlled-delivery support access, deletion and security incident-response controls for the Google verification correction.
 
 ### 0.4.0 - 2026-07-10
 

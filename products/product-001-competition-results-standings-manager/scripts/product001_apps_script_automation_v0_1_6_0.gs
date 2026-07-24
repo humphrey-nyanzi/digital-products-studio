@@ -1053,7 +1053,11 @@ function PRODUCT001_showQaStatus() {
 function PRODUCT001_buildCanonicalFormItems_(form) {
   form
     .setTitle('Football Match Result Submission')
-    .setDescription('Submit a football match result or status update for one scheduled fixture. Choose the fixture, identify yourself and complete only the page that matches what happened. The competition manager reviews every submission before it changes official records.')
+    .setDescription([
+      'Submit a football match result or status update for one scheduled fixture. Choose the fixture, identify yourself and complete only the page that matches what happened. The competition manager reviews every submission before it changes official records.',
+      'Privacy: https://freydigitalstudio.com/products/football-competition-manager/privacy/',
+      'Do not enter passwords, payment information, health information, disciplinary records or player registration data.'
+    ].join('\n\n'))
     .setConfirmationMessage('Submission received for review. If you made a mistake before approval, submit the same fixture again with the correct information and explain it in the message field. The competition manager will keep the submission history and approve only the correct entry.')
     .setProgressBar(true)
     .setShuffleQuestions(false)

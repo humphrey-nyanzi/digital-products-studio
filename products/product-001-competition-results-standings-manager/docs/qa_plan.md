@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Controlled delivery QA passed, Google data-access verification under review
-Last verified: 20 July 2026
+Status: Controlled delivery QA passed, targeted privacy correction QA required
+Last verified: 24 July 2026
 
 ## Purpose
 
@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding, and the four-scope data-access submission is under review. Public release remains blocked by that review and packaging completion.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding. On 23 July, Google requested concrete data protection mechanisms in the privacy policy. Public release remains blocked until the correction is deployed, verified, resubmitted and acknowledged by the reviewer.
 
 ## 18 July Ordinary-user QA Result
 
@@ -23,9 +23,9 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 | Ordinary-user usability | Partial pass | The main workflow and reset wording were understandable. Timezone behaviour was correct, but the Settings control did not visibly show Africa/Kampala. |
 | OAuth identity | Failed | Google showed an unverified warning, the application name `Competitions` and a personal developer identity. |
 | Documentation and packaging | Failed, remediation prepared | The original User Manual required access. A support-owned public copy now passes unsigned viewing and the master link is repaired. |
-| Public release | Hold | Standard Cloud project, verified consent identity and published privacy surface remain open. |
+| Public release | Hold | Branding is verified. The expanded privacy policy, in-product notices, data-access review and packaging remain open. |
 
-The table records the state observed during the 18 July test. By 20 July, the documentation defect, standard Cloud project, public trust routes and branding identity were repaired. Branding is verified and shown to users. Data-access verification remains under review, so public-release approval is still withheld.
+The table records the state observed during the 18 July test. By 20 July, the documentation defect, standard Cloud project, public trust routes and branding identity were repaired. Branding is verified and shown to users. The 23 July reviewer response reopened the privacy disclosure gate only. Public-release approval remains withheld.
 
 ## Required Regression
 
@@ -59,6 +59,9 @@ The table records the state observed during the 18 July test. By 20 July, the do
 | Access | Test with intended non-owner user | Form access works and protected areas cannot be damaged. |
 | OAuth identity | Authorise from an account that did not build the product | Consent screen uses the approved public application name, verified domain and acceptable warning state. |
 | OAuth scopes | Compare requested permissions with the release scope inventory | Every scope is necessary, documented and represented accurately in the privacy policy. |
+| Privacy policy | Open the live product-specific privacy URL | The unchanged verified URL returns 200 and states storage, transport, access control, support access, retention, deletion, incident response, prohibited uses and Cloudflare website processing. |
+| In-product privacy | Open Start Here, the Result Form and the User Manual | Each surface links to the same live product-specific privacy policy and warns against unnecessary sensitive data. |
+| Delivery access removal | Complete a controlled ownership transfer | The customer is owner and the support account is removed unless the customer explicitly requests temporary support access. |
 | Least-privilege authorisation | Prepare a controlled delivery workbook, associate the standard project, transfer ownership and reauthorise | The transferred bound project retains the hidden manifest and standard Cloud project without customer editing. Consent requests current workbook access, Forms management, trigger management and permission to display the setup dialog only. Full Drive and account-wide Sheets access are absent. |
 | Reset backup | Run both reset actions after scope reduction | A complete backup is created in the owner account main My Drive area and the reset completes. |
 | Replace Result Form | Remove or bin the disposable copy Form, then run Repair Tools > Replace Result Form | A new Form and hidden response sheet are created, Result Review is preserved and the old Form is not deleted automatically. |
@@ -80,7 +83,7 @@ The table records the state observed during the 18 July test. By 20 July, the do
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer, and branding verification passed. Do not repeat the entire operational QA unless a later script or workbook change affects the tested workflow. After Google completes the data-access review, run only the smallest consent and identity regression needed to confirm the approved state.
+The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer, and branding verification passed. The privacy correction requires only public-link, in-product-notice, Form-description, timezone-display and ownership-transfer support-removal checks. Do not repeat the complete operational QA unless a later change affects that workflow. After Google completes the data-access review, run only the smallest consent and identity regression needed to confirm the approved state.
 
 
 

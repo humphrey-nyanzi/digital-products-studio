@@ -1,18 +1,18 @@
 # Google Form Specification
 
 Product: Football Competition Results & Standings Manager  
-Status: Form workflow and least-privilege setup verified in v0.1.5.9, timezone display repair prepared in v0.1.6.0
-Last verified: 19 July 2026
+Status: Form workflow and least-privilege setup verified in v0.1.5.9, privacy and timezone repair prepared in v0.1.6.0
+Last verified: 24 July 2026
 
 ## Purpose
 
 The Google Form collects one outcome for an eligible Scheduled fixture. It is a submission channel, not the official results register. Every submission is reviewed by the competition manager before it affects fixtures, standings or Reports.
 
-The customer-facing Form title is Football Match Result Submission so its purpose is clear when opened outside the workbook.
+The customer-facing Form title is Football Match Result Submission so its purpose is clear when opened outside the workbook. Its description links to `https://freydigitalstudio.com/products/football-competition-manager/privacy/` and tells submitters not to enter passwords, payment information, health information, disciplinary records or player registration data.
 
 ## Per-copy Form Ownership
 
-Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. Setup detects the organiser browser timezone, applies it to the workbook and stores it in the hidden system settings. Repository-prepared v0.1.6.0 normalises equivalent East Africa zones to Africa/Nairobi so Google Sheets displays the selected GMT+3 value. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
+Each workbook copy uses its own Result Form. The workbook owner runs Competition Tools > Set Up Result Form once. Setup detects the organiser browser timezone, applies it to the workbook and stores it in the hidden system settings. Repository-prepared v0.1.6.0 normalises equivalent East Africa zones to Africa/Nairobi so Google Sheets displays the selected GMT+3 value and applies the privacy notice to every created or repaired Form. The installer reuses a Form only when it can be opened and is linked to the current workbook. It creates a new Form when no usable linked Form exists, records the actual response-sheet name in Setup and hides every Form-linked response tab.
 
 ## Form Replacement
 
@@ -82,5 +82,7 @@ Use a restrained navy and pale-blue theme, the closest clean Basic sans-serif fo
 8. Confirm no official sees an internal identifier or scorer field.
 9. Confirm the raw response sheet, Result Review, Fixtures, Reports and Checks behave correctly.
 10. In an East Africa customer context, confirm Google Sheets Settings visibly shows Africa/Nairobi and fixture times remain correct.
+11. Confirm the Form description shows the live product-specific privacy URL and the warning against unnecessary sensitive data.
+12. Confirm the privacy link opens without sign-in and returns the expanded data protection policy.
 
 

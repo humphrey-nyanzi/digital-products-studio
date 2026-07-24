@@ -1,8 +1,8 @@
 # Architecture Blueprint
 
 Product: Football Competition Results & Standings Manager  
-Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 timezone display repair prepared
-Last verified: 20 July 2026
+Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 privacy and timezone repair prepared
+Last verified: 24 July 2026
 
 ## Components
 
@@ -90,15 +90,15 @@ The prepared v0.1.5.9 package uses an explicit manifest in the master bound proj
 
 No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets scope is required. Reset backups use Spreadsheet.copy and are created in the owner account's main My Drive area. The script no longer inspects whether a Form file is in the bin through DriveApp. A missing, binned or unusable Form is handled through Repair Tools > Replace Result Form.
 
-Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
+Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. It also places the verified privacy URL and a data-minimisation warning in the Result Form description. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
 
 The four-scope bound-project package is verified through ordinary-user operation. A customer-created File > Make a copy received a new default Cloud project and did not inherit the source standard project. A support-prepared delivery workbook retained standard Cloud project `364546476326` after ownership transfer to the ordinary user. Controlled support preparation and ownership transfer is therefore the verified delivery architecture. Self-service customer copying is not approved for release.
 
-The standard project is `decoded-vision-502911-q6`, project number `364546476326`. Google verified and published the Product 001 branding on 20 July 2026. The four-scope data-access submission is under review. This review state does not change the verified workbook and Form ownership model.
+The standard project is `decoded-vision-502911-q6`, project number `364546476326`. Google verified and published the Product 001 branding on 20 July 2026. On 23 July, Google requested concrete data protection mechanisms in the privacy policy. This correction does not change the four-scope inventory, standard project, verified application identity or workbook and Form ownership model.
 
 ## Public Support Architecture
 
-The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Start Here, the Result Form description and the User Manual must also link to the stable product-specific privacy policy. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
 
 ## Reset Boundary
 
@@ -106,6 +106,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. Branding verification has passed. Data-access verification and the Director release decision remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding verification has passed. The privacy correction, data-access verification and the Director release decision remain separate release gates.
 
 
