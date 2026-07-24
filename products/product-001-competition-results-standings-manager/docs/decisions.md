@@ -233,3 +233,19 @@ Decision: respond to Google's 23 July 2026 request by expanding the existing pro
 Evidence: Google's review email identified one issue: the privacy policy did not specify data protection mechanisms for sensitive data. It did not reject the branding, product purpose, scope set or standard Cloud project.
 
 Consequence: deploy and verify the correction, resubmit through the Verification Centre and reply directly to the review email. Run targeted public-policy, Start Here, User Manual and ownership-transfer support-removal checks only. Keep the live Apps Script unchanged during review. Do not repeat the completed end-to-end operational QA without a workflow-impact reason.
+
+## D040 - Privacy correction completed and Google review resumed
+
+Decision: treat the 23 July privacy request as completed after the expanded policy, Start Here notice and canonical User Manual were verified on 24 July 2026. Preserve the reviewed app name, homepage URL, privacy URL, four scopes, OAuth client, standard Cloud project, Apps Script and Result Form while Google continues review.
+
+Evidence: the expanded policy was deployed at the unchanged product privacy URL, the workbook and manual show aligned customer-data guidance, the application returned to data-access review and a direct response was sent in the existing Google review thread.
+
+Consequence: the external blocker is now Google approval rather than an outstanding privacy edit. Continue private controlled-pilot, pricing, payment and packaging work without reopening completed operational QA.
+
+## D041 - Inbound support routing is not an outbound support identity
+
+Decision: do not treat inbound forwarding for support@freydigitalstudio.com as a complete customer-support mailbox. Before buyer support begins, configure a Studio-controlled mailbox that sends and retains mail through the public support address without exposing the Director's personal address.
+
+Evidence: the Google reviewer reply had to be sent from the personal receiving account because the routed support address was unavailable as an outbound sender.
+
+Consequence: establish the sending mailbox, access controls, recovery, SPF, DKIM, DMARC and retention procedure as shared Studio infrastructure. Do not change the active OAuth support contact during review unless Google requests it.

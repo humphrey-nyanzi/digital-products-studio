@@ -9,7 +9,7 @@
 ## Public Support Foundation
 
 - Domain: `freydigitalstudio.com`, active on Cloudflare Pages and reserved as shared multi-product infrastructure
-- Support: [support@freydigitalstudio.com](mailto:support@freydigitalstudio.com), routing verified
+- Support: [support@freydigitalstudio.com](mailto:support@freydigitalstudio.com), inbound routing verified, branded outbound sending pending
 - [Public product homepage](https://freydigitalstudio.com/products/football-competition-manager/)
 - [Public privacy policy](https://freydigitalstudio.com/products/football-competition-manager/privacy/)
 
@@ -26,4 +26,4 @@
 
 The workbook and Form are live implementation assets. Apps Script v0.1.5.9 and its explicit least-privilege manifest are the verified technical baseline. Form creation uses full Forms access while spreadsheet access remains current-workbook only. The manifest is part of the copied bound project and remains hidden from customers. Result Form setup detects the organiser browser timezone.
 
-The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. Controlled delivery through a support-prepared workbook retained standard Cloud project `364546476326` after ownership transfer and passed the complete ordinary-user workflow. Customer File > Make a copy did not retain that standard Cloud project, so self-service copying is not the release delivery model. OAuth branding and data-access verification remain open.
+The current master contains the populated eight-team QA competition. Its internal navigation uses copy-local sheet links and both visible Form links read the configured Form URL. Controlled delivery through a support-prepared workbook retained standard Cloud project `364546476326` after ownership transfer and passed the complete ordinary-user workflow. Customer File > Make a copy did not retain that standard Cloud project, so self-service copying is not the release delivery model. OAuth branding is verified and published. Data-access verification resumed on 24 July 2026 after the requested privacy correction was deployed and the reviewer was notified.

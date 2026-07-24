@@ -106,6 +106,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding verification has passed. The privacy correction, data-access verification and the Director release decision remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding and the requested privacy correction have passed. Data-access approval, packaging and the Director release decision remain separate release gates.
 
 

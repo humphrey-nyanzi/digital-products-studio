@@ -1,7 +1,7 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Controlled delivery QA passed, targeted privacy correction QA required
+Status: Controlled delivery and targeted privacy correction QA passed, Google review pending
 Last verified: 24 July 2026
 
 ## Purpose
@@ -12,7 +12,7 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding. On 23 July, Google requested concrete data protection mechanisms in the privacy policy. Public release remains blocked until the correction is deployed, verified, resubmitted and acknowledged by the reviewer.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding. On 24 July, the requested privacy correction passed targeted policy, Start Here and User Manual checks, the unchanged application returned to review and the reviewer was notified. Public release remains blocked by Google approval and packaging.
 
 ## 18 July Ordinary-user QA Result
 
@@ -23,7 +23,7 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 | Ordinary-user usability | Partial pass | The main workflow and reset wording were understandable. Timezone behaviour was correct, but the Settings control did not visibly show Africa/Kampala. |
 | OAuth identity | Failed | Google showed an unverified warning, the application name `Competitions` and a personal developer identity. |
 | Documentation and packaging | Failed, remediation prepared | The original User Manual required access. A support-owned public copy now passes unsigned viewing and the master link is repaired. |
-| Public release | Hold | Branding is verified. The expanded privacy policy, in-product notices, data-access review and packaging remain open. |
+| Public release | Hold | Branding and the privacy correction are verified. Data-access approval and packaging remain open. |
 
 The table records the state observed during the 18 July test. By 20 July, the documentation defect, standard Cloud project, public trust routes and branding identity were repaired. Branding is verified and shown to users. The 23 July reviewer response reopened the privacy disclosure gate only. Public-release approval remains withheld.
 
