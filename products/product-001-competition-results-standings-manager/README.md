@@ -13,7 +13,7 @@ The live workbook and linked Form are the implementation authority. The canonica
 - User Manual: [open](https://docs.google.com/document/d/1Ames7P4PMyqcGbKgfSXJlSuO-zqL8-kSi2SFXSGevGs/edit)
 - Verified customer-copy checkpoint: [v0.1.5.9](scripts/product001_apps_script_automation_v0_1_5_9.gs)
 - Verified least-privilege manifest: [appsscript v0.1.5.9](scripts/appsscript_v0_1_5_9.json)
-- Prepared privacy and timezone checkpoint: [v0.1.6.0](scripts/product001_apps_script_automation_v0_1_6_0.gs)
+- Prepared timezone-display checkpoint: [v0.1.6.0](scripts/product001_apps_script_automation_v0_1_6_0.gs)
 
 
 ## Product Scope
@@ -78,4 +78,4 @@ Google verified and published the Product 001 branding on 20 July 2026. On 23 Ju
 
 ## Next Action
 
-Deploy and verify the expanded privacy policy at the existing verified URL. The master Start Here page now includes the privacy and data-use notice. Install and verify the Result Form notice, update the User Manual, confirm support access is removed after ownership transfer, run only the targeted privacy and permission checks, resubmit the unchanged four-scope application and reply directly to Google confirming the correction.
+Deploy and verify the expanded privacy policy at the existing verified URL. The master Start Here page now includes the privacy and data-use notice. Update the User Manual, confirm support access is removed after ownership transfer, resubmit the unchanged four-scope application and reply directly to Google confirming the correction. Keep the live Apps Script and OAuth configuration unchanged during review.

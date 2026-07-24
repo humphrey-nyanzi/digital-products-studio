@@ -72,9 +72,9 @@ The 18 July outcome is preserved by gate:
 
 On 20 July 2026, the OAuth remediation passed its next gates. The standard Cloud project used the exact product application name, the owned domain, the public product homepage and privacy policy, and the dedicated support identity. Google verified and published the branding. The four approved scopes, their justifications and the unlisted workflow demonstration were submitted for data-access verification.
 
-On 23 July 2026, Google requested one correction: the privacy policy must specify data protection mechanisms for sensitive data. The scope set, branding, homepage and Cloud project were not rejected. The correction batch expands the existing privacy policy, adds in-product privacy notices and formalises temporary support access, deletion and incident-response controls before resubmission. On 24 July 2026, the master workbook Start Here page received a visible privacy and data-use panel linked to the stable product-specific privacy URL.
+On 23 July 2026, Google requested one correction: the privacy policy must specify data protection mechanisms for sensitive data. The scope set, branding, homepage and Cloud project were not rejected. The correction batch expands the existing privacy policy, adds a non-functional Start Here privacy notice and formalises temporary support access, deletion and incident-response controls before resubmission. On 24 July 2026, the master workbook Start Here page received a visible privacy and data-use panel linked to the stable product-specific privacy URL.
 
-The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value and adds the verified privacy URL plus a data-minimisation warning to the Result Form description. This checkpoint is not installed or live-tested yet.
+The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This checkpoint is not installed or live-tested, and installation is deferred during the active Google review.
 
 ## Remediation Foundation
 
@@ -91,8 +91,8 @@ The test also found that Google Sheets did not visibly select the detected Afric
 ## Active Blockers
 
 1. Deploy and live-verify the expanded privacy policy at the existing verified URL.
-2. Install and verify the Result Form privacy notice, and update the User Manual. The master Start Here notice is live.
-3. Install and target-test v0.1.6.0 privacy and timezone changes without repeating the completed operational QA.
+2. Update the User Manual. The master Start Here notice is live, and the Result Form remains unchanged during review.
+3. Keep v0.1.6.0 uninstalled until Google completes the active review or explicitly requests an application change.
 4. Resubmit the unchanged four-scope application and reply directly to the Google review email.
 5. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
 6. Make an explicit public-release or hold decision after verification and packaging pass.
