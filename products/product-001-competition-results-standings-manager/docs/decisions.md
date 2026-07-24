@@ -219,3 +219,17 @@ Decision: publish the verified Product 001 branding and submit the four approved
 Evidence: on 20 July 2026, Google confirmed that branding is verified and shown to users. The Verification Centre confirmed receipt of the data-access submission. The submission includes scope justifications and the workflow demonstration at `https://youtu.be/DZ81Cq88wOo`.
 
 Consequence: public release remains on hold during review. Preserve the submitted app name, domains, scopes and Cloud project unless Google requests a correction. Commercial preparation may continue privately.
+
+## D038 - Customer data protection and support access
+
+Decision: customer competition data remains in customer-owned Google files. Frey Digital Studio does not keep a continuing data copy or OAuth tokens. Controlled delivery removes the support account after ownership transfer unless the customer explicitly requests temporary support access. Temporary access is limited to the named file and purpose, removed when the case closes, and any downloaded support copy is deleted within 30 days unless a longer period is required by law or requested by the customer.
+
+Consequence: the public privacy policy, Start Here, User Manual and controlled-delivery process must describe the same ownership, access, retention, deletion and data-minimisation boundary. Customer information is not used for advertising, credit decisions, data brokerage, unrelated databases or general artificial intelligence model training. A documented incident-response procedure covers containment, access revocation, evidence, investigation, correction and appropriate notification.
+
+## D039 - Google privacy correction preserves verified OAuth identity
+
+Decision: respond to Google's 23 July 2026 request by expanding the existing product-specific privacy policy and adding a non-functional Start Here privacy notice. Keep the verified app name, homepage URL, privacy URL, four scopes, OAuth client and standard Cloud project unchanged.
+
+Evidence: Google's review email identified one issue: the privacy policy did not specify data protection mechanisms for sensitive data. It did not reject the branding, product purpose, scope set or standard Cloud project.
+
+Consequence: deploy and verify the correction, resubmit through the Verification Centre and reply directly to the review email. Run targeted public-policy, Start Here, User Manual and ownership-transfer support-removal checks only. Keep the live Apps Script unchanged during review. Do not repeat the completed end-to-end operational QA without a workflow-impact reason.
