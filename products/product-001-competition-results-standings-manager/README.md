@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, Google OAuth verification approved, controlled commercialisation in progress
-Last verified: 25 July 2026
+Status: Working prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
+Last verified: 29 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -66,6 +66,23 @@ The support account owns the canonical User Manual. The manual is available to a
 
 Google verified and published the Product 001 branding on 20 July 2026. On 23 July 2026, Google paused the data-access review because the public privacy policy did not specify concrete data protection mechanisms. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here notice and canonical User Manual were aligned, the unchanged application was returned to review and a direct response was sent in the Google review thread. Google approved OAuth verification on 25 July 2026. The verified app name, homepage URL, privacy URL, scopes, OAuth client and Cloud project remained unchanged.
 
+## Approved Commercial Delivery
+
+Product 001 may be listed publicly while each paid order is fulfilled through a Studio-prepared workbook. The marketplace is the checkout and entitlement layer. Google Drive is the ownership-delivery layer.
+
+The approved first-release flow is:
+
+1. The buyer purchases through the selected checkout and supplies a personal Gmail delivery address.
+2. The checkout immediately provides a useful Delivery Pack containing the User Manual, fulfilment steps, licence, privacy and support information.
+3. The Studio creates a fresh delivery workbook, associates its bound script with standard Cloud project `364546476326`, verifies the release checklist and shares it with the buyer.
+4. The Studio requests ownership transfer.
+5. The buyer accepts ownership, authorises the verified application and runs Set Up Result Form.
+6. The buyer owns the workbook, Form and competition data. Studio access is removed unless the buyer explicitly requests temporary support access.
+
+Direct File > Make a copy is not the release route because it creates a default Cloud project instead of retaining the verified application identity. The first public offer supports personal Gmail ownership only. Work, school and organisation-managed Google accounts require a separately tested delivery route.
+
+Gumroad is the leading first checkout candidate because the Director has a legitimate active US bank account available for payouts. Gumroad remains a channel rather than the business. Seller identity, tax, country and beneficial-owner information must remain accurate, and a real payout test is required before the Studio depends on the route.
+
 ## Key Documents
 
 - [Prototype Status](docs/prototype_status.md)
@@ -78,4 +95,4 @@ Google verified and published the Product 001 branding on 20 July 2026. On 23 Ju
 
 ## Next Action
 
-Define and test the controlled-pilot delivery and ownership-transfer sequence. Configure a true Studio outbound support identity, select the pilot price and payment route, complete private packaging QA and prepare the first buyer test. Keep the verified Apps Script and OAuth configuration unchanged unless a commercial requirement exposes a workflow-impact reason. Public release remains conditional on packaging, buyer-test readiness and the Director decision.
+Complete the market pricing and buyer-comparison task, qualify the Gumroad seller and payout route, configure a true Studio outbound support identity and finish the Delivery Pack. Then rehearse one complete managed fulfilment without changing the verified Apps Script or OAuth configuration. Public release remains conditional on packaging, checkout, support, fulfilment and Director gates.

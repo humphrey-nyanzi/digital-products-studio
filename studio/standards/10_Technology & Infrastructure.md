@@ -456,12 +456,13 @@ Avoid unrestricted editing access unless necessary.
 
 Recommended access levels:
 
-* Owner: Studio Director
+* Owner: Studio Director or Studio distribution identity for the master
 * Editor: trusted collaborators only
 * Viewer: demo users or reviewers
-* Make a copy: public template distribution
+* Make a copy: public template distribution only when copy behaviour is verified
+* Ownership transfer: managed delivery when the customer must own a prepared Google automation product
 
-For public templates, users should receive copy access rather than edit access to the master file.
+For simple public templates, users should receive copy access rather than edit access to the master file. For Google automation products, do not use a public copy link when copying changes the Cloud project, consent identity, connected assets or safety boundary. Prepare a fresh delivery file, associate the approved project, transfer ownership and remove Studio access after acceptance unless temporary support access is requested.
 
 ---
 
@@ -472,11 +473,14 @@ Products may be distributed through:
 * Gumroad
 * GitHub Releases
 * Google Drive copy links
+* Google Drive ownership transfer
 * personal website
 * newsletter
 * direct client delivery
 
-The distribution method should match the product type and audience.
+The distribution method should match the product type and audience. Keep the public destination, checkout, immediate buyer content, usable-product delivery and support route conceptually separate so one platform can be replaced without rebuilding the product.
+
+A publicly listed product may use managed fulfilment when technical identity or ownership cannot be preserved through self-service copying. The listing must state the delivery timing, account eligibility, buyer actions and support boundary before purchase. The checkout must provide meaningful immediate content even when the usable product is transferred later.
 
 ---
 

@@ -92,7 +92,7 @@ No Drive, Gmail, Calendar, external-request, user-profile or account-wide Sheets
 
 Set Up Result Form opens a short bound dialog that reads the browser IANA timezone, applies it to the workbook and stores it in hidden system setting Setup!D8. v0.1.5.9 passed GMT+3 behaviour but Google Sheets Settings did not visibly select Africa/Kampala. Repository-prepared v0.1.6.0 maps equivalent East Africa identifiers to Africa/Nairobi, which preserves GMT+3 and uses a timezone Google Sheets displays. Other valid timezone identifiers remain unchanged. If detection fails, the workbook retains its existing timezone. Reset to Blank Template preserves the system timezone instead of clearing it.
 
-The four-scope bound-project package is verified through ordinary-user operation. A customer-created File > Make a copy received a new default Cloud project and did not inherit the source standard project. A support-prepared delivery workbook retained standard Cloud project `364546476326` after ownership transfer to the ordinary user. Controlled support preparation and ownership transfer is therefore the verified delivery architecture. Self-service customer copying is not approved for release.
+The four-scope bound-project package is verified through ordinary-user operation. A customer-created File > Make a copy received a new default Cloud project and did not inherit the source standard project. A support-prepared delivery workbook retained standard Cloud project `364546476326` after ownership transfer to the ordinary user. Studio preparation followed by ownership transfer is therefore the verified delivery architecture. Self-service customer copying is not approved for release.
 
 The standard project is `decoded-vision-502911-q6`, project number `364546476326`. Google verified and published the Product 001 branding on 20 July 2026. On 23 July, Google requested concrete data protection mechanisms in the privacy policy. This correction does not change the four-scope inventory, standard project, verified application identity or workbook and Form ownership model.
 
@@ -100,12 +100,22 @@ The standard project is `decoded-vision-502911-q6`, project number `364546476326
 
 The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Start Here and the User Manual link to the stable product-specific privacy policy. The User Manual privacy, ownership and support-access guidance was updated and read back on 24 July 2026. Google approved OAuth verification on 25 July 2026, with the Result Form and verified application configuration unchanged. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
 
+## Commercial Fulfilment Architecture
+
+The product may be offered publicly even though fulfilment is prepared per order. The checkout platform records payment and immediately provides a Delivery Pack. It does not distribute the working master or an unprepared workbook.
+
+The Studio fulfils each eligible order by creating a fresh workbook, confirming the release version, associating the standard Cloud project, checking copy-local links and protections, sharing the file with the buyer and requesting ownership transfer. The buyer then accepts ownership, authorises the verified application and creates the customer-owned Result Form. These are the only required buyer setup actions.
+
+The first-release ownership route supports personal Gmail accounts. Google ownership transfer from the Studio's personal Google account cannot deliver ownership to work or school accounts. A Workspace route must be researched and tested separately before it is advertised.
+
+The checkout and delivery systems remain replaceable. Gumroad is the leading first checkout candidate, the owned product page remains the permanent public destination, and Google Drive remains the ownership-delivery layer. Regional payment options may be added without changing the workbook architecture.
+
 ## Reset Boundary
 
 Reset is an owner-only workflow. It creates a full-workbook backup in the owner account main My Drive area, clears linked records together and safely closes or reopens the connected Form. Reset, Form ownership, response-tab privacy and populated post-reset operation have passed live QA.
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding, the requested privacy correction and OAuth verification have passed. Controlled-pilot delivery, packaging and the Director release decision remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During managed fulfilment, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding, the requested privacy correction and OAuth verification have passed. Checkout, packaging, outbound support, fulfilment rehearsal and the Director release decision remain separate release gates.
 
 
