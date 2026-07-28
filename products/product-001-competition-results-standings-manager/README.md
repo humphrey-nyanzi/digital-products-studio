@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, Google data-access review resumed, public release on hold
-Last verified: 24 July 2026
+Status: Working prototype v0.1.0, Google OAuth verification approved, controlled commercialisation in progress
+Last verified: 25 July 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -64,7 +64,7 @@ The domain `freydigitalstudio.com` is registered as release infrastructure, not 
 
 The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs.
 
-Google verified and published the Product 001 branding on 20 July 2026. On 23 July 2026, Google paused the data-access review because the public privacy policy did not specify concrete data protection mechanisms. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here notice and canonical User Manual were aligned, the unchanged application was returned to review and a direct response was sent in the Google review thread. The verified app name, homepage URL, privacy URL, scopes, OAuth client and Cloud project remained unchanged.
+Google verified and published the Product 001 branding on 20 July 2026. On 23 July 2026, Google paused the data-access review because the public privacy policy did not specify concrete data protection mechanisms. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here notice and canonical User Manual were aligned, the unchanged application was returned to review and a direct response was sent in the Google review thread. Google approved OAuth verification on 25 July 2026. The verified app name, homepage URL, privacy URL, scopes, OAuth client and Cloud project remained unchanged.
 
 ## Key Documents
 
@@ -78,4 +78,4 @@ Google verified and published the Product 001 branding on 20 July 2026. On 23 Ju
 
 ## Next Action
 
-Monitor the resumed Google data-access review without changing the live Apps Script or OAuth configuration. Decide the controlled-pilot delivery and support boundary, configure a true Studio outbound support identity, select the pilot price and payment route, and complete private packaging QA. Public release remains conditional on Google approval, packaging and the Director decision.
+Define and test the controlled-pilot delivery and ownership-transfer sequence. Configure a true Studio outbound support identity, select the pilot price and payment route, complete private packaging QA and prepare the first buyer test. Keep the verified Apps Script and OAuth configuration unchanged unless a commercial requirement exposes a workflow-impact reason. Public release remains conditional on packaging, buyer-test readiness and the Director decision.

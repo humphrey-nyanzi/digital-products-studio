@@ -1,12 +1,12 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Prototype v0.1.0, Google data-access review resumed, public release on hold
-Last verified: 24 July 2026
+Status: Prototype v0.1.0, Google OAuth verification approved, controlled commercialisation in progress
+Last verified: 25 July 2026
 
 ## Product State
 
-The working lifecycle, customer interface, reset path, fixture generation and result workflow are substantially complete. Controlled delivery from a support-prepared workbook retained standard Cloud project `364546476326` after buyer ownership transfer and passed the full ordinary-user workflow. The support route and stable product-specific homepage and privacy policy are live. Google verified and published the Product 001 branding. On 24 July 2026, the requested privacy correction was deployed and verified, the unchanged application returned to review and a direct response was sent in the Google review thread. Public release remains blocked by data-access approval, commercial packaging and the final Director decision.
+The working lifecycle, customer interface, reset path, fixture generation and result workflow are substantially complete. Controlled delivery from a support-prepared workbook retained standard Cloud project `364546476326` after buyer ownership transfer and passed the full ordinary-user workflow. The support route and stable product-specific homepage and privacy policy are live. Google verified and published the Product 001 branding. On 24 July 2026, the requested privacy correction was deployed and verified, the unchanged application returned to review and a direct response was sent in the Google review thread. Google approved OAuth verification on 25 July 2026. Public release remains blocked by controlled-pilot readiness, commercial packaging and the final Director decision.
 
 ## Required Before Packaging
 
@@ -34,8 +34,8 @@ The working lifecycle, customer interface, reset path, fixture generation and re
 | 23 to 24 July 2026 | Privacy correction | Google requested concrete protection mechanisms. The policy and in-product notices were aligned, the unchanged application returned to review and the reviewer was notified. |
 | 28 July 2026 | Controlled-pilot delivery decision | Confirm the support-prepared ownership-transfer workflow, support boundary and customer handoff. Record hold or controlled-pilot status without claiming public readiness. |
 | 31 July 2026 | Pricing and buyer comparison | Select a test price, payment route, support allowance, unit economics and initial revenue target. |
-| 7 August 2026 | Private packaging and demo QA | Delivery package, manual export, screenshots and demo assets pass private QA while Google review continues. |
-| 21 August 2026 | Earliest conditional public offer gate | Publish only if verification and packaging have passed. Otherwise reschedule without forcing release. |
+| 7 August 2026 | Private packaging and demo QA | Delivery package, manual export, screenshots and demo assets pass private QA. |
+| 21 August 2026 | Earliest conditional public offer gate | Publish only if controlled-pilot, packaging and commercial gates have passed. Otherwise reschedule without forcing release. |
 | 24 to 31 August 2026 | Launch and first market signals | Prepare, distribute and review launch content after the public offer gate passes. |
 
 Every scheduled Product 001 work block is at least 90 minutes. Calendar event descriptions contain the relevant runbook and canonical Product 001 folder link.
@@ -46,9 +46,9 @@ The v1.0 deliverable is a reusable workbook, linked Form, Apps Script automation
 
 ## Current Blocker
 
-Core product functionality, football logic, ordinary-user operation, controlled ownership transfer, isolation and protections are substantially verified. The standard Cloud project, product application identity, support route, support-owned public manual and verified branding are established. The requested privacy correction is complete and Google's data-access review has resumed. The remaining Studio gates are outbound support identity, pricing, payment, packaging, support boundaries, buyer testing and the Director release decision.
+Core product functionality, football logic, ordinary-user operation, controlled ownership transfer, isolation and protections are substantially verified. The standard Cloud project, product application identity, support route, support-owned public manual and verified branding are established. The requested privacy correction is complete and Google approved OAuth verification on 25 July 2026. The remaining Studio gates are outbound support identity, pricing, payment, packaging, support boundaries, buyer testing and the Director release decision.
 
-The correction did not require a scope, app-name, homepage, privacy-URL, OAuth-client or Cloud-project change. Preserve the reviewed application while Google completes the active review.
+The correction did not require a scope, app-name, homepage, privacy-URL, OAuth-client or Cloud-project change. Preserve the approved application unless a commercial requirement exposes a workflow-impact reason.
 
 ## Verification Evidence
 
@@ -56,9 +56,9 @@ The correction did not require a scope, app-name, homepage, privacy-URL, OAuth-c
 - Project number: `364546476326`
 - Demo video: `https://youtu.be/DZ81Cq88wOo`
 - Branding: verified, published and shown to users on 20 July 2026
-- Data access: under review after the completed 24 July 2026 privacy correction and reviewer response
+- Data access: approved by Google on 25 July 2026
 
 ## Next Release Decision
 
-Do not blank or distribute the working master. Preserve it as implementation evidence. Keep the live Apps Script, Result Form and OAuth configuration unchanged while Google reviews the corrected submission. Use the next private gates to decide the controlled-pilot support boundary, establish branded outbound support email, select pricing and payment, and complete package-level QA. Do not repeat the full operational QA without a concrete workflow-impact reason.
+Do not blank or distribute the working master. Preserve it as implementation evidence. Keep the verified Apps Script, Result Form and OAuth configuration unchanged unless a commercial requirement exposes a workflow-impact reason. Use the next private gates to decide the controlled-pilot support boundary, establish branded outbound support email, select pricing and payment, and complete package-level QA. Do not repeat the full operational QA without a concrete workflow-impact reason.
 

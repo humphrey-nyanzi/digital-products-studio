@@ -249,3 +249,11 @@ Decision: do not treat inbound forwarding for support@freydigitalstudio.com as a
 Evidence: the Google reviewer reply had to be sent from the personal receiving account because the routed support address was unavailable as an outbound sender.
 
 Consequence: establish the sending mailbox, access controls, recovery, SPF, DKIM, DMARC and retention procedure as shared Studio infrastructure. Do not change the active OAuth support contact during review unless Google requests it.
+
+## D042 - Google OAuth approval closes the external verification gate
+
+Decision: record Google approval on 25 July 2026 as the closure of the external verification gate. Preserve the approved application name, homepage URL, privacy URL, four scopes, OAuth client, standard Cloud project and v0.1.5.9 Apps Script baseline unless a commercial requirement exposes a workflow-impact reason.
+
+Evidence: Google confirmed OAuth verification approval after the 24 July privacy correction and reviewer response. The approval required no Apps Script, Result Form, scope, OAuth client or Cloud-project change.
+
+Consequence: move Product 001 into controlled commercialisation. The open gates are controlled-pilot delivery, customer ownership transfer, branded outbound support, pricing, payment, private packaging, support boundaries, buyer testing and the Director release decision.

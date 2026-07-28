@@ -1,7 +1,7 @@
 # Architecture Blueprint
 
 Product: Football Competition Results & Standings Manager  
-Status: Live workbook architecture verified on v0.1.5.9, v0.1.6.0 timezone display repair prepared and installation deferred during Google review
+Status: Live workbook architecture verified on v0.1.5.9, Google OAuth verification approved, v0.1.6.0 timezone display repair prepared but uninstalled
 Last verified: 24 July 2026
 
 ## Components
@@ -98,7 +98,7 @@ The standard project is `decoded-vision-502911-q6`, project number `364546476326
 
 ## Public Support Architecture
 
-The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Start Here and the User Manual link to the stable product-specific privacy policy. The User Manual privacy, ownership and support-access guidance was updated and read back on 24 July 2026. Result Form copy remains unchanged during the active Google review. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
+The customer User Manual is owned by the dedicated support Google account and shared as public Viewer. The master Start Here page links to that support-owned document. Start Here and the User Manual link to the stable product-specific privacy policy. The User Manual privacy, ownership and support-access guidance was updated and read back on 24 July 2026. Google approved OAuth verification on 25 July 2026, with the Result Form and verified application configuration unchanged. Public product information and the privacy policy are maintained as static files under `site/` and deployed through Cloudflare Pages to `freydigitalstudio.com`. The domain is shared multi-product release infrastructure and does not settle the final public brand name. Product 001 uses stable OAuth-facing routes under `/products/football-competition-manager/`, allowing the root page to become a future catalogue without changing verified Product 001 URLs.
 
 ## Reset Boundary
 
@@ -106,6 +106,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding and the requested privacy correction have passed. Data-access approval, packaging and the Director release decision remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During controlled delivery, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding, the requested privacy correction and OAuth verification have passed. Controlled-pilot delivery, packaging and the Director release decision remain separate release gates.
 
 

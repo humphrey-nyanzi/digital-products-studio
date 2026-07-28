@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, Google data-access review resumed, public release on hold
-Last verified: 24 July 2026
+Status: Working prototype v0.1.0, Google OAuth verification approved, controlled commercialisation in progress
+Last verified: 25 July 2026
 
 ## Verified Product State
 
@@ -74,7 +74,7 @@ On 20 July 2026, the OAuth remediation passed its next gates. The standard Cloud
 
 On 23 July 2026, Google requested one correction: the privacy policy must specify data protection mechanisms for sensitive data. The scope set, branding, homepage and Cloud project were not rejected. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here privacy notice and canonical User Manual were aligned, the unchanged application returned to data-access review and a direct response was sent in the existing Google review thread.
 
-The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This checkpoint is not installed or live-tested, and installation is deferred during the active Google review.
+The test also found that Google Sheets did not visibly select the detected Africa/Kampala timezone even though GMT+3 behaviour was correct. The repository-prepared v0.1.6.0 checkpoint maps equivalent East Africa timezone identifiers to Africa/Nairobi for a visible Settings value. This checkpoint is not installed or live-tested. Installation remains deferred until a controlled commercial requirement justifies changing the verified application.
 
 ## Remediation Foundation
 
@@ -90,12 +90,12 @@ The test also found that Google Sheets did not visibly select the detected Afric
 
 ## Active Blockers
 
-1. Monitor the resumed Google data-access review and respond only if Google requests more information.
-2. Keep v0.1.6.0 uninstalled until Google completes the active review or explicitly requests an application change.
+1. Define and test the controlled-pilot delivery and customer ownership-transfer sequence.
+2. Keep v0.1.6.0 uninstalled unless a controlled commercial requirement exposes a workflow-impact reason.
 3. Configure branded outbound sending for `support@freydigitalstudio.com` before customer support begins.
 4. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
-5. Make an explicit public-release or hold decision after verification and packaging pass.
+5. Make an explicit public-release or hold decision after controlled-pilot, packaging and commercial gates pass.
 
 ## Next Action
 
-Preserve the reviewed application while Google completes data-access review. Continue the controlled-pilot, outbound support identity, pricing, payment and private packaging work. Public release remains on hold until verification and packaging pass.
+Preserve the verified application while completing the controlled-pilot, outbound support identity, pricing, payment, private packaging and buyer-test work. Public release remains on hold until the commercial, packaging and Director gates pass.
