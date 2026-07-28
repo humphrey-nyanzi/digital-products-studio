@@ -335,13 +335,14 @@ Google Workspace products that request customer permissions require a trusted pu
 The Studio should establish and maintain these assets once, then reuse them where appropriate:
 
 * a Studio-controlled distribution account with a professional sender name
+* a Studio mailbox that can send and retain mail through the public support address, with SPF, DKIM and DMARC configured
 * an owned domain and a public Studio or product-support website
 * a public privacy policy and support contact
 * one or more standard Google Cloud projects with clear production names
 * a documented OAuth consent and verification procedure
 * a register of approved scopes and why each scope is needed
 
-The personal account of the Studio Director should not be the default customer-facing sharing identity once a Studio distribution identity is available.
+The personal account of the Studio Director should not be the default customer-facing sharing or email identity once a Studio distribution identity is available. Inbound forwarding does not satisfy the outbound identity requirement.
 
 ### Per-product requirements
 
@@ -532,7 +533,7 @@ This pipeline should align with the Studio Manual.
 
 The Studio should grow in stages.
 
-## Stage 1 — Simple Hybrid Workflow
+## Stage 1 - Simple Hybrid Workflow
 
 Current default.
 
@@ -548,7 +549,7 @@ This is sufficient for early products.
 
 ---
 
-## Stage 2 — Structured Engineering Workflow
+## Stage 2 - Structured Engineering Workflow
 
 Introduce when products become more complex.
 
@@ -561,7 +562,7 @@ Introduce when products become more complex.
 
 ---
 
-## Stage 3 — Automated Workflow
+## Stage 3 - Automated Workflow
 
 Introduce only when justified.
 
@@ -652,7 +653,7 @@ At minimum:
 
 # Change Log
 
-## 1.0.0 — June 2026
+## 1.0.0 - June 2026
 
 Initial release.
 

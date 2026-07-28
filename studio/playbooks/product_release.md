@@ -80,7 +80,7 @@ Each stage should be completed before moving to the next.
 
 ---
 
-# Stage 1 — Feature Complete
+# Stage 1 - Feature Complete
 
 The product has reached its planned Version 1 scope.
 
@@ -94,7 +94,7 @@ Version 1 should not continue expanding.
 
 ---
 
-# Stage 2 — Internal QA
+# Stage 2 - Internal QA
 
 Perform structured testing.
 
@@ -113,7 +113,7 @@ Critical issues must be resolved before continuing.
 
 ---
 
-# Stage 3 — Release Candidate
+# Stage 3 - Release Candidate
 
 Assign a release candidate version.
 
@@ -136,6 +136,8 @@ Complete this gate before a Google Workspace product becomes a public release ca
 Confirm:
 
 * the distribution account and sender name are appropriate for customers;
+* the public support address can send and retain outbound messages without exposing a personal address;
+* SPF, DKIM and DMARC are configured for the sending domain;
 * the Studio controls the domain used for public application information;
 * the public privacy policy and support contact are live;
 * the production Google Cloud project has a clear customer-facing name.
@@ -178,7 +180,7 @@ Retain:
 
 ---
 
-# Stage 4 — Documentation Review
+# Stage 4 - Documentation Review
 
 Confirm all documentation is complete.
 
@@ -196,7 +198,7 @@ Documentation should match the product exactly.
 
 ---
 
-# Stage 5 — Packaging
+# Stage 5 - Packaging
 
 Prepare the final package.
 
@@ -215,7 +217,7 @@ Package contents should be clearly organised.
 
 ---
 
-# Stage 6 — Final Review
+# Stage 6 - Final Review
 
 The Studio Director performs a final review.
 
@@ -231,7 +233,7 @@ Only approved products proceed to release.
 
 ---
 
-# Stage 7 — GitHub Release
+# Stage 7 - GitHub Release
 
 Create a GitHub Release.
 
@@ -246,7 +248,7 @@ The GitHub Release becomes the official historical record.
 
 ---
 
-# Stage 8 — Distribution
+# Stage 8 - Distribution
 
 Publish the product through the appropriate channels.
 
@@ -261,7 +263,7 @@ Ensure the published files match the GitHub Release.
 
 ---
 
-# Stage 9 — Post-Release Review
+# Stage 9 - Post-Release Review
 
 Within a reasonable period after release:
 
@@ -419,7 +421,7 @@ These metrics guide future improvements.
 
 # Change Log
 
-## 1.0.0 — June 2026
+## 1.0.0 - June 2026
 
 Initial release.
 

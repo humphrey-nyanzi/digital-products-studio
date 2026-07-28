@@ -39,7 +39,7 @@ The July UX pass hides most internal tabs and several helper columns. Hiding is 
 
 On 18 July 2026, an ordinary-user account completed setup, fixture creation, Form submission, approval and reporting in its own workbook. Editing a protected automatic area was blocked. The protection gate therefore passed for the tested customer workflow.
 
-This result does not by itself approve public release. Google privacy correction, data-access verification, packaging, support boundaries and the Director release decision remain open.
+This result does not by itself approve public release. The Google privacy correction and OAuth verification are complete. Packaging, outbound support identity, support boundaries, buyer testing and the Director release decision remain open.
 
 ## Controlled Delivery And Support Access
 
