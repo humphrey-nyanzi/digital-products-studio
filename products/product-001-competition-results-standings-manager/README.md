@@ -83,6 +83,8 @@ Direct File > Make a copy is not the release route because it creates a default 
 
 Gumroad is the leading first checkout candidate because the Director has a legitimate active US bank account available for payouts. Gumroad remains a channel rather than the business. Seller identity, tax, country and beneficial-owner information must remain accurate, and a real payout test is required before the Studio depends on the route.
 
+The initial launch has one self-service product at $19. Ten completed, non-refunded purchases trigger an internal pricing review, but no future increase is promised to buyers. The first market signal is three independent paid buyers. Assisted setup is not part of the initial Gumroad offer. Price or service changes require buyer, conversion, fulfilment, compliance and support evidence rather than intuition alone.
+
 ## Key Documents
 
 - [Prototype Status](docs/prototype_status.md)
@@ -95,4 +97,4 @@ Gumroad is the leading first checkout candidate because the Director has a legit
 
 ## Next Action
 
-Complete the market pricing and buyer-comparison task, qualify the Gumroad seller and payout route, configure a true Studio outbound support identity and finish the Delivery Pack. Then rehearse one complete managed fulfilment without changing the verified Apps Script or OAuth configuration. Public release remains conditional on packaging, checkout, support, fulfilment and Director gates.
+Qualify the Gumroad seller and payout route, configure a true Studio outbound support identity and finish the Delivery Pack. Then rehearse one complete managed fulfilment without changing the verified Apps Script or OAuth configuration. Public release remains conditional on packaging, checkout, support, fulfilment and Director gates.

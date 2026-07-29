@@ -2,7 +2,7 @@
 
 Product: Football Competition Results & Standings Manager  
 Status: Prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
-Last verified: 29 July 2026
+Last verified: 30 July 2026
 
 ## Product State
 
@@ -19,16 +19,16 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 5. Studio preparation followed by ownership transfer retained the verified Cloud project and customer-owned Form workflow.
 6. Public managed fulfilment replaced the closed named-buyer pilot assumption.
 7. The support boundary and first-release personal Gmail eligibility are defined.
+8. The initial $19 self-service price, internal pricing-review trigger and first revenue target are approved.
 
 ## Open Commercial Gates
 
-1. Complete five relevant buyer comparisons, three price hypotheses, unit economics and one self-service test price.
-2. Configure branded outbound sending through `support@freydigitalstudio.com`.
-3. Qualify Gumroad using the Director's real identity, Uganda residence, tax details and legitimate US bank payout account.
-4. Confirm checkout fields for the purchase email, personal Gmail delivery address, account acknowledgement and applicable terms.
-5. Complete the Delivery Pack, licence, refund terms, screenshots, manual export and fulfilment checklist.
-6. Rehearse preparation, standard-project association, transfer, support removal and customer setup from order to independent operation.
-7. Obtain the Director's explicit publish or reschedule decision.
+1. Configure branded outbound sending through `support@freydigitalstudio.com`.
+2. Qualify Gumroad using the Director's real identity, Uganda residence, tax details and legitimate US bank payout account.
+3. Confirm checkout fields for the purchase email, personal Gmail delivery address, account acknowledgement and applicable terms.
+4. Complete the Delivery Pack, licence, refund terms, screenshots, manual export and fulfilment checklist.
+5. Rehearse preparation, standard-project association, transfer, support removal and customer setup from order to independent operation.
+6. Obtain the Director's explicit publish or reschedule decision.
 
 ## Release Timeline
 
@@ -36,7 +36,7 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 |---|---|---|
 | 25 July 2026 | Google OAuth approval | External verification closed without an Apps Script, Form, scope, OAuth-client or Cloud-project change. |
 | 28 to 29 July 2026 | Commercial architecture and record reconciliation | Public managed fulfilment, personal Gmail eligibility, support boundary and the revised commercial sequence are recorded. |
-| 30 July 2026 | Pricing and offer architecture | Compare the exact product with at least five alternatives, test three price hypotheses and select the initial self-service price, unit economics and first revenue target. Keep guided setup and custom implementation separate. |
+| 30 July 2026 | Pricing and offer architecture | Completed. Launch one self-service product at $19. Review the price after 10 completed, non-refunded purchases without promising an increase to buyers. |
 | 31 July 2026 | Gumroad qualification | Create or inspect the seller configuration, use truthful identity and tax information, test the US bank payout option and record every unresolved compliance or payout condition. Do not publish an incomplete listing. |
 | 7 August 2026 | Delivery Pack and public-safe demo QA | Manual, screenshots, licence, refund terms, checkout wording, support terms and product-page claims agree with the verified product. |
 | 14 August 2026 | Managed-fulfilment rehearsal | Rehearse the order record, fresh delivery copy, standard Cloud project, ownership request, buyer setup instructions, Studio access removal and delivery evidence. Do not use the working master as the buyer file. |
@@ -46,6 +46,36 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 | 14 September 2026 | Commercial conversion decision | Use sufficient market evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
 
 Calendar event descriptions contain the relevant runbook and canonical Product 001 record links.
+
+## Pricing And Market Comparison
+
+Product 001 competes with free templates, free hosted tools and paid tournament platforms. It is not priced as a full software-as-a-service platform. Its differentiators are the customer-owned Google files, football-specific result approval workflow, protected standings and reports, and reusable competition administration structure.
+
+| Alternative | Current entry price | Buyer trade-off |
+|---|---:|---|
+| [LeDojo tournament spreadsheet](https://ledojo.club/modeles-excel/organisation-tournoi) | Free | A simpler downloadable spreadsheet with a fixed eight-team example and no managed Result Form approval workflow. |
+| [Challonge Standard](https://help.challonge.com/pricing) | Free | Hosted, advertisement-supported tournament management with broad bracket features, but not a customer-owned Google workbook and Form workflow. |
+| [LeagueRepublic Free](https://help.leaguerepublic.com/en/articles/634775-pricing) | Free | Hosted league management with a paid Gold path. The customer depends on the platform rather than owning the operational files. |
+| [Tournify Pro](https://tournify.app/pricing) | $79 per year | A commercial hosted product for up to 32 teams with public display and sponsor features beyond Product 001 scope. |
+| [Competize Small Tournaments](https://www.competize.com/en/pricing) | EUR 19 per month | A hosted multi-competition platform with public engagement features and recurring fees. |
+
+The free alternatives set a strong buyer expectation. Product 001 therefore begins with a low-risk validation price rather than attempting to match the annual value of the larger hosted platforms.
+
+### Tested Price Hypotheses
+
+Gumroad's current direct-link fee is 10 percent plus $0.50 per transaction. Gumroad Discover sales use a 30 percent fee. The estimates below exclude any later payout or currency-conversion cost.
+
+| Price | Direct-link proceeds | Discover proceeds | Decision |
+|---:|---:|---:|---|
+| $9 | $7.60 | $6.30 | Rejected. Managed fulfilment and even one support interaction would consume too much of the proceeds. |
+| $19 | $16.60 | $13.30 | Approved initial launch price. Ten qualifying purchases trigger an internal review rather than an automatic increase. |
+| $29 | $25.60 | $20.30 | Retained as a future review hypothesis, not an approved increase or buyer-facing promise. |
+
+The first launch has one purchase option only. Assisted setup is not advertised or sold through the initial Gumroad listing. Gumroad's [service policy](https://gumroad.com/help/article/70-can-i-sell-services) prohibits installation and technical-support services, so any future paid service requires a clearly permitted scope and separate approval before it is offered.
+
+The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. Ten completed, non-refunded purchases trigger the internal pricing review. Test purchases, cancelled orders and refunded purchases do not count. Gumroad's Sales dashboard and product-specific sales CSV provide the purchase record. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
+
+The working licence boundary is one purchasing organisation using the product for its own competitions. Its authorised organisers may operate the files. Resale, redistribution and sharing blank delivery copies outside that organisation are not permitted. Final licence language remains a Delivery Pack gate.
 
 ## Public Managed-Fulfilment Flow
 
@@ -78,4 +108,4 @@ Do not blank or distribute the working master. Preserve v0.1.5.9, the Result For
 
 ## Next Release Decision
 
-Complete pricing and Gumroad qualification first. Then complete packaging and the managed-fulfilment rehearsal. Public release requires the Director to confirm that checkout, payout, support, packaging and delivery evidence are acceptable.
+Complete Gumroad qualification next. Then complete outbound support, packaging and the managed-fulfilment rehearsal. Public release requires the Director to confirm that checkout, payout, support, packaging and delivery evidence are acceptable.
