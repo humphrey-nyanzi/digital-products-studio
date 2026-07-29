@@ -19,7 +19,7 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 5. Studio preparation followed by ownership transfer retained the verified Cloud project and customer-owned Form workflow.
 6. Public managed fulfilment replaced the closed named-buyer pilot assumption.
 7. The support boundary and first-release personal Gmail eligibility are defined.
-8. The initial self-service price, standard price, assisted-setup price and first revenue target are approved.
+8. The initial $19 self-service price, internal pricing-review trigger and first revenue target are approved.
 
 ## Open Commercial Gates
 
@@ -36,7 +36,7 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 |---|---|---|
 | 25 July 2026 | Google OAuth approval | External verification closed without an Apps Script, Form, scope, OAuth-client or Cloud-project change. |
 | 28 to 29 July 2026 | Commercial architecture and record reconciliation | Public managed fulfilment, personal Gmail eligibility, support boundary and the revised commercial sequence are recorded. |
-| 30 July 2026 | Pricing and offer architecture | Completed. The first 10 buyers receive a $19 launch price. The planned standard self-service price is $29. Assisted setup is a separate $79 offer. |
+| 30 July 2026 | Pricing and offer architecture | Completed. Launch one self-service product at $19. Review the price after 10 completed, non-refunded purchases without promising an increase to buyers. |
 | 31 July 2026 | Gumroad qualification | Create or inspect the seller configuration, use truthful identity and tax information, test the US bank payout option and record every unresolved compliance or payout condition. Do not publish an incomplete listing. |
 | 7 August 2026 | Delivery Pack and public-safe demo QA | Manual, screenshots, licence, refund terms, checkout wording, support terms and product-page claims agree with the verified product. |
 | 14 August 2026 | Managed-fulfilment rehearsal | Rehearse the order record, fresh delivery copy, standard Cloud project, ownership request, buyer setup instructions, Studio access removal and delivery evidence. Do not use the working master as the buyer file. |
@@ -68,12 +68,12 @@ Gumroad's current direct-link fee is 10 percent plus $0.50 per transaction. Gumr
 | Price | Direct-link proceeds | Discover proceeds | Decision |
 |---:|---:|---:|---|
 | $9 | $7.60 | $6.30 | Rejected. Managed fulfilment and even one support interaction would consume too much of the proceeds. |
-| $19 | $16.60 | $13.30 | Approved launch price for the first 10 buyers. This prioritises evidence and buyer learning over immediate margin. |
-| $29 | $25.60 | $20.30 | Approved planned standard price after the first 10 buyers, subject to actual buyer and support evidence. |
+| $19 | $16.60 | $13.30 | Approved initial launch price. Ten qualifying purchases trigger an internal review rather than an automatic increase. |
+| $29 | $25.60 | $20.30 | Retained as a future review hypothesis, not an approved increase or buyer-facing promise. |
 
-Assisted setup is a separate $79 offer and must not be implied in the self-service price. Its exact service checklist remains part of packaging. Custom implementation remains separately scoped and quoted.
+The first launch has one purchase option only. Assisted setup is not advertised or sold through the initial Gumroad listing. Gumroad's [service policy](https://gumroad.com/help/article/70-can-i-sell-services) prohibits installation and technical-support services, so any future paid service requires a clearly permitted scope and separate approval before it is offered.
 
-The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. The full initial cohort target is 10 paid buyers, equal to $190 gross. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
+The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. Ten completed, non-refunded purchases trigger the internal pricing review. Test purchases, cancelled orders and refunded purchases do not count. Gumroad's Sales dashboard and product-specific sales CSV provide the purchase record. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
 
 The working licence boundary is one purchasing organisation using the product for its own competitions. Its authorised organisers may operate the files. Resale, redistribution and sharing blank delivery copies outside that organisation are not permitted. Final licence language remains a Delivery Pack gate.
 

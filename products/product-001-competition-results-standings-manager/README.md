@@ -83,7 +83,7 @@ Direct File > Make a copy is not the release route because it creates a default 
 
 Gumroad is the leading first checkout candidate because the Director has a legitimate active US bank account available for payouts. Gumroad remains a channel rather than the business. Seller identity, tax, country and beneficial-owner information must remain accurate, and a real payout test is required before the Studio depends on the route.
 
-The approved launch price is $19 for the first 10 paid buyers. The planned standard self-service price is $29. Assisted setup is a separate $79 offer, and custom implementation remains separately scoped and quoted. The first market signal is three independent paid buyers. Price changes require buyer, conversion, fulfilment and support evidence rather than intuition alone.
+The initial launch has one self-service product at $19. Ten completed, non-refunded purchases trigger an internal pricing review, but no future increase is promised to buyers. The first market signal is three independent paid buyers. Assisted setup is not part of the initial Gumroad offer. Price or service changes require buyer, conversion, fulfilment, compliance and support evidence rather than intuition alone.
 
 ## Key Documents
 

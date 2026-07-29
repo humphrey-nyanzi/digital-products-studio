@@ -290,8 +290,8 @@ Consequence: record product-page reach where available, checkout starts, complet
 
 ## D048 - Low-risk launch pricing tests buyer demand
 
-Decision: offer Product 001 to the first 10 paid buyers at $19, then use $29 as the planned standard self-service price. Keep assisted setup separate at $79. Custom implementation remains separately scoped and quoted.
+Decision: launch one Product 001 self-service offer at $19. Keep the first 10 completed, non-refunded purchases as an internal pricing-review trigger rather than a buyer-facing promise. Retain $29 as a future hypothesis only. Do not advertise an assisted setup offer during the initial launch.
 
 Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while preserving a usable direct-sale contribution after Gumroad fees.
 
-Consequence: the first revenue signal is three independent paid buyers. The full initial cohort target is 10 paid buyers. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution.
+Consequence: the first revenue signal is three independent paid buyers. Gumroad's Sales dashboard and product-specific CSV provide the purchase count. Test purchases, cancelled orders and refunded purchases do not count. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution. Any future paid service requires a permitted, bounded scope and separate approval.
