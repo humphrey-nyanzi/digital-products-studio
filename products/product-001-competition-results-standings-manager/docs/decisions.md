@@ -287,3 +287,11 @@ Consequence: standard email support lasts seven calendar days after delivery wit
 Decision: validate the commercial offer through measured public exposure and real buyer behaviour. A friend may provide useful feedback but is not a release dependency.
 
 Consequence: record product-page reach where available, checkout starts, completed purchases, enquiries, objections, refunds, support incidents and substantive buyer conversations. Review early signals without reopening product development, then make a continue, revise, pause or close decision only after sufficient evidence.
+
+## D048 - Low-risk launch pricing tests buyer demand
+
+Decision: offer Product 001 to the first 10 paid buyers at $19, then use $29 as the planned standard self-service price. Keep assisted setup separate at $79. Custom implementation remains separately scoped and quoted.
+
+Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while preserving a usable direct-sale contribution after Gumroad fees.
+
+Consequence: the first revenue signal is three independent paid buyers. The full initial cohort target is 10 paid buyers. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution.
