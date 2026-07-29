@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 20 July 2026
+Last updated: 29 July 2026
 
 ## D001 - Football-first self-service scope
 
@@ -256,4 +256,34 @@ Decision: record Google approval on 25 July 2026 as the closure of the external 
 
 Evidence: Google confirmed OAuth verification approval after the 24 July privacy correction and reviewer response. The approval required no Apps Script, Result Form, scope, OAuth client or Cloud-project change.
 
-Consequence: move Product 001 into controlled commercialisation. The open gates are controlled-pilot delivery, customer ownership transfer, branded outbound support, pricing, payment, private packaging, support boundaries, buyer testing and the Director release decision.
+Consequence: move Product 001 into commercialisation. The open gates are branded outbound support, pricing, payment qualification, packaging, fulfilment rehearsal, market validation and the Director release decision.
+
+## D043 - Public managed fulfilment is the commercial release model
+
+Decision: Product 001 may be listed publicly while every paid order is fulfilled through a Studio-prepared workbook and customer ownership transfer. Public availability does not require a closed group of named pilot customers.
+
+Consequence: the checkout platform handles payment, order evidence and immediate Delivery Pack access. Google Drive handles workbook ownership. The Studio does not distribute the working master or instruct buyers to use File > Make a copy.
+
+## D044 - Personal Gmail is the first-release ownership requirement
+
+Decision: the first public offer requires a personal Gmail account for workbook ownership. Work, school and organisation-managed Google accounts are excluded until a separate Workspace delivery route is tested.
+
+Consequence: checkout must collect a required personal Gmail delivery address and an acknowledgement of the account requirement. The buyer's unavoidable actions are to provide the address, accept ownership, authorise the verified application and run Set Up Result Form. The buyer never edits Apps Script code or the manifest.
+
+## D045 - Gumroad is a channel, not the business
+
+Decision: qualify Gumroad as the first public checkout candidate because the Director has a legitimate active US bank account available for payouts. Keep the owned product page as the permanent product destination and Google Drive as the ownership-delivery layer.
+
+Consequence: Gumroad onboarding must use the Director's real identity, residence, tax and beneficial-owner information. The US bank account improves payout viability but does not change the seller's country or remove compliance checks. Complete a real payout test before treating Gumroad as dependable. Preserve regional payment alternatives for later use.
+
+## D046 - Self-service support boundary
+
+Decision: the product is designed for independent end-to-end use. Customers may contact `support@freydigitalstudio.com` for delivery or setup difficulty, reproducible defects, comments and feature requests.
+
+Consequence: standard email support lasts seven calendar days after delivery with a target response within two business days. Support excludes competition administration, data entry, custom formulas, redesign, unsupported formats, account recovery, deliberate damage, unlimited training and guaranteed feature development. A feature request is recorded and considered, not promised. Temporary workbook access follows D038.
+
+## D047 - Public market evidence replaces assumed friend pilots
+
+Decision: validate the commercial offer through measured public exposure and real buyer behaviour. A friend may provide useful feedback but is not a release dependency.
+
+Consequence: record product-page reach where available, checkout starts, completed purchases, enquiries, objections, refunds, support incidents and substantive buyer conversations. Review early signals without reopening product development, then make a continue, revise, pause or close decision only after sufficient evidence.

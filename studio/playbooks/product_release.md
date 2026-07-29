@@ -153,19 +153,24 @@ Record:
 
 ### Customer-copy test
 
-Using an account that did not build the master:
+Choose and document the delivery architecture before testing. A public copy link is acceptable only when the copied product retains the intended verified application identity and remains independent from the master. If it does not, use managed fulfilment.
 
-1. create the delivery copy;
-2. confirm the customer account owns the copy;
-3. authorise the bound script and record the consent experience;
-4. create the product's Form or other connected assets;
-5. confirm all connected assets belong to the customer account;
-6. submit a test record and confirm only the customer copy changes;
-7. inspect every workbook and Form link for master references;
-8. compare the master and copy Cloud project identities;
-9. complete the ordinary-user protection and recovery tests.
+For managed fulfilment, use an account that did not build the master:
 
-Do not distribute a customer copy that links back to the Studio master or an obsolete Form. Do not assume that copying a bound script preserves the intended verified application identity.
+1. create a fresh delivery copy without altering the working master;
+2. associate the bound script with the approved standard Cloud project;
+3. share the workbook and request ownership transfer;
+4. confirm the customer accepts and owns the workbook;
+5. authorise the bound script and record the consent experience;
+6. create the product's Form or other connected assets;
+7. confirm all connected assets belong to the customer account;
+8. submit a test record and confirm only the customer copy changes;
+9. inspect every workbook and Form link for master references;
+10. compare the standard Cloud project before and after ownership transfer;
+11. remove Studio access unless temporary support access is requested;
+12. complete the ordinary-user protection and recovery tests.
+
+Do not distribute a customer copy that links back to the Studio master or an obsolete Form. Do not assume that copying a bound script preserves the intended verified application identity. State any Google account eligibility limit before purchase.
 
 ### Evidence and decision
 
@@ -259,7 +264,17 @@ Examples:
 * Studio website
 * Direct client delivery
 
-Ensure the published files match the GitHub Release.
+Separate the channel responsibilities:
+
+* the owned product page is the durable public destination;
+* the checkout records payment, eligibility and entitlement;
+* the immediate download or content page provides a real Delivery Pack;
+* the delivery system provides the usable product and records ownership;
+* the support system handles exceptions without becoming mandatory onboarding.
+
+A product may be public while fulfilment is prepared per order. State the delivery time and required buyer actions before purchase. Do not advertise an instant product download when the Studio must prepare or transfer the usable product.
+
+Ensure the published package and prepared delivery files match the approved release. Record platform identity, tax, payout and country requirements truthfully. A bank account in another country does not change the seller's residence or beneficial ownership.
 
 ---
 
@@ -336,15 +351,19 @@ Optional:
 
 Before publishing:
 
-* title reviewed
-* description completed
-* screenshots updated
-* pricing confirmed
-* download package verified
-* licence attached
-* product thumbnail prepared
+* seller identity, country, tax and payout details are truthful and accepted
+* title and product purpose are reviewed
+* description states the exact deliverable and delivery timing
+* screenshots and demo are current
+* pricing and unit economics are confirmed
+* required delivery-account and eligibility fields are configured
+* the immediate Delivery Pack is verified
+* licence, privacy, refund and support terms are attached or linked
+* the usable-product fulfilment checklist is tested
+* product thumbnail is prepared
+* a real payout test remains scheduled until completed
 
-The Gumroad page should communicate quality before download.
+The Gumroad page should communicate quality before purchase. Treat Gumroad as a replaceable checkout channel, not the only public product destination or the owner of the delivery architecture.
 
 ---
 

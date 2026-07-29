@@ -254,7 +254,7 @@ Studio Version:
 
 Current Focus:
 
-Completing final release QA for Product 001: Football Competition Results & Standings Manager.
+Commercialising Product 001: Football Competition Results & Standings Manager through public managed fulfilment, pricing, payment qualification, packaging and measured market validation.
 
 ---
 

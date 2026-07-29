@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, Google OAuth verification approved, controlled commercialisation in progress
-Last verified: 25 July 2026
+Status: Working prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
+Last verified: 29 July 2026
 
 ## Verified Product State
 
@@ -87,15 +87,20 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - The stable Product 001 homepage and privacy routes are deployed and passed public HTTPS, content, manual-link and support-address checks.
 - Google verified and published the Product 001 branding on 20 July 2026.
 - The data-access verification submission includes the four approved scopes and the workflow demonstration at `https://youtu.be/DZ81Cq88wOo`.
+- Google approved OAuth verification on 25 July 2026.
+- The 28 July commercial gate approved public managed fulfilment rather than a closed named-buyer pilot.
+- The buyer must provide a personal Gmail address, accept ownership, authorise the verified application and run Set Up Result Form. No code or manifest editing is required.
 
 ## Active Blockers
 
-1. Define and test the controlled-pilot delivery and customer ownership-transfer sequence.
-2. Keep v0.1.6.0 uninstalled unless a controlled commercial requirement exposes a workflow-impact reason.
+1. Complete exact-market pricing research and choose the one-time self-service test price.
+2. Qualify Gumroad under the Director's real identity, Uganda residence, tax information and legitimate US bank payout details.
 3. Configure branded outbound sending for `support@freydigitalstudio.com` before customer support begins.
-4. Decide the controlled-pilot package, support boundary, price, payment method and first revenue target.
-5. Make an explicit public-release or hold decision after controlled-pilot, packaging and commercial gates pass.
+4. Complete the Delivery Pack, licence, refund terms, screenshots, checkout fields and fulfilment checklist.
+5. Rehearse the approved preparation and ownership-transfer process without using the working master as the buyer file.
+6. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
+7. Make an explicit publish or reschedule decision after checkout, packaging, support and fulfilment gates pass.
 
 ## Next Action
 
-Preserve the verified application while completing the controlled-pilot, outbound support identity, pricing, payment, private packaging and buyer-test work. Public release remains on hold until the commercial, packaging and Director gates pass.
+Preserve the verified application while completing pricing, Gumroad qualification, outbound support identity, packaging and a managed-fulfilment rehearsal. The offer may be public once those gates and the Director decision pass. Market validation will come from measured public exposure, purchases, enquiries, objections and support evidence rather than an assumed group of friends.
