@@ -2,7 +2,7 @@
 
 Product: Football Competition Results & Standings Manager  
 Status: Prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
-Last verified: 30 July 2026
+Last verified: 31 July 2026
 
 ## Product State
 
@@ -20,12 +20,13 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 6. Public managed fulfilment replaced the closed named-buyer pilot assumption.
 7. The support boundary and first-release personal Gmail eligibility are defined.
 8. The initial $19 self-service price, internal pricing-review trigger and first revenue target are approved.
+9. Gumroad, Buy Me a Coffee, Ko-fi and Lemon Squeezy were disqualified against truthful Uganda payout requirements.
 
 ## Open Commercial Gates
 
 1. Configure branded outbound sending through `support@freydigitalstudio.com`.
-2. Qualify Gumroad using the Director's real identity, Uganda residence, tax details and legitimate US bank payout account.
-3. Confirm checkout fields for the purchase email, personal Gmail delivery address, account acknowledgement and applicable terms.
+2. Qualify Payhip connected to a Uganda-verified Flutterwave account using the Director's truthful identity, residence, tax and payout details.
+3. Confirm checkout currency, international-card acceptance, fees, settlement, refunds, required personal Gmail capture, account acknowledgement and applicable terms.
 4. Complete the Delivery Pack, licence, refund terms, screenshots, manual export and fulfilment checklist.
 5. Rehearse preparation, standard-project association, transfer, support removal and customer setup from order to independent operation.
 6. Obtain the Director's explicit publish or reschedule decision.
@@ -37,11 +38,12 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 | 25 July 2026 | Google OAuth approval | External verification closed without an Apps Script, Form, scope, OAuth-client or Cloud-project change. |
 | 28 to 29 July 2026 | Commercial architecture and record reconciliation | Public managed fulfilment, personal Gmail eligibility, support boundary and the revised commercial sequence are recorded. |
 | 30 July 2026 | Pricing and offer architecture | Completed. Launch one self-service product at $19. Review the price after 10 completed, non-refunded purchases without promising an increase to buyers. |
-| 31 July 2026 | Gumroad qualification | Create or inspect the seller configuration, use truthful identity and tax information, test the US bank payout option and record every unresolved compliance or payout condition. Do not publish an incomplete listing. |
+| 31 July 2026 | Payment-route reassessment | Disqualify routes that fail Uganda payout or fulfilment requirements. Rank Payhip plus Flutterwave first, Selar second and direct Flutterwave third. |
+| 1 to 4 August 2026 | Payhip plus Flutterwave qualification | Use truthful Uganda identity and payout information. Confirm account approval, currency, international cards, required checkout questions, custom-order delivery, fees, refunds and settlement. Do not publish an incomplete listing. |
 | 7 August 2026 | Delivery Pack and public-safe demo QA | Manual, screenshots, licence, refund terms, checkout wording, support terms and product-page claims agree with the verified product. |
 | 14 August 2026 | Managed-fulfilment rehearsal | Rehearse the order record, fresh delivery copy, standard Cloud project, ownership request, buyer setup instructions, Studio access removal and delivery evidence. Do not use the working master as the buyer file. |
 | 21 August 2026 | Public offer gate | Publish or reschedule based on checkout, payout, packaging, outbound support and fulfilment evidence. |
-| 24 to 26 August 2026 | Launch content | Draft, approve and publish only the ready channels. The owned product page remains the permanent destination and Gumroad is the first checkout candidate. |
+| 24 to 26 August 2026 | Launch content | Draft, approve and publish only the ready Studio-branded channels. The owned product page remains the permanent destination and the qualified commerce platform remains replaceable. |
 | 31 August 2026 | Early market-signal review | Record reach where available, checkout starts, purchases, enquiries, objections, refunds and support incidents. Select at most two offer or channel variables to test next. |
 | 14 September 2026 | Commercial conversion decision | Use sufficient market evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
 
@@ -61,19 +63,22 @@ Product 001 competes with free templates, free hosted tools and paid tournament 
 
 The free alternatives set a strong buyer expectation. Product 001 therefore begins with a low-risk validation price rather than attempting to match the annual value of the larger hosted platforms.
 
-### Tested Price Hypotheses
+### Tested Price And Fee Hypotheses
 
-Gumroad's current direct-link fee is 10 percent plus $0.50 per transaction. Gumroad Discover sales use a 30 percent fee. The estimates below exclude any later payout or currency-conversion cost.
+The $19 launch price remains the approved demand test. The live buyer currency is not fixed until the selected Uganda payment account passes checkout and settlement qualification.
 
-| Price | Direct-link proceeds | Discover proceeds | Decision |
-|---:|---:|---:|---|
-| $9 | $7.60 | $6.30 | Rejected. Managed fulfilment and even one support interaction would consume too much of the proceeds. |
-| $19 | $16.60 | $13.30 | Approved initial launch price. Ten qualifying purchases trigger an internal review rather than an automatic increase. |
-| $29 | $25.60 | $20.30 | Retained as a future review hypothesis, not an approved increase or buyer-facing promise. |
+| Route | Published platform and processing cost | Decision |
+|---|---:|---|
+| Payhip Free plus Flutterwave | Payhip 5 percent, plus Flutterwave Uganda at 3 percent for mobile money or 4.8 percent for cards, before VAT, currency conversion and transfer costs | First candidate. It supports Uganda, required checkout questions and manual custom digital delivery. |
+| Selar | Current Uganda fee, currency, payout and custom-delivery behaviour require confirmation in a live truthful account | Second candidate. It supports Uganda and has affiliate tools, but Selar does not promise to market the product for the seller. |
+| Direct Flutterwave | 3 percent for Uganda mobile money or 4.8 percent for cards, before VAT and transfer costs | Fallback. It provides payment links and international-card collection but leaves storefront, order evidence and delivery operations with the Studio. |
+| Gumroad | No usable truthful payout route for the Uganda-resident seller | Rejected. A US bank account does not override seller-country eligibility. |
 
-The first launch has one purchase option only. Assisted setup is not advertised or sold through the initial Gumroad listing. Gumroad's [service policy](https://gumroad.com/help/article/70-can-i-sell-services) prohibits installation and technical-support services, so any future paid service requires a clearly permitted scope and separate approval before it is offered.
+At a $19 equivalent, the published Payhip Free and Flutterwave percentages imply approximately $17.14 to $17.48 before VAT, currency conversion and withdrawal costs. This is planning arithmetic, not a verified payout result.
 
-The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. Ten completed, non-refunded purchases trigger the internal pricing review. Test purchases, cancelled orders and refunded purchases do not count. Gumroad's Sales dashboard and product-specific sales CSV provide the purchase record. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
+The first launch has one purchase option only. Assisted setup is not advertised or sold through the initial listing. Any future paid service requires a clearly permitted, bounded scope and separate approval before it is offered.
+
+The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. Ten completed, non-refunded purchases trigger the internal pricing review. Test purchases, cancelled orders and refunded purchases do not count. The selected platform's order dashboard or export provides the purchase record. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
 
 The working licence boundary is one purchasing organisation using the product for its own competitions. Its authorised organisers may operate the files. Resale, redistribution and sharing blank delivery copies outside that organisation are not permitted. Final licence language remains a Delivery Pack gate.
 
@@ -96,11 +101,23 @@ Standard email support covers delivery and setup difficulty, reproducible produc
 
 Guided setup and custom implementation are separate future offers. They must not be included silently in the self-service price.
 
-## Checkout And Payment Boundary
+## Checkout, Payment And Demand Boundary
 
-Gumroad is the leading first checkout candidate, not the permanent product home. The owned product page remains the public destination and Google Drive remains the ownership-delivery layer.
+The owned product page remains the permanent public destination and Google Drive remains the ownership-delivery layer. Commerce platforms are replaceable channels.
 
-The Director's active US bank account improves Gumroad payout viability. It does not change the Director's residence or remove seller identity, tax, beneficial-owner or platform eligibility checks. Do not use a false US address or identity. Complete a real payout test before treating the route as dependable. Regional options such as Flutterwave, Pesapal or direct bank payment may be added later without changing the workbook architecture.
+Gumroad is disqualified because Uganda is not supported for direct bank payout and PayPal is not a practical fallback. Buy Me a Coffee and Ko-fi are disqualified because their payouts depend on Stripe or PayPal. Lemon Squeezy is disqualified because Uganda is absent from its bank-payout list and PayPal is not usable.
+
+Payhip plus Flutterwave is the first route to qualify. [Payhip's Flutterwave guidance](https://help.payhip.com/article/367-connect-your-flutterwave-account) names Uganda as supported, and its [custom digital order guidance](https://help.payhip.com/article/266-custom-digital-orders) permits required checkout questions, placeholder Delivery Packs and manual later delivery. The route still requires a live account and test transaction because account verification, currency matching, international-card acceptance, monthly Payhip fee billing, settlement and refunds are not repository-verified. Payhip automates specified taxes, but it is not treated as a complete merchant-of-record solution for every jurisdiction.
+
+Selar is the second route. It supports Uganda, digital products, bank or mobile-money payout and affiliate tools. Its own [seller guidance](https://help.selar.com/portal/en/kb/articles/will-selar-promote-my-product) says Selar does not promote products for sellers. Current Uganda fees, checkout currency, international-card behaviour, tax handling and managed-delivery fit must be confirmed live before selection.
+
+Direct Flutterwave payment links are the fallback. [Flutterwave Uganda pricing](https://www.flutterwave.com/ug/pricing) confirms international cards and mobile money, but the Studio would own more checkout wording, order tracking, tax assessment and fulfilment administration.
+
+Paddle and FastSpring remain later-stage watchlist routes. Both can provide merchant-of-record tax handling and wire payouts, but their approval, integration and payout-threshold overhead is disproportionate to an unproven $19 manually fulfilled offer.
+
+No platform removes demand generation. Use Studio-branded product pages, search-friendly product content, demonstrations, relevant football-organiser communities, partnerships and carefully selected affiliates. Personal creator marketing is optional. Marketing itself is not.
+
+Manual ownership transfer is acceptable for a low-volume commercial test. It is not the permanent scale architecture. If real orders show that delivery time, Studio labour or buyer trust materially reduces conversion, assess a verified Google Workspace add-on or another self-service architecture before increasing promotion.
 
 ## Technical Freeze
 
@@ -108,4 +125,4 @@ Do not blank or distribute the working master. Preserve v0.1.5.9, the Result For
 
 ## Next Release Decision
 
-Complete Gumroad qualification next. Then complete outbound support, packaging and the managed-fulfilment rehearsal. Public release requires the Director to confirm that checkout, payout, support, packaging and delivery evidence are acceptable.
+Complete Payhip plus Flutterwave qualification next. If it fails, qualify Selar, then direct Flutterwave. After selecting a route, complete outbound support, packaging and the managed-fulfilment rehearsal. Public release requires the Director to confirm that checkout, payout, support, packaging and delivery evidence are acceptable.

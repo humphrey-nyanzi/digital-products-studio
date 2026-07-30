@@ -272,6 +272,8 @@ Consequence: checkout must collect a required personal Gmail delivery address an
 
 ## D045 - Gumroad is a channel, not the business
 
+Status: superseded by D049 after live Uganda payout qualification.
+
 Decision: qualify Gumroad as the first public checkout candidate because the Director has a legitimate active US bank account available for payouts. Keep the owned product page as the permanent product destination and Google Drive as the ownership-delivery layer.
 
 Consequence: Gumroad onboarding must use the Director's real identity, residence, tax and beneficial-owner information. The US bank account improves payout viability but does not change the seller's country or remove compliance checks. Complete a real payout test before treating Gumroad as dependable. Preserve regional payment alternatives for later use.
@@ -292,6 +294,16 @@ Consequence: record product-page reach where available, checkout starts, complet
 
 Decision: launch one Product 001 self-service offer at $19. Keep the first 10 completed, non-refunded purchases as an internal pricing-review trigger rather than a buyer-facing promise. Retain $29 as a future hypothesis only. Do not advertise an assisted setup offer during the initial launch.
 
-Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while preserving a usable direct-sale contribution after Gumroad fees.
+Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while preserving a usable direct-sale contribution through the shortlisted Uganda-compatible routes.
 
-Consequence: the first revenue signal is three independent paid buyers. Gumroad's Sales dashboard and product-specific CSV provide the purchase count. Test purchases, cancelled orders and refunded purchases do not count. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution. Any future paid service requires a permitted, bounded scope and separate approval.
+Consequence: the first revenue signal is three independent paid buyers. The selected platform's order dashboard or export provides the purchase count. Test purchases, cancelled orders and refunded purchases do not count. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution. Any future paid service requires a permitted, bounded scope and separate approval.
+
+## D049 - Uganda payout support precedes platform preference
+
+Decision: disqualify Gumroad as the initial checkout. Uganda is not supported for direct bank payouts, PayPal is not a practical fallback and the Director's legitimate US bank account does not change truthful residence or seller-country eligibility. Also disqualify Buy Me a Coffee, Ko-fi and Lemon Squeezy because their available payout routes depend on Stripe, PayPal or supported-country lists that exclude Uganda.
+
+Decision: qualify Payhip connected to Flutterwave first, Selar second and direct Flutterwave third. A route becomes approved only after truthful live onboarding confirms the seller account, supported currency, international-card checkout, fees, refunds, settlement, required personal Gmail capture, immediate Delivery Pack access and manual ownership-transfer fulfilment.
+
+Evidence: Payhip officially supports Flutterwave in Uganda and explicitly documents custom digital orders with checkout questions, a placeholder file, a stated delivery period and manual later delivery. Flutterwave publishes Uganda card and mobile-money pricing. Selar officially states that it supports Uganda and offers digital-product and affiliate tools, while also stating that sellers remain responsible for promoting their links.
+
+Consequence: the owned product page remains the permanent public destination, Google Drive remains the ownership-delivery layer and the commerce platform remains replaceable. No platform is treated as a discovery guarantee. Demand generation uses the Studio identity rather than requiring Humphrey to become the public product brand. Manual transfer is accepted only for the low-volume market test. Evidence of material buyer friction or unsustainable Studio labour triggers assessment of a Google Workspace add-on or another self-service architecture.

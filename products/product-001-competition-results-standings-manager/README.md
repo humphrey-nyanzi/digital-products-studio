@@ -68,7 +68,7 @@ Google verified and published the Product 001 branding on 20 July 2026. On 23 Ju
 
 ## Approved Commercial Delivery
 
-Product 001 may be listed publicly while each paid order is fulfilled through a Studio-prepared workbook. The marketplace is the checkout and entitlement layer. Google Drive is the ownership-delivery layer.
+Product 001 may be listed publicly while each paid order is fulfilled through a Studio-prepared workbook. The selected commerce platform is the checkout, order-evidence and Delivery Pack layer. Google Drive is the ownership-delivery layer.
 
 The approved first-release flow is:
 
@@ -81,9 +81,13 @@ The approved first-release flow is:
 
 Direct File > Make a copy is not the release route because it creates a default Cloud project instead of retaining the verified application identity. The first public offer supports personal Gmail ownership only. Work, school and organisation-managed Google accounts require a separately tested delivery route.
 
-Gumroad is the leading first checkout candidate because the Director has a legitimate active US bank account available for payouts. Gumroad remains a channel rather than the business. Seller identity, tax, country and beneficial-owner information must remain accurate, and a real payout test is required before the Studio depends on the route.
+Gumroad was disqualified on 31 July 2026. Uganda is not supported for direct bank payouts, PayPal is not a practical fallback, and a US bank account does not change the seller's truthful country or platform eligibility. Buy Me a Coffee, Ko-fi and Lemon Squeezy are also unavailable because their payout routes depend on Stripe, PayPal or a supported-country list that excludes Uganda.
 
-The initial launch has one self-service product at $19. Ten completed, non-refunded purchases trigger an internal pricing review, but no future increase is promised to buyers. The first market signal is three independent paid buyers. Assisted setup is not part of the initial Gumroad offer. Price or service changes require buyer, conversion, fulfilment, compliance and support evidence rather than intuition alone.
+The first replacement candidate is Payhip connected to a Uganda-verified Flutterwave account. Payhip explicitly supports Flutterwave in Uganda, required checkout questions and custom digital orders that are delivered manually after purchase. Selar is the second candidate because it supports Uganda and digital-product delivery. A direct Flutterwave payment link is the fallback if neither storefront passes live account, checkout, payout and fulfilment tests.
+
+The initial launch has one self-service product at a $19 price hypothesis. Ten completed, non-refunded purchases trigger an internal pricing review, but no future increase is promised to buyers. The first market signal is three independent paid buyers. Assisted setup is not part of the initial offer. The live checkout currency and exact proceeds remain a payment-qualification result because Payhip and Flutterwave account currencies must match. Price or service changes require buyer, conversion, fulfilment, compliance and support evidence rather than intuition alone.
+
+No shortlisted platform removes the need to generate demand. Public marketing should use the Studio identity, product page, product demonstration, football-organiser communities, relevant partnerships and later affiliate or marketplace listings. Humphrey does not need to become the product's public personality. Payhip marketplace eligibility begins only after at least $10 in real sales, while Selar states that sellers remain responsible for sharing their product link even when affiliate tools are available.
 
 ## Key Documents
 
@@ -97,4 +101,4 @@ The initial launch has one self-service product at $19. Ten completed, non-refun
 
 ## Next Action
 
-Qualify the Gumroad seller and payout route, configure a true Studio outbound support identity and finish the Delivery Pack. Then rehearse one complete managed fulfilment without changing the verified Apps Script or OAuth configuration. Public release remains conditional on packaging, checkout, support, fulfilment and Director gates.
+Run a live Payhip plus Flutterwave qualification using truthful Uganda identity and payout details. Confirm account approval, supported currency, international-card checkout, required Gmail capture, immediate Delivery Pack access, manual fulfilment compatibility, refunds, fees and settlement. If that route fails, test Selar against the same checklist, then use direct Flutterwave as the fallback. Configure a true Studio outbound support identity and finish the Delivery Pack before the managed-fulfilment rehearsal. Do not change the verified Apps Script or OAuth configuration.
