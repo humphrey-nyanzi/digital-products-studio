@@ -2,7 +2,8 @@
 
 Product: Football Competition Results & Standings Manager  
 Status: Form workflow and least-privilege setup verified in v0.1.5.9, timezone display repair prepared in v0.1.6.0
-Last verified: 19 July 2026
+Last technical verification: 19 July 2026
+Last reconciled: 31 August 2026
 
 ## Purpose
 

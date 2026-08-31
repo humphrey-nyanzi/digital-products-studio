@@ -8,7 +8,7 @@
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
 **Authority:** High
-**Last Updated:** June 2026
+**Last Updated:** August 2026
 **Next Review:** Quarterly
 
 ---
@@ -292,7 +292,7 @@ It should contain:
 * Apps Script project link, if applicable
 * demo video link
 * published product page
-* Gumroad or sales page
+* checkout or sales page
 * documentation links
 * internal working folder link
 
@@ -470,7 +470,7 @@ For simple public templates, users should receive copy access rather than edit a
 
 Products may be distributed through:
 
-* Gumroad
+* Selar or another approved checkout platform
 * GitHub Releases
 * Google Drive copy links
 * Google Drive ownership transfer

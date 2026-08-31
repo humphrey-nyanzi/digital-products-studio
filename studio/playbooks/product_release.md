@@ -9,7 +9,7 @@
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
 **Authority:** High
-**Last Updated:** June 2026
+**Last Updated:** August 2026
 **Next Review:** Quarterly
 
 ---
@@ -259,7 +259,7 @@ Publish the product through the appropriate channels.
 
 Examples:
 
-* Gumroad
+* Selar or another approved checkout platform
 * GitHub Releases
 * Studio website
 * Direct client delivery
@@ -268,7 +268,7 @@ Separate the channel responsibilities:
 
 * the owned product page is the durable public destination;
 * the checkout records payment, eligibility and entitlement;
-* the immediate download or content page provides a real Delivery Pack;
+* the immediate download or content page provides a real Buyer Guide or other meaningful buyer content;
 * the delivery system provides the usable product and records ownership;
 * the support system handles exceptions without becoming mandatory onboarding.
 
@@ -347,7 +347,7 @@ Optional:
 
 ---
 
-# Gumroad Checklist
+# Checkout Platform Checklist
 
 Before publishing:
 
@@ -357,13 +357,13 @@ Before publishing:
 * screenshots and demo are current
 * pricing and unit economics are confirmed
 * required delivery-account and eligibility fields are configured
-* the immediate Delivery Pack is verified
+* the immediate Buyer Guide or confirmation is verified, where applicable
 * licence, privacy, refund and support terms are attached or linked
 * the usable-product fulfilment checklist is tested
 * product thumbnail is prepared
 * a real payout test remains scheduled until completed
 
-The Gumroad page should communicate quality before purchase. Treat Gumroad as a replaceable checkout channel, not the only public product destination or the owner of the delivery architecture.
+The checkout page should communicate quality before purchase. Treat Selar or another approved checkout platform as a replaceable channel, not the only public product destination or the owner of the delivery architecture.
 
 ---
 

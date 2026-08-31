@@ -2,7 +2,8 @@
 
 Product: Football Competition Results & Standings Manager  
 Status: Live workbook architecture verified on v0.1.5.9, Google OAuth verification approved, v0.1.6.0 timezone display repair prepared but uninstalled
-Last verified: 24 July 2026
+Last technical verification: 24 July 2026
+Last reconciled: 31 August 2026
 
 ## Components
 
@@ -102,13 +103,13 @@ The customer User Manual is owned by the dedicated support Google account and sh
 
 ## Commercial Fulfilment Architecture
 
-The product may be offered publicly even though fulfilment is prepared per order. The checkout platform records payment and immediately provides a Delivery Pack. It does not distribute the working master or an unprepared workbook.
+The product may be offered publicly even though fulfilment is prepared per order. Selar records payment and immediately sends the Buyer Guide, which sets out the delivery window, buyer responsibilities and the next setup steps. It does not distribute the working master or an unprepared workbook.
 
 The Studio fulfils each eligible order by creating a fresh workbook, confirming the release version, associating the standard Cloud project, checking copy-local links and protections, sharing the file with the buyer and requesting ownership transfer. The buyer then accepts ownership, authorises the verified application and creates the customer-owned Result Form. These are the only required buyer setup actions.
 
 The first-release ownership route supports personal Gmail accounts. Google ownership transfer from the Studio's personal Google account cannot deliver ownership to work or school accounts. A Workspace route must be researched and tested separately before it is advertised.
 
-The checkout and delivery systems remain replaceable. Gumroad is the leading first checkout candidate, the owned product page remains the permanent public destination, and Google Drive remains the ownership-delivery layer. Regional payment options may be added without changing the workbook architecture.
+Checkout remains replaceable. Selar is the current checkout platform, the public product page is the stable product-information destination, and Google Drive remains the ownership-delivery layer. Regional payment options may be added without changing the workbook architecture.
 
 ## Reset Boundary
 
@@ -116,6 +117,6 @@ Reset is an owner-only workflow. It creates a full-workbook backup in the owner 
 
 ## Protection Boundary
 
-Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During managed fulfilment, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding, the requested privacy correction and OAuth verification have passed. Checkout, packaging, outbound support, fulfilment rehearsal and the Director release decision remain separate release gates.
+Buyer-editable cells are distinct from formula and ID areas. The 18 July ordinary-user test confirmed that protected automatic cells could not be edited. During managed fulfilment, the support account prepares the file and transfers ownership, then must be removed unless the customer explicitly requests temporary support access. Support access is limited to the named file and purpose, removed when resolved and any downloaded support copy is deleted within 30 days after resolution. Branding, the requested privacy correction, OAuth verification, checkout rehearsal, managed-fulfilment rehearsal and branded outbound support have passed. Director approval remains required for new publication and promotion actions. Paid settlement qualification remains event-driven.
 
 

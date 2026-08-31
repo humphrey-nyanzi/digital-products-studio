@@ -1,8 +1,8 @@
 # Product Requirements
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, final release QA  
-Last verified: 15 July 2026
+Status: Current Product 001 requirements; operational baseline v0.1.5.9
+Last requirements review: 31 August 2026
 
 ## Buyer And Outcome
 

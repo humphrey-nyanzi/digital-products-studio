@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Technical, ownership, privacy and OAuth gates passed, commercial fulfilment QA pending
-Last verified: 29 July 2026
+Status: Technical, ownership, privacy, OAuth, Selar checkout, managed fulfilment and outbound support gates passed; local landing-page release review in progress
+Last verified: 31 August 2026
 
 ## Purpose
 
@@ -12,7 +12,17 @@ Verify that a normal organiser can run a competition without damaging the workbo
 
 The populated end-to-end lifecycle, per-copy Form setup, reset, response-tab privacy, manager outcome workflow, multi-group generation and bounded practical scheduling have passed their defined QA.
 
-The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding. On 24 July, the requested privacy correction passed targeted policy, Start Here and User Manual checks, the unchanged application returned to review and the reviewer was notified. Google approved OAuth verification on 25 July 2026. Public managed fulfilment is approved. Public release remains blocked by pricing, checkout, outbound support, packaging, fulfilment rehearsal and the Director gate.
+The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbook regression passed automatic timezone behaviour, hidden response-tab handling, Played submission processing and approval updates. The 18 July ordinary-user test passed the complete operational customer workflow, ownership, isolation and protection checks. On 20 July, a support-prepared delivery workbook retained standard Cloud project 364546476326 after ownership transfer and passed the consent and operational checks. Customer File > Make a copy did not retain the standard project. Google verified and published the branding. On 24 July, the requested privacy correction passed targeted policy, Start Here and User Manual checks, the unchanged application returned to review and the reviewer was notified. Google approved OAuth verification on 25 July 2026. Public managed fulfilment is approved.
+
+On 11 August 2026, the live Selar offer passed a zero-value checkout rehearsal. The order recorded the required Gmail and delivery acknowledgement, sent the buyer receipt, sent the seller notification and redirected to the public Quick Start Buyer Guide. An initial fulfilment attempt exposed that the copy had been created under the buyer account before standard-project association. It showed the default unverified `Competitions` identity and was stopped before permission was granted. The corrected 17 August rehearsal passed support-owned preparation, standard-project association, ownership transfer, verified consent, buyer Form setup, fixture publication, result approval, output checks and Studio access removal. Branded outbound support was also verified.
+
+## 31 August Landing-Page Release Review
+
+The local landing page was checked against the approved positioning, delivery and privacy boundaries. Its Selar destination, USD and UGX prices, service type, personal-Gmail requirement, one-business-day delivery promise, support boundary, public User Manual and privacy route match the live offer.
+
+At desktop and 375-pixel mobile widths, the local product and privacy routes had no page-level horizontal overflow. All public assets loaded, the page had one H1, complete image alternative text, valid landmarks, no duplicate IDs and no browser warnings or errors. The demonstration screenshots contain fictional teams and no buyer, order or private-account information.
+
+The release branch must include the untracked page assets and canonical landing-page brief, retain the historical v0.1.5.3 script unless an explicit archival decision is made, and receive Director approval before deployment. Dense screenshots now provide direct full-size links so mobile readers can inspect the underlying interface without relying on the cropped preview.
 
 ## 18 July Ordinary-user QA Result
 
@@ -23,9 +33,9 @@ The 16 and 17 July copy-isolation regressions passed. The v0.1.5.9 copied-workbo
 | Ordinary-user usability | Partial pass | The main workflow and reset wording were understandable. Timezone behaviour was correct, but the Settings control did not visibly show Africa/Kampala. |
 | OAuth identity | Failed | Google showed an unverified warning, the application name `Competitions` and a personal developer identity. |
 | Documentation and packaging | Failed, remediation prepared | The original User Manual required access. A support-owned public copy now passes unsigned viewing and the master link is repaired. |
-| Public release | Hold | OAuth verification and managed-delivery architecture are approved. Pricing, checkout, outbound support, packaging, fulfilment rehearsal and Director gates remain open. |
+| Public release | Hold at test date | The 18 July test did not itself authorise public commercial release. |
 
-The table records the state observed during the 18 July test. By 20 July, the documentation defect, standard Cloud project, public trust routes and branding identity were repaired. Branding is verified and shown to users. The 23 July reviewer response reopened the privacy disclosure gate only. Public-release approval remains withheld.
+The table records the state observed during the 18 July test. Later work repaired the documentation and identity defects, secured OAuth approval, launched the Selar offer, passed checkout and managed-fulfilment rehearsals, and verified branded outbound support. New publication and promotion actions still require Director approval.
 
 ## Required Regression
 
@@ -71,20 +81,36 @@ The table records the state observed during the 18 July test. By 20 July, the do
 
 ## Managed-Fulfilment Rehearsal
 
-Run this rehearsal once the checkout and Delivery Pack are prepared. It is a commercial process test, not a repeat of football-logic QA.
+Run this rehearsal using the live checkout, Quick Start Buyer Guide, User Manual and legal pages. It is a commercial process test, not a repeat of football-logic QA.
 
 | Step | Test | Pass condition |
 |---|---|---|
 | Order eligibility | Review the checkout record | Payment is recorded, the personal Gmail delivery address is complete and the account requirement is acknowledged. |
-| Immediate content | Open the buyer receipt or content page | The Delivery Pack, manual, licence, privacy, support and ownership instructions are available without asking the buyer to message the Studio. |
+| Immediate content | Open the buyer receipt or content page | The Quick Start Buyer Guide, User Manual, licence boundary, privacy, support and ownership instructions are available without asking the buyer to message the Studio. |
 | Fresh delivery file | Create from the approved master process | The working master remains unchanged and no prior customer data, Form URL or response destination is present. |
 | Verified identity | Associate and inspect the bound project | Standard Cloud project `364546476326`, v0.1.5.9 and the four approved scopes are present. |
 | Workbook safety | Check links, protections and reset wording | Customer links are copy-local or public, protected areas remain protected and no destructive action is run unnecessarily. |
 | Ownership request | Share and request transfer | The eligible personal Gmail account receives the ownership request without a call or code change. |
-| Buyer instructions | Follow only the Delivery Pack | The buyer can accept ownership, authorise the app and run Set Up Result Form without handholding. |
+| Buyer instructions | Follow only the Quick Start Buyer Guide and linked User Manual | The buyer can accept ownership, authorise the app and run Set Up Result Form without handholding. |
 | Data ownership | Inspect the final files | The buyer owns the workbook, Form and responses. Studio access is removed unless temporary support access was requested. |
 | Delivery evidence | Close the order checklist | Delivery time, file ID, owner, support window and any exception are recorded without retaining competition data. |
 | Support route | Send and receive a test message | `support@freydigitalstudio.com` can send, receive and retain the case without exposing the personal inbox. |
+
+## 11 August Commercial Rehearsal Result
+
+| Gate | Result | Evidence |
+|---|---|---|
+| Selar order eligibility | Passed for zero value | Order `S12T8H33F6636` recorded the buyer, personal Gmail delivery address and required acknowledgement. Checkout also required the buyer's name, contact email and human verification. |
+| Immediate buyer content | Passed | Successful checkout redirected to the public Quick Start Buyer Guide, which links to the canonical User Manual. |
+| Buyer and seller notices | Passed | The buyer receipt and seller sale notification were received. |
+| Paid transaction and settlement | Not tested | The 100 percent coupon reduced the USD 19 order to USD 0. No payment, transaction fee, KYC or payout was exercised. |
+| Fresh delivery-file sanitation | Passed | Historical competition, fixture, result, Form metadata and response tabs were removed from the rehearsal copy. The working master remained unchanged. |
+| Customer structure | Passed | The clean copy retained the approved 15 sheets, formulas, validations, formats, protections and hidden states. |
+| Standard-project association | Failed sequence | The copy was already buyer-owned and still used a default project when consent was opened. The support-owned standard-project association step had been skipped. |
+| OAuth consent | Stopped safely | The unverified `Competitions` screen was closed before permissions were granted. This is not evidence against the approved standard project. |
+| Ownership transfer | Pending | Repeat from a support-owned prepared copy after associating standard Cloud project `364546476326`. |
+| Buyer Form and isolation | Pending | Test only after the correctly prepared workbook is transferred and the verified consent completes. |
+| Outbound support | Passed | Inbound routing and branded outbound sending through the public support address are verified. |
 
 ## Evidence To Retain
 
@@ -100,7 +126,9 @@ Run this rehearsal once the checkout and Delivery Pack are prepared. It is a com
 
 Release readiness requires the final bound Apps Script source, passing football-logic regression, ordinary-user access verification and a final clean-copy end-to-end regression. Any remaining limitation must be plainly stated in the buyer guide and listing.
 
-The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer, and branding verification passed. The privacy correction and OAuth verification are complete. Do not repeat the complete operational QA unless a later change affects that workflow. Run the managed-fulfilment rehearsal as a process test and use only the smallest consent or identity regression needed after a relevant verified-application change.
+The first 16 July regression is recorded as a partial pass. The 17 July fresh-copy regression closed navigation isolation. The 18 July ordinary-user regression closed the operational and protection gates. The manual defect is repaired. The 20 July controlled-delivery regression confirmed standard Cloud project retention after ownership transfer, and branding verification passed. The privacy correction and OAuth verification are complete. The 11 August zero-value Selar rehearsal closed the checkout-data, notification and immediate-content checks only.
+
+Do not repeat the complete operational QA unless a later change affects that workflow. Complete the remaining managed-fulfilment steps as a process test: support-owned preparation, standard-project association, ownership transfer, verified consent, Form setup, isolation and support removal. Keep paid settlement, KYC and payout open until real evidence closes them.
 
 
 

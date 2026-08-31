@@ -254,7 +254,7 @@ Studio Version:
 
 Current Focus:
 
-Commercialising Product 001: Football Competition Results & Standings Manager through public managed fulfilment, pricing, payment qualification, packaging and measured market validation.
+Reconciling the Product 001 release candidate and repository records while the Director reviews the locally hosted landing page. Deployment, publication and paid-settlement qualification remain separately controlled.
 
 ---
 

@@ -1,14 +1,14 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
-Last verified: 30 July 2026
+Status: Live Selar offer, checkout and managed fulfilment rehearsals passed; landing-page release review in progress
+Last verified: 31 August 2026
 
 ## Product State
 
 The working lifecycle, customer interface, reset path, fixture generation and result workflow are substantially complete. A support-prepared workbook retained standard Cloud project `364546476326` after buyer ownership transfer and passed the full ordinary-user workflow. Google approved OAuth verification on 25 July 2026.
 
-The 28 July commercial gate approved public managed fulfilment. Product 001 may be listed publicly, but each paid order receives a separately prepared workbook. The checkout platform records payment and delivers the buyer package. Google Drive transfers workbook ownership. Direct File > Make a copy is not approved because it creates a default Cloud project.
+The 28 July commercial gate approved public managed fulfilment. The Selar Service listing is now live at UGX 70,000 and USD 19. Each paid order receives a separately prepared workbook. Selar records payment and entitlement, then redirects the buyer to the Quick Start Buyer Guide. Google Drive transfers workbook ownership. Direct File > Make a copy is not approved because it creates a default Cloud project. The correctly sequenced managed-fulfilment rehearsal passed on 17 August 2026.
 
 ## Completed Release Gates
 
@@ -19,16 +19,21 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 5. Studio preparation followed by ownership transfer retained the verified Cloud project and customer-owned Form workflow.
 6. Public managed fulfilment replaced the closed named-buyer pilot assumption.
 7. The support boundary and first-release personal Gmail eligibility are defined.
-8. The initial $19 self-service price, internal pricing-review trigger and first revenue target are approved.
+8. The initial self-service price, standard price, assisted-setup price and first revenue target are approved.
+9. The Selar store, Service listing, corrected product image, Software and Tech category, Data & Analytics subcategory and stable product URL are live.
+10. Fixed UGX 70,000 and USD 19 prices are live, with currency switching enabled.
+11. Required personal Gmail and delivery acknowledgement fields are live at checkout.
+12. Selar terms, privacy and refunds pages are live. No shipping policy is used for the manually delivered digital service.
+13. The Quick Start Buyer Guide and linked User Manual passed the zero-value post-purchase redirect test.
+14. The zero-value order recorded the required fields and triggered both the buyer receipt and seller notification.
+15. The managed-fulfilment rehearsal passed support preparation, standard-project association, ownership transfer, buyer consent, Form setup, six-fixture publication, one result approval, output verification and Studio access removal.
 
 ## Open Commercial Gates
 
-1. Configure branded outbound sending through `support@freydigitalstudio.com`.
-2. Qualify Gumroad using the Director's real identity, Uganda residence, tax details and legitimate US bank payout account.
-3. Confirm checkout fields for the purchase email, personal Gmail delivery address, account acknowledgement and applicable terms.
-4. Complete the Delivery Pack, licence, refund terms, screenshots, manual export and fulfilment checklist.
-5. Rehearse preparation, standard-project association, transfer, support removal and customer setup from order to independent operation.
-6. Obtain the Director's explicit publish or reschedule decision.
+1. Complete the clean release branch and final corrections to the approved local landing page.
+2. Obtain Director feedback and explicit approval before deploying the page to the stable verified route.
+3. Begin measured inbound discovery through one relevant channel at a time after the approved page is live.
+4. When a real paid order occurs, complete any resulting KYC and verify settlement and payout.
 
 ## Release Timeline
 
@@ -36,16 +41,17 @@ The 28 July commercial gate approved public managed fulfilment. Product 001 may 
 |---|---|---|
 | 25 July 2026 | Google OAuth approval | External verification closed without an Apps Script, Form, scope, OAuth-client or Cloud-project change. |
 | 28 to 29 July 2026 | Commercial architecture and record reconciliation | Public managed fulfilment, personal Gmail eligibility, support boundary and the revised commercial sequence are recorded. |
-| 30 July 2026 | Pricing and offer architecture | Completed. Launch one self-service product at $19. Review the price after 10 completed, non-refunded purchases without promising an increase to buyers. |
-| 31 July 2026 | Gumroad qualification | Create or inspect the seller configuration, use truthful identity and tax information, test the US bank payout option and record every unresolved compliance or payout condition. Do not publish an incomplete listing. |
-| 7 August 2026 | Delivery Pack and public-safe demo QA | Manual, screenshots, licence, refund terms, checkout wording, support terms and product-page claims agree with the verified product. |
-| 14 August 2026 | Managed-fulfilment rehearsal | Rehearse the order record, fresh delivery copy, standard Cloud project, ownership request, buyer setup instructions, Studio access removal and delivery evidence. Do not use the working master as the buyer file. |
-| 21 August 2026 | Public offer gate | Publish or reschedule based on checkout, payout, packaging, outbound support and fulfilment evidence. |
-| 24 to 26 August 2026 | Launch content | Draft, approve and publish only the ready channels. The owned product page remains the permanent destination and Gumroad is the first checkout candidate. |
-| 31 August 2026 | Early market-signal review | Record reach where available, checkout starts, purchases, enquiries, objections, refunds and support incidents. Select at most two offer or channel variables to test next. |
+| 30 July 2026 | Pricing and offer architecture | Completed. The first 10 buyers receive a $19 launch price. The planned standard self-service price is $29. Assisted setup is a separate $79 offer. |
+| 8 August 2026 | Selar offer setup | Completed. The store, Service listing, UGX and USD prices, legal pages, checkout fields, corrected image and stable URL are live. |
+| 11 August 2026 | Zero-value checkout rehearsal | Completed. Order recording, required data, buyer receipt, seller notification and the Quick Start redirect passed. Paid settlement was not tested. |
+| 11 August 2026 | Fresh delivery-file sanitation | Completed. A rehearsal copy was reduced to the approved clean 15-sheet structure without changing the working master. |
+| 17 August 2026 | Managed-fulfilment rehearsal | Completed. The approved sequence retained the verified identity, created the buyer-owned Form, processed a result and ended with buyer sole ownership. |
+| When a real paid order occurs | Selar settlement qualification | Complete any required KYC and confirm actual payout before treating Selar settlement as dependable. This is an event-driven gate, not a scheduled dependency. |
+| 27 August 2026 | Inbound discovery preparation | Prepare the public landing-page brief, reusable listing pack and authentic screenshot requirements without publishing or buying promotion. |
+| 31 August 2026 | Landing-page release review and repository reconciliation | Review the local candidate, resolve release-package integrity, prepare a clean PR and hold deployment for Director approval. No market-signal review is due before approved traffic begins. |
 | 14 September 2026 | Commercial conversion decision | Use sufficient market evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
 
-Calendar event descriptions contain the relevant runbook and canonical Product 001 record links.
+Any Calendar event descriptions should link back to this release plan and the canonical Product 001 records.
 
 ## Pricing And Market Comparison
 
@@ -63,24 +69,25 @@ The free alternatives set a strong buyer expectation. Product 001 therefore begi
 
 ### Tested Price Hypotheses
 
-Gumroad's current direct-link fee is 10 percent plus $0.50 per transaction. Gumroad Discover sales use a 30 percent fee. The estimates below exclude any later payout or currency-conversion cost.
+The live Selar prices are UGX 70,000 and USD 19. Platform charges, payout deductions and currency-conversion effects remain unverified until a real paid transaction settles. Gross prices are therefore the only current proceeds evidence.
 
-| Price | Direct-link proceeds | Discover proceeds | Decision |
-|---:|---:|---:|---|
-| $9 | $7.60 | $6.30 | Rejected. Managed fulfilment and even one support interaction would consume too much of the proceeds. |
-| $19 | $16.60 | $13.30 | Approved initial launch price. Ten qualifying purchases trigger an internal review rather than an automatic increase. |
-| $29 | $25.60 | $20.30 | Retained as a future review hypothesis, not an approved increase or buyer-facing promise. |
+| Price | Decision |
+|---:|---|
+| $9 | Rejected. Managed fulfilment and even one support interaction would consume too much of the gross amount. |
+| $19 | Live launch price for the first 10 paid buyers. This prioritises evidence and buyer learning over immediate margin. |
+| UGX 70,000 | Live local-currency price paired with the USD 19 launch offer. |
+| $29 | Planned standard price after the first 10 paid buyers, subject to actual buyer, settlement, fulfilment and support evidence. |
 
-The first launch has one purchase option only. Assisted setup is not advertised or sold through the initial Gumroad listing. Gumroad's [service policy](https://gumroad.com/help/article/70-can-i-sell-services) prohibits installation and technical-support services, so any future paid service requires a clearly permitted scope and separate approval before it is offered.
+Assisted setup is a separate $79 offer and must not be implied in the self-service price. Its exact service checklist remains part of packaging. Custom implementation remains separately scoped and quoted.
 
-The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. Ten completed, non-refunded purchases trigger the internal pricing review. Test purchases, cancelled orders and refunded purchases do not count. Gumroad's Sales dashboard and product-specific sales CSV provide the purchase record. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
+The first revenue signal is three independent paid buyers, equal to $57 gross at the launch price. The full initial cohort target is 10 paid buyers, equal to $190 gross. Weak sales do not prove that price is wrong unless the offer has first received sufficient relevant exposure.
 
-The working licence boundary is one purchasing organisation using the product for its own competitions. Its authorised organisers may operate the files. Resale, redistribution and sharing blank delivery copies outside that organisation are not permitted. Final licence language remains a Delivery Pack gate.
+The working licence boundary is one purchasing organisation using the product for its own competitions. Its authorised organisers may operate the files. Resale, redistribution and sharing blank delivery copies outside that organisation are not permitted. The live Selar listing and Terms and Conditions state this boundary.
 
 ## Public Managed-Fulfilment Flow
 
-1. A buyer purchases through the selected checkout and supplies a personal Gmail delivery address.
-2. The checkout immediately provides the Delivery Pack and order reference.
+1. A buyer purchases through Selar and supplies a personal Gmail delivery address.
+2. Selar immediately redirects the buyer to the Quick Start Buyer Guide. The receipt provides the order evidence, and the guide links to the User Manual and explains the remaining delivery steps.
 3. The Studio prepares a fresh workbook, associates the verified standard Cloud project and completes the fulfilment checklist.
 4. The Studio shares the workbook and requests ownership transfer.
 5. The buyer accepts ownership, authorises the verified application and runs Set Up Result Form.
@@ -90,7 +97,7 @@ The target delivery promise is within one business day after a complete eligible
 
 ## Packaging Boundary
 
-The v0.1.0 self-service offer contains a prepared workbook, customer-created Result Form workflow, Apps Script automation, Delivery Pack and User Manual. It does not include competition administration, data entry, custom formulas, redesign, unsupported formats, account recovery, deliberate damage, unlimited training or guaranteed feature development.
+The v0.1.0 self-service offer contains a prepared workbook, customer-created Result Form workflow, Apps Script automation, Quick Start Buyer Guide and User Manual. Selar also exposes the applicable terms, privacy and refunds pages. The offer does not include competition administration, data entry, custom formulas, redesign, unsupported formats, account recovery, deliberate damage, unlimited training or guaranteed feature development.
 
 Standard email support covers delivery and setup difficulty, reproducible product defects, comments and feature-request intake for seven calendar days after delivery. The response target is within two business days. Feature requests are considered rather than promised. Temporary support access follows the privacy and retention boundary in D038.
 
@@ -98,9 +105,9 @@ Guided setup and custom implementation are separate future offers. They must not
 
 ## Checkout And Payment Boundary
 
-Gumroad is the leading first checkout candidate, not the permanent product home. The owned product page remains the public destination and Google Drive remains the ownership-delivery layer.
+Selar is the live first checkout channel. It is not the owner of the delivery architecture. Selar records the order and provides immediate buyer guidance. Google Drive remains the workbook ownership-delivery layer.
 
-The Director's active US bank account improves Gumroad payout viability. It does not change the Director's residence or remove seller identity, tax, beneficial-owner or platform eligibility checks. Do not use a false US address or identity. Complete a real payout test before treating the route as dependable. Regional options such as Flutterwave, Pesapal or direct bank payment may be added later without changing the workbook architecture.
+Ugandan bank details were accepted and confirmed by email. Selar states that KYC occurs after the first sale and before payout. The zero-value rehearsal did not trigger KYC and did not test payment collection, transaction fees, settlement or payout. Do not treat Selar settlement as dependable until a real paid transaction, any required KYC and a successful payout are complete.
 
 ## Technical Freeze
 
@@ -108,4 +115,4 @@ Do not blank or distribute the working master. Preserve v0.1.5.9, the Result For
 
 ## Next Release Decision
 
-Complete Gumroad qualification next. Then complete outbound support, packaging and the managed-fulfilment rehearsal. Public release requires the Director to confirm that checkout, payout, support, packaging and delivery evidence are acceptable.
+Complete the clean release branch, verify the corrected local landing page and obtain Director approval. After approval, deploy to the existing stable route and verify production behaviour before beginning measured inbound discovery through one relevant channel at a time. Qualify payment settlement, KYC if requested and payout when a real paid order occurs. The Director retains approval authority for each publication destination and any paid promotion.
