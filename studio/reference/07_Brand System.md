@@ -9,7 +9,7 @@
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
 **Authority:** High
-**Last Updated:** June 2026
+**Last Updated:** August 2026
 **Next Review:** Annual or after a major rebrand
 
 ---
@@ -342,7 +342,7 @@ Consistency should exist across:
 * documentation
 * GitHub repositories
 * websites
-* Gumroad pages
+* checkout pages
 * screenshots
 * PDFs
 * videos
@@ -423,7 +423,7 @@ Major branding changes should be documented through an ADR.
 
 # Change Log
 
-## 1.0.0 — June 2026
+## 1.0.0 - June 2026
 
 Initial release.
 

@@ -1,7 +1,7 @@
 # Product Decisions
 
 Product: Football Competition Results & Standings Manager  
-Last updated: 29 July 2026
+Last updated: 31 August 2026
 
 ## D001 - Football-first self-service scope
 
@@ -210,6 +210,8 @@ Decision: prepare each pilot delivery workbook through the support account, asso
 
 Evidence: on 20 July 2026, the transferred workbook retained the standard Cloud project and passed consent, Form creation, submission, approval, isolation and protection checks. A customer-created File > Make a copy received a default Cloud project instead.
 
+Additional evidence: on 11 August 2026, a clean rehearsal copy prepared under the buyer account again used a default project and showed the unverified `Competitions` identity. The consent attempt stopped before permissions were granted. This confirms the required order: support-owned preparation, standard-project association, then ownership transfer.
+
 Consequence: direct self-service copying is not the approved release route. A Google Sheets Editor add-on remains a possible future distribution architecture only after pilot demand justifies the extra build, review and support burden.
 
 ## D037 - Branding passed and data-access verification entered review
@@ -250,19 +252,21 @@ Evidence: the Google reviewer reply had to be sent from the personal receiving a
 
 Consequence: establish the sending mailbox, access controls, recovery, SPF, DKIM, DMARC and retention procedure as shared Studio infrastructure. Do not change the active OAuth support contact during review unless Google requests it.
 
+Current status: branded outbound sending through `support@freydigitalstudio.com` was later verified. The original distinction remains valid as a control: inbound routing alone is not evidence of outbound readiness.
+
 ## D042 - Google OAuth approval closes the external verification gate
 
 Decision: record Google approval on 25 July 2026 as the closure of the external verification gate. Preserve the approved application name, homepage URL, privacy URL, four scopes, OAuth client, standard Cloud project and v0.1.5.9 Apps Script baseline unless a commercial requirement exposes a workflow-impact reason.
 
 Evidence: Google confirmed OAuth verification approval after the 24 July privacy correction and reviewer response. The approval required no Apps Script, Result Form, scope, OAuth client or Cloud-project change.
 
-Consequence: move Product 001 into commercialisation. The open gates are branded outbound support, pricing, payment qualification, packaging, fulfilment rehearsal, market validation and the Director release decision.
+Consequence: move Product 001 into commercialisation. At the time of this decision, the open gates were branded outbound support, pricing, payment qualification, packaging, fulfilment rehearsal, market validation and the Director release decision. Outbound support, pricing, checkout, packaging and fulfilment were completed later; paid settlement qualification remains event-driven.
 
 ## D043 - Public managed fulfilment is the commercial release model
 
 Decision: Product 001 may be listed publicly while every paid order is fulfilled through a Studio-prepared workbook and customer ownership transfer. Public availability does not require a closed group of named pilot customers.
 
-Consequence: the checkout platform handles payment, order evidence and immediate Delivery Pack access. Google Drive handles workbook ownership. The Studio does not distribute the working master or instruct buyers to use File > Make a copy.
+Consequence: the checkout platform handles payment, order evidence and immediate buyer guidance. Google Drive handles workbook ownership. The Studio does not distribute the working master or instruct buyers to use File > Make a copy.
 
 ## D044 - Personal Gmail is the first-release ownership requirement
 
@@ -275,6 +279,8 @@ Consequence: checkout must collect a required personal Gmail delivery address an
 Decision: qualify Gumroad as the first public checkout candidate because the Director has a legitimate active US bank account available for payouts. Keep the owned product page as the permanent product destination and Google Drive as the ownership-delivery layer.
 
 Consequence: Gumroad onboarding must use the Director's real identity, residence, tax and beneficial-owner information. The US bank account improves payout viability but does not change the seller's country or remove compliance checks. Complete a real payout test before treating Gumroad as dependable. Preserve regional payment alternatives for later use.
+
+Status: superseded as the first-checkout choice by D049. The durable channel-separation principle remains active.
 
 ## D046 - Self-service support boundary
 
@@ -290,8 +296,44 @@ Consequence: record product-page reach where available, checkout starts, complet
 
 ## D048 - Low-risk launch pricing tests buyer demand
 
-Decision: launch one Product 001 self-service offer at $19. Keep the first 10 completed, non-refunded purchases as an internal pricing-review trigger rather than a buyer-facing promise. Retain $29 as a future hypothesis only. Do not advertise an assisted setup offer during the initial launch.
+Decision: offer Product 001 to the first 10 paid buyers at $19, then use $29 as the planned standard self-service price. Keep assisted setup separate at $79. Custom implementation remains separately scoped and quoted.
 
-Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while preserving a usable direct-sale contribution after Gumroad fees.
+Evidence: relevant buyer alternatives range from free spreadsheets and free hosted tournament tools to Tournify Pro at $79 per year and Competize Small Tournaments at EUR 19 per month. Product 001 has a narrower customer-owned workflow and no public hosted platform. It has no paid-buyer history, reviews or established product brand. A $19 launch price reduces buyer risk while leaving room to measure real fulfilment, support and platform costs.
 
-Consequence: the first revenue signal is three independent paid buyers. Gumroad's Sales dashboard and product-specific CSV provide the purchase count. Test purchases, cancelled orders and refunded purchases do not count. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution. Any future paid service requires a permitted, bounded scope and separate approval.
+Consequence: the first revenue signal is three independent paid buyers. The full initial cohort target is 10 paid buyers. Pricing may change only from buyer, conversion, support and fulfilment evidence. Weak sales are not attributed to price until the offer receives sufficient relevant exposure. The working licence covers one purchasing organisation using the product for its own competitions and prohibits resale or redistribution.
+
+## D049 - Selar is the first live checkout channel
+
+Date: 11 August 2026
+
+Problem: Product 001 required a checkout available to Ugandan sellers that could collect buyer eligibility data, provide immediate buyer guidance and support the approved manual-delivery architecture.
+
+Decision: use Selar as the first live checkout channel. List the product as a manually delivered Service at UGX 70,000 and USD 19. Keep Google Drive as the ownership-delivery layer.
+
+Evidence: the Frey Digital Studio store, product listing, corrected product image, required checkout fields, terms, privacy and refunds pages are live. Selar accepted the Studio's Ugandan bank details and confirmed them by email.
+
+Consequence: D045 is superseded as the first-checkout choice. Selar KYC, a real paid transaction, platform deductions and successful payout remain open until completed. The checkout channel does not change the verified Google delivery architecture.
+
+## D050 - Immediate buyer guidance uses the Quick Start Buyer Guide
+
+Date: 11 August 2026
+
+Problem: a manually prepared workbook cannot be delivered instantly, but the buyer still needs useful and accurate content immediately after checkout.
+
+Decision: redirect successful Selar orders to the support-owned public Quick Start Buyer Guide. Keep it concise, address the buyer directly, link to the canonical User Manual and state the one-business-day delivery and ownership-transfer steps.
+
+Evidence: zero-value order `S12T8H33F6636` redirected successfully, and the buyer receipt and seller sale notification were received.
+
+Consequence: the Quick Start Buyer Guide is the immediate content layer. It is not the usable workbook and must not imply instant workbook delivery. The listing and required checkout acknowledgement must retain the same delivery boundary.
+
+## D051 - Zero-value checkout evidence does not qualify paid settlement
+
+Date: 11 August 2026
+
+Problem: a 100 percent coupon can test the buyer journey without charging the Director, but it cannot prove payment collection or payout.
+
+Decision: accept the zero-value rehearsal as evidence for order recording, required checkout data, buyer receipt, seller notification and post-purchase redirect only.
+
+Evidence: Selar recorded the USD 19 product, a USD 19 coupon discount and a USD 0 total. No KYC prompt appeared during the order.
+
+Consequence: payment method success, transaction fees, KYC, settlement and payout remain unverified. Do not describe the Selar payout route as dependable until a real paid transaction completes those gates.

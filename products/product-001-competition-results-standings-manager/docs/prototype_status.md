@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Working prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
-Last verified: 29 July 2026
+Status: Live Selar offer, checkout and managed-fulfilment rehearsals passed; landing-page release review in progress
+Last verified: 31 August 2026
 
 ## Verified Product State
 
@@ -79,7 +79,7 @@ The test also found that Google Sheets did not visibly select the detected Afric
 ## Remediation Foundation
 
 - `freydigitalstudio.com` is registered as infrastructure while the final public brand remains undecided.
-- `support@freydigitalstudio.com` inbound routing is verified. Branded outbound sending remains a pre-support Studio gate.
+- `support@freydigitalstudio.com` inbound routing and branded outbound sending are verified.
 - A dedicated support Google account owns the new canonical User Manual.
 - The manual is public read-only and passed an unsigned access check.
 - The master workbook Start Here link now opens the new manual.
@@ -91,16 +91,28 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - The 28 July commercial gate approved public managed fulfilment rather than a closed named-buyer pilot.
 - The buyer must provide a personal Gmail address, accept ownership, authorise the verified application and run Set Up Result Form. No code or manifest editing is required.
 
+## Commercial And Fulfilment Evidence
+
+- Frey Digital Studio is live on Selar at `https://selar.com/m/frey_digital_studio`.
+- The Service listing is live at `https://selar.com/football-competition-manager` for UGX 70,000 and USD 19. Currency switching remains enabled.
+- The listing uses Software and Tech as its category and Data & Analytics as its subcategory.
+- Terms, privacy and refunds pages are live. No shipping policy is used because the product is manually delivered digitally.
+- Checkout requires a personal Gmail delivery address and acknowledgement of the one-business-day delivery and ownership-transfer conditions.
+- The support-owned Quick Start Buyer Guide is the verified post-purchase redirect and links to the canonical User Manual.
+- A zero-value order on 11 August 2026 recorded the checkout fields, issued the buyer receipt, issued the seller notification and opened the Quick Start Buyer Guide.
+- Ugandan bank details were accepted and confirmed by email. Selar KYC, a paid transaction and successful payout remain unverified.
+- A fresh rehearsal workbook was cleaned to the approved 15-sheet customer structure without changing the working master.
+- The rehearsal then exposed a sequence error: the buyer-owned copy used a default Apps Script project and showed the unverified `Competitions` consent identity. The attempt stopped before permissions were granted. This is not a regression in the verified application. It confirms that the Studio must associate standard Cloud project `364546476326` while the support account owns the prepared copy, before transferring ownership.
+- The corrected 17 August rehearsal passed the required sequence: support-owned preparation, standard-project association, ownership transfer, verified consent, buyer Form setup, fixture publication, result approval, output checks and Studio access removal.
+
 ## Active Blockers
 
-1. Complete exact-market pricing research and choose the one-time self-service test price.
-2. Qualify Gumroad under the Director's real identity, Uganda residence, tax information and legitimate US bank payout details.
-3. Configure branded outbound sending for `support@freydigitalstudio.com` before customer support begins.
-4. Complete the Delivery Pack, licence, refund terms, screenshots, checkout fields and fulfilment checklist.
-5. Rehearse the approved preparation and ownership-transfer process without using the working master as the buyer file.
-6. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
-7. Make an explicit publish or reschedule decision after checkout, packaging, support and fulfilment gates pass.
+1. Complete the clean release branch, final page corrections and review of the public landing page.
+2. Deploy only after Director approval, then verify the stable route, privacy route, Selar links and support route in production.
+3. Begin measured inbound discovery only after Director approval of the live page and each publication destination.
+4. Complete one real paid Selar transaction, any resulting KYC and a successful payout before treating settlement as dependable.
+5. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
 
 ## Next Action
 
-Preserve the verified application while completing pricing, Gumroad qualification, outbound support identity, packaging and a managed-fulfilment rehearsal. The offer may be public once those gates and the Director decision pass. Market validation will come from measured public exposure, purchases, enquiries, objections and support evidence rather than an assumed group of friends.
+Preserve the verified application and working master. Implement and locally verify the approved public landing page with authentic workflow screenshots, then request Director approval before deployment. Keep Selar KYC and successful payout open until a real paid order proves them.

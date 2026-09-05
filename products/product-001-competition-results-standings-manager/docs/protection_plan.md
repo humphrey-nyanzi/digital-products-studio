@@ -4,7 +4,7 @@ Owner: Humphrey Nyanzi
 Product: Football Competition Results & Standings Manager  
 Status: Ordinary-user protection verification passed, support data controls prepared
 Repository document version: 0.5.0
-Last reconciled: 2026-07-24
+Last reconciled: 2026-08-31
 
 ## Purpose
 
@@ -39,7 +39,7 @@ The July UX pass hides most internal tabs and several helper columns. Hiding is 
 
 On 18 July 2026, an ordinary-user account completed setup, fixture creation, Form submission, approval and reporting in its own workbook. Editing a protected automatic area was blocked. The protection gate therefore passed for the tested customer workflow.
 
-This result does not by itself approve public release. The Google privacy correction and OAuth verification are complete. Packaging, outbound support identity, support boundaries, buyer testing and the Director release decision remain open.
+This result did not by itself approve public release. The Google privacy correction, OAuth verification, managed-fulfilment rehearsal and branded outbound support verification were completed later. Director approval remains required for new publication and promotion actions.
 
 ## Controlled Delivery And Support Access
 

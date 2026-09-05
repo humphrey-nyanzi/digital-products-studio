@@ -9,7 +9,7 @@
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
 **Authority:** High
-**Last Updated:** June 2026
+**Last Updated:** August 2026
 **Next Review:** Quarterly
 
 ---
@@ -97,7 +97,7 @@ Do not skip stages without documented justification.
 
 ---
 
-# Stage 1 — Idea
+# Stage 1 - Idea
 
 Objective:
 
@@ -118,7 +118,7 @@ Deliverables:
 
 ---
 
-# Stage 2 — Research
+# Stage 2 - Research
 
 Objective:
 
@@ -140,7 +140,7 @@ Deliverables:
 
 ---
 
-# Stage 3 — Requirements
+# Stage 3 - Requirements
 
 Objective:
 
@@ -162,7 +162,7 @@ Deliverables:
 
 ---
 
-# Stage 4 — Planning
+# Stage 4 - Planning
 
 Objective:
 
@@ -185,7 +185,7 @@ Deliverables:
 
 ---
 
-# Stage 5 — Design
+# Stage 5 - Design
 
 Objective:
 
@@ -210,7 +210,7 @@ Deliverables:
 
 ---
 
-# Stage 6 — Development
+# Stage 6 - Development
 
 Objective:
 
@@ -228,7 +228,7 @@ Work should be tracked through GitHub Issues.
 
 ---
 
-# Stage 7 — Internal QA
+# Stage 7 - Internal QA
 
 Objective:
 
@@ -248,7 +248,7 @@ Critical issues should be resolved before proceeding.
 
 ---
 
-# Stage 8 — Packaging
+# Stage 8 - Packaging
 
 Objective:
 
@@ -268,7 +268,7 @@ The package should feel complete and professional.
 
 ---
 
-# Stage 9 — Release Candidate
+# Stage 9 - Release Candidate
 
 Objective:
 
@@ -286,7 +286,7 @@ The Studio Director determines whether the product proceeds to release.
 
 ---
 
-# Stage 10 — Public Release
+# Stage 10 - Public Release
 
 Objective:
 
@@ -294,7 +294,7 @@ Publish the product.
 
 Possible distribution channels include:
 
-* Gumroad
+* Selar or another approved checkout platform
 * GitHub Releases
 * Studio website
 * Direct client delivery
@@ -307,7 +307,7 @@ Every release should include:
 
 ---
 
-# Stage 11 — Maintenance
+# Stage 11 - Maintenance
 
 Objective:
 
@@ -325,7 +325,7 @@ Released products remain active Studio assets.
 
 ---
 
-# Stage 12 — Iteration
+# Stage 12 - Iteration
 
 Objective:
 
@@ -426,7 +426,7 @@ These metrics guide future development.
 
 # Change Log
 
-## 1.0.0 — June 2026
+## 1.0.0 - June 2026
 
 Initial release.
 

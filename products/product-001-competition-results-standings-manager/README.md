@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Working prototype v0.1.0, Google OAuth verification approved, public managed fulfilment approved
-Last verified: 29 July 2026
+Status: Live Selar offer, checkout and managed-fulfilment rehearsals passed; public landing-page release review in progress
+Last verified: 31 August 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -60,9 +60,9 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 ## Public Support Foundation
 
-The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` receives routed mail successfully and is attached to the dedicated product-support Google account. Branded outbound sending is not yet configured, so customer support must not begin until the Studio can send and retain messages through the support identity.
+The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` receives routed mail successfully, branded outbound sending has been verified and the address is attached to the dedicated product-support Google account.
 
-The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs.
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs. The local release candidate prepares redirects from the duplicate root routes to these product-specific routes; deployment remains subject to Director approval.
 
 Google verified and published the Product 001 branding on 20 July 2026. On 23 July 2026, Google paused the data-access review because the public privacy policy did not specify concrete data protection mechanisms. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here notice and canonical User Manual were aligned, the unchanged application was returned to review and a direct response was sent in the Google review thread. Google approved OAuth verification on 25 July 2026. The verified app name, homepage URL, privacy URL, scopes, OAuth client and Cloud project remained unchanged.
 
@@ -72,8 +72,8 @@ Product 001 may be listed publicly while each paid order is fulfilled through a 
 
 The approved first-release flow is:
 
-1. The buyer purchases through the selected checkout and supplies a personal Gmail delivery address.
-2. The checkout immediately provides a useful Delivery Pack containing the User Manual, fulfilment steps, licence, privacy and support information.
+1. The buyer purchases through Selar and supplies a personal Gmail delivery address.
+2. Selar immediately redirects the buyer to the Quick Start Buyer Guide, which links to the User Manual and explains the remaining delivery steps.
 3. The Studio creates a fresh delivery workbook, associates its bound script with standard Cloud project `364546476326`, verifies the release checklist and shares it with the buyer.
 4. The Studio requests ownership transfer.
 5. The buyer accepts ownership, authorises the verified application and runs Set Up Result Form.
@@ -81,9 +81,11 @@ The approved first-release flow is:
 
 Direct File > Make a copy is not the release route because it creates a default Cloud project instead of retaining the verified application identity. The first public offer supports personal Gmail ownership only. Work, school and organisation-managed Google accounts require a separately tested delivery route.
 
-Gumroad is the leading first checkout candidate because the Director has a legitimate active US bank account available for payouts. Gumroad remains a channel rather than the business. Seller identity, tax, country and beneficial-owner information must remain accurate, and a real payout test is required before the Studio depends on the route.
+Selar is the live first checkout route. The product is listed as a manually delivered Service at [selar.com/football-competition-manager](https://selar.com/football-competition-manager) for UGX 70,000 or USD 19. The checkout requires a personal Gmail delivery address and acknowledgement of the one-business-day delivery and ownership-transfer conditions. Ugandan bank details were accepted and confirmed by email. Selar states that KYC occurs after the first sale and before payout, so KYC, a paid transaction and successful settlement remain open qualification gates.
 
-The initial launch has one self-service product at $19. Ten completed, non-refunded purchases trigger an internal pricing review, but no future increase is promised to buyers. The first market signal is three independent paid buyers. Assisted setup is not part of the initial Gumroad offer. Price or service changes require buyer, conversion, fulfilment, compliance and support evidence rather than intuition alone.
+The support-owned [Quick Start Buyer Guide](https://docs.google.com/document/d/1zR4JrA58GEW4FIQFqgC8NPJ220ucrjHH-8uk1KDtSao/edit) is public read-only and configured as the post-purchase redirect. A zero-value coupon rehearsal on 11 August 2026 confirmed the order flow, required checkout data, buyer receipt, seller notification and redirect. It did not test payment collection, transaction fees, KYC or payout.
+
+The approved launch price is $19 for the first 10 paid buyers. The planned standard self-service price is $29. Assisted setup is a separate $79 offer, and custom implementation remains separately scoped and quoted. The first market signal is three independent paid buyers. Price changes require buyer, conversion, fulfilment and support evidence rather than intuition alone.
 
 ## Key Documents
 
@@ -93,8 +95,9 @@ The initial launch has one self-service product at $19. Ten completed, non-refun
 - [Google Form Specification](docs/google_form_spec.md)
 - [QA Plan](docs/qa_plan.md)
 - [Release Plan](docs/release_plan.md)
+- [Public Landing Page Brief And Listing Pack](docs/public_landing_page_and_listing_pack.md)
 - [Decisions](docs/decisions.md)
 
 ## Next Action
 
-Qualify the Gumroad seller and payout route, configure a true Studio outbound support identity and finish the Delivery Pack. Then rehearse one complete managed fulfilment without changing the verified Apps Script or OAuth configuration. Public release remains conditional on packaging, checkout, support, fulfilment and Director gates.
+Review the redesigned local landing-page release candidate and the clean release branch before any deployment. The page needs Director feedback, final approval and post-deployment verification at the existing stable routes and root redirects. Then begin measured inbound discovery through one relevant channel at a time. A real paid Selar transaction, KYC if requested, settlement and payout remain event-driven qualification gates.
