@@ -1,8 +1,8 @@
 # Public Landing Page Brief And Listing Pack
 
 Document: Public Landing Page Brief And Listing Pack
-Status: Implemented locally, release corrections in progress
-Version: 0.2.1
+Status: Redesigned locally after approved release audit, awaiting Director review
+Version: 0.3.0
 Owner: Humphrey Nyanzi
 Authority: Product document
 Last Updated: 31 August 2026
@@ -33,7 +33,7 @@ Before directing new traffic to the offer:
 
 ## Implementation Status
 
-The approved landing-page brief has been implemented locally at `site/products/football-competition-manager/index.html`. The verified public route has not been changed or deployed.
+The approved landing-page brief has been redesigned locally at `site/products/football-competition-manager/index.html`. The verified public route has not been changed or deployed.
 
 Four authentic workflow screenshots are stored in `site/products/football-competition-manager/assets/`:
 
@@ -42,9 +42,9 @@ Four authentic workflow screenshots are stored in `site/products/football-compet
 - `result-review.webp`;
 - `standings-reports.webp`.
 
-The corrected square product cover is stored beside them as `product-cover.webp` and is used as the product identifier rather than workflow evidence.
+The corrected square product cover is stored beside them as `product-cover.webp`. It is retained for Selar and social-sharing metadata, not the public-page header or workflow evidence.
 
-The local page has been checked at desktop and mobile widths. The dense workflow screenshots include direct full-size links for constrained screens. Director review and explicit deployment approval remain required before the verified public route changes.
+The 31 August release audit approved a calmer, evidence-led revision: text-only header, standings-and-reports hero proof, three-step workflow evidence, a factual privacy summary and a single green closing action. The release candidate includes Cloudflare redirects from the duplicate root routes to the product-specific canonical routes. These redirects have not been deployed. The local page has been checked at desktop and mobile widths, and dense workflow screenshots include direct full-size links for constrained screens. Director review and explicit deployment approval remain required before any verified public route changes.
 
 ## Positioning Foundation
 
@@ -109,61 +109,59 @@ Keep the verified product route stable:
 
 `https://freydigitalstudio.com/products/football-competition-manager/`
 
-The current page supports the verified Google application, privacy information and customer help. Expand it carefully without changing the verified route, product identity, privacy link or support link.
+The current page supports the verified Google application, privacy information and customer help. Keep the verified product route, product identity, privacy link and support link stable. On the next approved deployment, redirect `/` to the product route and `/privacy/` to the product privacy route so no public duplicate remains.
 
 ### Required page sequence
 
 #### 1. Hero
 
-Eyebrow:
+Context label:
 
-Football competition administration
+For football organisers
 
 Heading:
 
-Keep your football fixtures, results and standings in one controlled workflow
+Run fixtures, results and standings from one official record.
 
 Supporting copy:
 
-Create fixtures, collect match results through a connected Google Form, approve official outcomes and keep standings and reports current from one Google Sheets workbook.
+Create the fixture list, collect results in a connected Form and approve each score before it updates the table.
 
 Primary action:
 
-View pricing and order
+View the $19 offer
 
 Secondary action:
 
-See how it works
+See the workflow
 
 #### 2. Problem and outcome
 
 Heading:
 
-Move from scattered updates to one official competition record
+One record for the result that counts.
 
 Copy:
 
-When fixtures, result messages and standings live in separate places, corrections take longer and it becomes harder to confirm what is official. This system gives the competition organiser one structured path from schedule creation to approved results and current reports.
+When fixtures, result messages and standings live in separate places, corrections take longer and it becomes harder to confirm what is official. This workflow keeps the schedule, submitted results, review decisions and current reports connected.
 
 #### 3. Workflow
 
 Heading:
 
-From setup to official standings
+Prepare the schedule. Review the score. Publish the table.
 
 Steps:
 
-1. Add the competition, teams and venues.
-2. Generate a round-robin schedule or enter fixtures manually.
-3. Publish eligible fixtures to the connected Result Form.
-4. Review every submission and approve the official outcome.
-5. Check standings, reports and validation messages before publishing.
+1. Prepare fixtures with the generated schedule or manual entry.
+2. Collect eligible results in the connected Form and review the submitted score.
+3. Publish current standings after approval.
 
 #### 4. Best fit
 
 Heading:
 
-Designed for small football competitions
+Fit, delivery and ownership
 
 Best-fit buyers:
 
@@ -179,21 +177,7 @@ Not a fit for:
 - organisations that can only accept ownership through a work, school or organisation-managed Google account;
 - buyers seeking ongoing administration or custom development within the listed price.
 
-#### 5. What the buyer receives
-
-- A prepared Google Sheets competition workbook.
-- A guided workflow for creating the connected Google Result Form.
-- Fixture, result review, official results, standings, reports and validation sections.
-- A Quick Start Buyer Guide and detailed User Manual.
-- Standard email support for seven calendar days after delivery.
-
-#### 6. Delivery and ownership
-
-Heading:
-
-Prepared for your personal Gmail account
-
-Copy:
+#### 5. Delivery and ownership
 
 This is a manually prepared service, not an instant download. At checkout, you provide the personal Gmail address that should own the files. The workbook is prepared and transferred within one business day after a complete eligible order. You then accept ownership, authorise the verified Google application and create your Result Form through the guided setup.
 
@@ -201,18 +185,17 @@ Required notice:
 
 Work, school and organisation-managed Google accounts are not currently supported for ownership delivery.
 
-#### 7. Price and support
+#### 6. Price and support
 
 Price:
 
-- USD 19
-- UGX 70,000
+- USD 19 on the public website. Selar may offer local currency at checkout.
 
 Support copy:
 
 The purchase includes standard email support for delivery and setup difficulties, reproducible product defects, and feedback for seven calendar days after delivery. Responses are targeted within two business days. Competition administration, data entry, customisation and guaranteed feature development are not included.
 
-#### 8. Trust and privacy
+#### 7. Trust and privacy
 
 Required points:
 
@@ -222,11 +205,11 @@ Required points:
 - The application does not request full Google Drive access or account-wide Google Sheets access.
 - Link to the public privacy policy and User Manual.
 
-#### 9. Final action
+#### 8. Final action
 
 Heading:
 
-Ready to organise your next football competition?
+Start your next competition with one official record.
 
 Action:
 
@@ -238,15 +221,17 @@ You will need a personal Gmail account and must accept the ownership transfer af
 
 ### Page design requirements
 
-- Use a calm, spacious layout with short sections and clear descriptive headings.
-- Use the existing navy, green, white and gold product palette with accessible contrast.
-- Use the corrected square cover as the product identifier, not as evidence of the workflow.
+- Use a calm, capable and practical layout with shorter sections and clear descriptive headings.
+- Use navy as the evidence field, green as the action and ownership colour, white and cool grey as reading surfaces, and gold only for small details.
+- Use self-hosted Barlow Regular and SemiBold for reading copy, with Source Serif 4 SemiBold for headings. Retain the SIL Open Font Licenses beside the font files.
+- Use the corrected square cover only for Selar and social-sharing metadata, not in the page header.
 - Use authentic screenshots with realistic sample data for workflow evidence.
 - Avoid stock football photography, synthetic interface mock-ups and decorative dashboards.
-- Keep the primary Selar action visible near the top and after the delivery section.
+- Keep the primary Selar action near the top and repeat it once in the green closing section.
 - Make the delivery, account and support boundaries readable without opening another page.
 - Preserve the existing privacy, User Manual and support links.
 - Support mobile reading without hiding eligibility or delivery notices.
+- Do not use repeated all-caps kickers, equal card grids, coloured side stripes or divider-heavy scaffolding.
 
 ### Required evidence assets
 
@@ -263,6 +248,7 @@ Screenshot rules:
 - remove personal email addresses, order details and internal file identifiers;
 - show only the relevant part of each screen;
 - retain readable interface text at mobile and desktop display sizes, with a direct full-size view for dense screenshots on constrained screens;
+- make a dense screenshot itself the full-size link, with a zoom pointer, restrained hover scale and new-tab behaviour rather than visible link copy;
 - do not expose hidden response tabs, technical configuration or internal test labels.
 
 Optional demonstration:
@@ -459,6 +445,10 @@ Before using this pack on any public destination:
 - [Asset Map](../assets/template_map.md)
 
 ## Change Log
+
+### 0.3.0, 31 August 2026
+
+Recorded the approved release-audit redesign: canonical root-route redirects prepared for Cloudflare, a text-only header, standings-and-reports hero proof, a three-step evidence sequence, $19-only public price presentation, redesigned factual privacy page and root Product and Design contracts. The work remains local and awaits Director review, deployment approval and production verification.
 
 ### 0.2.1, 31 August 2026
 

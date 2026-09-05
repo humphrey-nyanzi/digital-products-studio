@@ -13,7 +13,7 @@ Last reconciled: 2026-08-31
 | Linked result Form | Google Forms, see `links.md` | Simplified status-based flow with per-copy ownership and verified response-tab privacy. |
 | Canonical user manual | Google Docs, see `links.md` | Support-owned, public Viewer access verified. Privacy, ownership and support-access guidance was updated and read back on 24 July 2026. |
 | Quick Start Buyer Guide | Google Docs, see `links.md` | Support-owned, public Viewer access verified and configured as the Selar post-purchase redirect. |
-| Product support site | Repository root `site/` and stable route `/products/football-competition-manager/` | Verified OAuth routes are unchanged. The approved landing page is implemented and tested locally, while the currently deployed public page remains unchanged pending Director review. |
+| Product support site | Repository root `site/` and stable route `/products/football-competition-manager/` | Verified OAuth routes are unchanged. The approved audit redesign is implemented and tested locally, with root-route redirects prepared but not deployed. |
 | Selar listing and legal pages | Selar, see `links.md` | Service listing, UGX and USD prices, product image, checkout fields, terms, privacy and refunds pages are live. |
 | Fulfilment folders | Google Drive, see `links.md` | Fulfilment System and Customer Deliveries folders are active. The first rehearsal order folder and clean workbook are retained as process evidence. |
 
@@ -33,7 +33,7 @@ The square product cover is a Studio-provided product asset. The four workflow i
 | User manual Google Doc | Canonical buyer instructions | Support-owned public Viewer copy is current and accessible. |
 | User manual Word export | Optional offline buyer reference | Not required for the current Selar redirect flow. Regenerate only if a later channel requires a file upload. |
 | Buyer quick-start guide | Short setup path | Current support-owned Google Doc is live and verified through the zero-value checkout redirect. |
-| Product image | Selar listing, store card and `site/products/football-competition-manager/assets/product-cover.webp` | The corrected square image is live on Selar and included locally as the landing-page product identifier. |
+| Product image | Selar listing, store card and `site/products/football-competition-manager/assets/product-cover.webp` | The corrected square image is live on Selar and used locally for social-sharing metadata, not the landing-page header. |
 | Public landing-page brief and listing pack | `docs/public_landing_page_and_listing_pack.md` | Canonical reusable positioning, copy, claim controls and asset requirements. Approved and implemented locally; publication still requires explicit Director approval. |
 | Authentic workflow screenshots | `site/products/football-competition-manager/assets/` | Four current WebP screenshots cover Create Fixtures, Result Form, Result Review and Standings and Reports. Personal account details and rehearsal labels are not exposed. |
 | Release checklist | Confirm package and support boundaries | Checkout, managed fulfilment, branded outbound support and local landing-page checks passed. Deployment review remains open, while paid settlement qualification is event-driven. |

@@ -84,6 +84,8 @@ digital-products-studio/
 │
 ├── archive/
 │
+├── PRODUCT.md
+├── DESIGN.md
 ├── README.md
 └── .gitignore
 ```
@@ -91,6 +93,10 @@ digital-products-studio/
 ---
 
 # Studio Documentation
+
+## Interface Contracts
+
+`PRODUCT.md` defines the public-interface purpose, audience, voice and accessibility target. `DESIGN.md` defines the current visual tokens and interface guardrails for the static site.
 
 ## Governance
 
@@ -254,7 +260,7 @@ Studio Version:
 
 Current Focus:
 
-Reconciling the Product 001 release candidate and repository records while the Director reviews the locally hosted landing page. Deployment, publication and paid-settlement qualification remain separately controlled.
+Reviewing the redesigned Product 001 release candidate, its canonical route redirects and its current design contracts. Deployment, publication and paid-settlement qualification remain separately controlled.
 
 ---
 

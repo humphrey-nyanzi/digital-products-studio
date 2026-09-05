@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-31T00:00:00+03:00",
+  "title": "Design System: Football Competition Results & Standings Manager",
+  "extensions": {
+    "colorMeta": {
+      "canvas": { "role": "neutral", "displayName": "Clear Canvas", "canonical": "#F6F8FA" },
+      "surface": { "role": "neutral", "displayName": "White Surface", "canonical": "#FFFFFF" },
+      "ink": { "role": "neutral", "displayName": "Record Ink", "canonical": "#102235" },
+      "navy": { "role": "primary", "displayName": "Evidence Navy", "canonical": "#0B1F33" },
+      "green": { "role": "primary", "displayName": "Working Green", "canonical": "#1F604A" },
+      "soft-green": { "role": "secondary", "displayName": "Soft Ownership Green", "canonical": "#E7F0EA" },
+      "gold": { "role": "tertiary", "displayName": "Measured Gold", "canonical": "#B8781E" },
+      "focus": { "role": "focus", "displayName": "Focus Orange", "canonical": "#A24A10" }
+    },
+    "motion": [
+      { "name": "state-change", "value": "160ms ease", "purpose": "Short visual feedback for links and buttons only." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "700px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single commercial action on a section.",
+      "html": "<a class=\"ds-button-primary\" href=\"#\">View the $19 offer</a>",
+      "css": ".ds-button-primary { display: inline-block; padding: 14px 20px; border-radius: 6px; background: #1F604A; color: #FFFFFF; font: 700 16px Aptos, Segoe UI, sans-serif; text-decoration: none; } .ds-button-primary:hover { background: #174A38; } .ds-button-primary:focus-visible { outline: 3px solid #A24A10; outline-offset: 3px; }"
+    },
+    {
+      "name": "Buyer Notice",
+      "kind": "card",
+      "description": "A factual eligibility or ownership message.",
+      "html": "<section class=\"ds-notice\"><strong>Personal Gmail account required</strong><p>Work, school and organisation-managed accounts are not currently supported.</p></section>",
+      "css": ".ds-notice { padding: 18px; border: 1px solid #BFD6C6; border-radius: 12px; background: #E7F0EA; color: #102235; font: 400 16px Aptos, Segoe UI, sans-serif; } .ds-notice strong { display: block; font-weight: 700; } .ds-notice p { margin: 6px 0 0; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The official match record.",
+    "keyCharacteristics": ["Clear proposition before detail.", "Real workflow screens as evidence.", "One primary action at a time."],
+    "dos": ["Use authentic product proof.", "State delivery and account eligibility plainly."],
+    "donts": ["Do not use generic sports SaaS decoration.", "Do not use repeated card grids or side stripes."]
+  }
+}
