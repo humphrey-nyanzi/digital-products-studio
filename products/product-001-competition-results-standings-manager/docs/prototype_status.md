@@ -1,8 +1,8 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Live Selar offer, checkout and managed-fulfilment rehearsals passed; landing-page release review in progress
-Last verified: 31 August 2026
+Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
+Last verified: 10 September 2026
 
 ## Verified Product State
 
@@ -104,15 +104,16 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - A fresh rehearsal workbook was cleaned to the approved 15-sheet customer structure without changing the working master.
 - The rehearsal then exposed a sequence error: the buyer-owned copy used a default Apps Script project and showed the unverified `Competitions` consent identity. The attempt stopped before permissions were granted. This is not a regression in the verified application. It confirms that the Studio must associate standard Cloud project `364546476326` while the support account owns the prepared copy, before transferring ownership.
 - The corrected 17 August rehearsal passed the required sequence: support-owned preparation, standard-project association, ownership transfer, verified consent, buyer Form setup, fixture publication, result approval, output checks and Studio access removal.
+- The Football Coaching Directory listing is public at `https://fcd.football/listing/football-competition-results-standings-manager`.
+- The `freydigitalstudio.com` Google Search Console Domain property is verified. The canonical product page is indexed over HTTPS and the canonical privacy page has an active indexing request.
 
 ## Active Blockers
 
-1. Complete the clean release branch, final page corrections and review of the public landing page.
-2. Deploy only after Director approval, then verify the stable route, privacy route, Selar links and support route in production.
-3. Begin measured inbound discovery only after Director approval of the live page and each publication destination.
-4. Complete one real paid Selar transaction, any resulting KYC and a successful payout before treating settlement as dependable.
-5. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
+1. Measure the FCD and Search Console baseline through 24 September 2026. Separate exposure, click-through and conversion evidence.
+2. Complete one real paid Selar transaction, any resulting KYC and a successful payout before treating settlement as dependable.
+3. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
+4. Add a sitemap only in a separately approved website-maintenance release.
 
 ## Next Action
 
-Preserve the verified application and working master. Implement and locally verify the approved public landing page with authentic workflow screenshots, then request Director approval before deployment. Keep Selar KYC and successful payout open until a real paid order proves them.
+Preserve the verified application and working master. Measure FCD visibility, Search Console impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections through 24 September 2026. Keep Selar KYC and successful payout open until a real paid order proves them.

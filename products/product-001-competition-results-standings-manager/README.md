@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Live Selar offer, checkout and managed-fulfilment rehearsals passed; public landing-page release review in progress
-Last verified: 31 August 2026
+Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
+Last verified: 10 September 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -62,7 +62,7 @@ The canonical Google Doc User Manual was reformatted on 15 July 2026. It now use
 
 The domain `freydigitalstudio.com` is registered as release infrastructure, not as a final public brand decision. `support@freydigitalstudio.com` receives routed mail successfully, branded outbound sending has been verified and the address is attached to the dedicated product-support Google account.
 
-The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs. The local release candidate prepares redirects from the duplicate root routes to these product-specific routes; deployment remains subject to Director approval.
+The support account owns the canonical User Manual. The manual is available to anyone with the link as Viewer, and the master workbook Start Here link now opens that support-owned document. Stable Product 001 routes are live at `/products/football-competition-manager/` and `/products/football-competition-manager/privacy/`. These routes let the domain root evolve into a future multi-product catalogue without changing Product 001 OAuth URLs. Root duplicate routes redirect to the canonical Product 001 routes.
 
 Google verified and published the Product 001 branding on 20 July 2026. On 23 July 2026, Google paused the data-access review because the public privacy policy did not specify concrete data protection mechanisms. On 24 July 2026, the expanded policy was deployed and verified, the master Start Here notice and canonical User Manual were aligned, the unchanged application was returned to review and a direct response was sent in the Google review thread. Google approved OAuth verification on 25 July 2026. The verified app name, homepage URL, privacy URL, scopes, OAuth client and Cloud project remained unchanged.
 
@@ -100,4 +100,4 @@ The approved launch price is $19 for the first 10 paid buyers. The planned stand
 
 ## Next Action
 
-Review the redesigned local landing-page release candidate and the clean release branch before any deployment. The page needs Director feedback, final approval and post-deployment verification at the existing stable routes and root redirects. Then begin measured inbound discovery through one relevant channel at a time. A real paid Selar transaction, KYC if requested, settlement and payout remain event-driven qualification gates.
+Measure the first live inbound channel through 24 September 2026. The Football Coaching Directory listing is public, the `freydigitalstudio.com` Google Search Console Domain property is verified, the product page is indexed over HTTPS and the privacy page has an active indexing request. Record exposure, search impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections separately. A real paid Selar transaction, KYC if requested, settlement and payout remain event-driven qualification gates.

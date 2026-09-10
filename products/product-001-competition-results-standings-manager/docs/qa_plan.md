@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Technical, ownership, privacy, OAuth, Selar checkout, managed fulfilment and outbound support gates passed; local landing-page release review in progress
-Last verified: 31 August 2026
+Status: Technical, ownership, privacy, OAuth, Selar checkout, managed fulfilment, outbound support and public landing-page gates passed; inbound discovery measurement in progress
+Last verified: 10 September 2026
 
 ## Purpose
 
@@ -22,7 +22,11 @@ The local landing page was checked against the approved positioning, delivery an
 
 At desktop and 375-pixel mobile widths, the local product and privacy routes had no page-level horizontal overflow. All public assets loaded, the page had one H1, complete image alternative text, valid landmarks, no duplicate IDs and no browser warnings or errors. The demonstration screenshots contain fictional teams and no buyer, order or private-account information.
 
-The release branch must include the untracked page assets and canonical landing-page brief, retain the historical v0.1.5.3 script unless an explicit archival decision is made, and receive Director approval before deployment. Dense screenshots now provide direct full-size links so mobile readers can inspect the underlying interface without relying on the cropped preview.
+At the review stage, the release branch was required to include the page assets and canonical landing-page brief, retain the historical v0.1.5.3 script unless an explicit archival decision was made, and receive Director approval before deployment. PR #18 then merged on 5 September 2026, and the canonical product and privacy routes plus root redirects were verified live. Dense screenshots use zoom-pointer and hover treatment so readers can inspect the underlying interface without a separate text link.
+
+## 10 September Discovery Baseline
+
+The Football Coaching Directory listing is public. The `freydigitalstudio.com` Google Search Console Domain property is verified. URL inspection confirmed that the canonical product page is indexed and served over HTTPS; the canonical privacy page was submitted to Google's priority crawl queue. No views, referrals, enquiries, checkout attempts or purchases are yet verified. This is a measurement baseline, not a product QA failure.
 
 ## 18 July Ordinary-user QA Result
 

@@ -260,7 +260,7 @@ Studio Version:
 
 Current Focus:
 
-Reviewing the redesigned Product 001 release candidate, its canonical route redirects and its current design contracts. Deployment, publication and paid-settlement qualification remain separately controlled.
+Measuring Product 001 through its live Selar offer, public Football Coaching Directory listing and verified Google Search Console property. Paid settlement, KYC and payout remain separately controlled until a real paid order occurs.
 
 ---
 

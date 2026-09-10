@@ -12,6 +12,11 @@
 - [Product information](https://freydigitalstudio.com/products/football-competition-manager/)
 - [Product privacy policy](https://freydigitalstudio.com/products/football-competition-manager/privacy/)
 
+## Public Discovery
+
+- [Football Coaching Directory listing](https://fcd.football/listing/football-competition-results-standings-manager)
+- Google Search Console Domain property for `freydigitalstudio.com`: verified 10 September 2026; product page indexed and privacy-page indexing requested
+
 ## Selar Store And Checkout
 
 - [Frey Digital Studio store](https://selar.com/m/frey_digital_studio), username `frey_digital_studio`
