@@ -1,8 +1,8 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Live Selar offer, checkout and managed fulfilment rehearsals passed; landing-page release review in progress
-Last verified: 31 August 2026
+Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
+Last verified: 10 September 2026
 
 ## Product State
 
@@ -30,10 +30,9 @@ The 28 July commercial gate approved public managed fulfilment. The Selar Servic
 
 ## Open Commercial Gates
 
-1. Complete the clean release branch and final corrections to the approved local landing page.
-2. Obtain Director feedback and explicit approval before deploying the page to the stable verified route.
-3. Begin measured inbound discovery through one relevant channel at a time after the approved page is live.
-4. When a real paid order occurs, complete any resulting KYC and verify settlement and payout.
+1. Measure the public Football Coaching Directory listing and Search Console baseline through 24 September 2026. Do not mistake low exposure for weak conversion.
+2. When a real paid order occurs, complete any resulting KYC and verify settlement and payout.
+3. Add a sitemap in a separately approved website-maintenance release. It is not a launch blocker.
 
 ## Release Timeline
 
@@ -48,8 +47,9 @@ The 28 July commercial gate approved public managed fulfilment. The Selar Servic
 | 17 August 2026 | Managed-fulfilment rehearsal | Completed. The approved sequence retained the verified identity, created the buyer-owned Form, processed a result and ended with buyer sole ownership. |
 | When a real paid order occurs | Selar settlement qualification | Complete any required KYC and confirm actual payout before treating Selar settlement as dependable. This is an event-driven gate, not a scheduled dependency. |
 | 27 August 2026 | Inbound discovery preparation | Prepare the public landing-page brief, reusable listing pack and authentic screenshot requirements without publishing or buying promotion. |
-| 31 August 2026 | Landing-page release review and repository reconciliation | Review the local candidate, resolve release-package integrity, prepare a clean PR and hold deployment for Director approval. No market-signal review is due before approved traffic begins. |
-| 14 September 2026 | Commercial conversion decision | Use sufficient market evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
+| 5 September 2026 | Landing-page release | Completed. PR #18 merged and the canonical product and privacy routes, root redirects and visual design contracts were verified live. |
+| 10 September 2026 | First inbound channel and search baseline | Completed. The Football Coaching Directory listing is public. Search Console domain ownership is verified, the product page is indexed and the privacy page has an active indexing request. |
+| 24 September 2026 | Commercial evidence checkpoint | Review the bounded FCD and Search Console exposure window. Use the available evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
 
 Any Calendar event descriptions should link back to this release plan and the canonical Product 001 records.
 
@@ -115,4 +115,4 @@ Do not blank or distribute the working master. Preserve v0.1.5.9, the Result For
 
 ## Next Release Decision
 
-Complete the clean release branch, verify the corrected local landing page and obtain Director approval. After approval, deploy to the existing stable route and verify production behaviour before beginning measured inbound discovery through one relevant channel at a time. Qualify payment settlement, KYC if requested and payout when a real paid order occurs. The Director retains approval authority for each publication destination and any paid promotion.
+Maintain the verified public routes and measure the first inbound channel through 24 September 2026. Review FCD visibility, Search Console impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections before changing the offer, price or product. Qualify payment settlement, KYC if requested and payout when a real paid order occurs. The Director retains approval authority for any new publication destination, paid promotion or website-maintenance release.
