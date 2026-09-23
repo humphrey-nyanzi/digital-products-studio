@@ -69,6 +69,8 @@ Repositories should remain focused.
 
 Do not combine unrelated products into the same repository.
 
+The Studio repository also holds `site/`, the shared publication surface and Product 001's existing public routes. The [Analysis Library concept](https://app.notion.com/p/39c6f66c017a8194a4c1f7bc98ab7b63) governs article selection; analytical evidence remains in its owning case repository. Publishing an article is a separate editorial release decision, not a Studio product release or a reason to create another repository. See [site/README.md](../../site/README.md).
+
 ---
 
 # Branch Strategy

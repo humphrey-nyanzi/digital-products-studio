@@ -185,6 +185,8 @@ Relevant Product Documentation
 
 Work should never ignore established Studio standards.
 
+For site work, also read [site/README.md](../../site/README.md), the [canonical Analysis Library concept](https://app.notion.com/p/39c6f66c017a8194a4c1f7bc98ab7b63) and the owning case's evidence and publication decision. Case closure does not authorise an article. Publishing an approved article and releasing a Studio product require separate decisions.
+
 ---
 
 # Respect Existing Decisions
