@@ -79,6 +79,7 @@ digital-products-studio/
 │   └── playbooks/
 │
 ├── products/
+├── site/                  # Publication surface and Product 001 public pages
 │
 ├── shared/
 │
@@ -279,13 +280,9 @@ These documents establish the Studio's operating principles before product work 
 
 # Repository Philosophy
 
-This repository does not primarily contain products.
+This repository holds the Studio's product-business system, Product 001 work and the source for its public site. Separate product repositories may be appropriate when a product needs one; active development alone does not require a move.
 
-It contains the system used to create products.
-
-Individual products should have their own repositories once they reach active development.
-
-The Studio repository remains the shared foundation that every product inherits.
+The [Analysis Library concept](https://app.notion.com/p/39c6f66c017a8194a4c1f7bc98ab7b63) is the canonical editorial and site direction. The [site guide](site/README.md) explains the current publication boundary. Lab and other case repositories own analytical evidence; this repository may publish only selected, approved article text and media. Publishing an article is a separate decision from releasing a Studio product.
 
 ---
 

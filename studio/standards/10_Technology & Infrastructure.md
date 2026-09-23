@@ -223,6 +223,9 @@ Contains:
 * Shared prompts
 * Shared assets
 * Studio-level planning
+* `site/` as the public publication surface and existing product-support pages
+
+The [Analysis Library concept](https://app.notion.com/p/39c6f66c017a8194a4c1f7bc98ab7b63) governs future article direction. Lab and case repositories retain analytical evidence; the Studio repository holds only approved publication content and assets. An article publication is not a Studio product release. See [site/README.md](../../site/README.md) for the current site boundary.
 
 ---
 
