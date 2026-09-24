@@ -1,8 +1,8 @@
 # QA Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Technical, ownership, privacy, OAuth, Selar checkout, managed fulfilment, outbound support and public landing-page gates passed; inbound discovery measurement in progress
-Last verified: 10 September 2026
+Status: Technical, ownership, privacy, OAuth, Selar checkout, managed fulfilment, outbound support and public landing-page gates passed; FCD discovery channel closed
+Last verified: 24 September 2026
 
 ## Purpose
 
@@ -26,7 +26,7 @@ At the review stage, the release branch was required to include the page assets 
 
 ## 10 September Discovery Baseline
 
-The Football Coaching Directory listing is public. The `freydigitalstudio.com` Google Search Console Domain property is verified. URL inspection confirmed that the canonical product page is indexed and served over HTTPS; the canonical privacy page was submitted to Google's priority crawl queue. No views, referrals, enquiries, checkout attempts or purchases are yet verified. This is a measurement baseline, not a product QA failure.
+At this historical baseline, the Football Coaching Directory listing was public. The Director deleted it on 24 September 2026; it is no longer an active test channel. The `freydigitalstudio.com` Google Search Console Domain property is verified. URL inspection confirmed that the canonical product page is indexed and served over HTTPS; the canonical privacy page was submitted to Google's priority crawl queue. The 24 September commercial evidence and measurement limits are maintained in the [release plan](release_plan.md#24-september-2026-commercial-evidence-checkpoint). This is a discovery-measurement issue, not a product QA failure.
 
 ## 18 July Ordinary-user QA Result
 

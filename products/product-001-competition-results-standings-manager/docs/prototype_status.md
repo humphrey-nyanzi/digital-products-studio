@@ -1,7 +1,7 @@
 # Prototype Status
 
 Product: Football Competition Results & Standings Manager  
-Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
+Status: Historical technical baseline; live Selar offer and managed fulfilment remain available. See the product README for current operating priority.
 Last verified: 10 September 2026
 
 ## Verified Product State
@@ -104,16 +104,16 @@ The test also found that Google Sheets did not visibly select the detected Afric
 - A fresh rehearsal workbook was cleaned to the approved 15-sheet customer structure without changing the working master.
 - The rehearsal then exposed a sequence error: the buyer-owned copy used a default Apps Script project and showed the unverified `Competitions` consent identity. The attempt stopped before permissions were granted. This is not a regression in the verified application. It confirms that the Studio must associate standard Cloud project `364546476326` while the support account owns the prepared copy, before transferring ownership.
 - The corrected 17 August rehearsal passed the required sequence: support-owned preparation, standard-project association, ownership transfer, verified consent, buyer Form setup, fixture publication, result approval, output checks and Studio access removal.
-- The Football Coaching Directory listing is public at `https://fcd.football/listing/football-competition-results-standings-manager`.
+- The Football Coaching Directory listing was published on 10 September, then deleted by the Director on 24 September 2026. It is no longer an active channel.
 - The `freydigitalstudio.com` Google Search Console Domain property is verified. The canonical product page is indexed over HTTPS and the canonical privacy page has an active indexing request.
 
 ## Active Blockers
 
-1. Measure the FCD and Search Console baseline through 24 September 2026. Separate exposure, click-through and conversion evidence.
+1. Complete the product-record and measurement cleanup in the [release plan](release_plan.md#24-september-2026-channel-closure-and-measurement-audit). Do not treat Cloudflare HTTP requests as buyer visits or resume FCD work.
 2. Complete one real paid Selar transaction, any resulting KYC and a successful payout before treating settlement as dependable.
 3. Keep v0.1.6.0 uninstalled unless a commercial requirement exposes a workflow-impact reason.
 4. Add a sitemap only in a separately approved website-maintenance release.
 
 ## Next Action
 
-Preserve the verified application and working master. Measure FCD visibility, Search Console impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections through 24 September 2026. Keep Selar KYC and successful payout open until a real paid order proves them.
+Preserve the verified application and working master. Verify product-page measurement and define a way to distinguish pageviews from outbound Selar clicks before approving another distribution test. Keep Selar KYC and successful payout open until a real paid order proves them.

@@ -1,7 +1,7 @@
 # Product 001: Football Competition Results & Standings Manager
 
-Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
-Last verified: 10 September 2026
+Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; event-driven fulfilment and support, without a dedicated promotion schedule
+Last verified: 24 September 2026
 
 Product 001 is a football-first Google Sheets and Google Forms system for small competition organisers, schools, academies, club networks and community tournaments.
 
@@ -100,4 +100,4 @@ The approved launch price is $19 for the first 10 paid buyers. The planned stand
 
 ## Next Action
 
-Measure the first live inbound channel through 24 September 2026. The Football Coaching Directory listing is public, the `freydigitalstudio.com` Google Search Console Domain property is verified, the product page is indexed over HTTPS and the privacy page has an active indexing request. Record exposure, search impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections separately. A real paid Selar transaction, KYC if requested, settlement and payout remain event-driven qualification gates.
+Keep the live $19 Selar Service available and fulfil actual orders under the verified managed-delivery procedure. Respond to support requests through the existing public route. No dedicated promotion, directory replacement or successor-product work is scheduled. The 24 September [commercial evidence checkpoint](docs/release_plan.md#24-september-2026-commercial-evidence-checkpoint) and [measurement audit](docs/release_plan.md#24-september-2026-channel-closure-and-measurement-audit) remain historical evidence, not an immediate growth-work mandate. A real paid Selar transaction, KYC if requested, settlement and payout remain event-driven qualification gates.

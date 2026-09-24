@@ -1,26 +1,22 @@
 # Digital Products Studio
 
-> Building practical, reliable digital products that solve real operational problems.
+> Working repository name. The public name is under review; do not treat this name as the long-term identity.
 
 ---
 
 ## Overview
 
-This repository contains the operating system for the Digital Products Studio.
+This repository retains the operating material for the existing product and the source of the public site. It is no longer a mandate to build a pipeline of digital products.
 
-The Studio is a structured product engineering environment for designing, building, releasing and maintaining lightweight digital products.
+The current direction is analytics-led: complete defensible analytical work in its owning case repository, then selectively share publication-safe findings through the public site. A useful method, template or tool may become a free or paid resource, but only when the work and a clear user need justify it. There is no standing Product 002 programme or dedicated Product 001 marketing campaign.
 
-Rather than treating every new product as an isolated project, the Studio provides a shared set of principles, standards, templates and workflows that ensure every product is developed consistently.
-
-The Studio itself is a product.
-
-Its purpose is to make building future products repeatable.
+Product 001 remains available through Selar as a manually fulfilled service. Its verified delivery, support, privacy and ownership-transfer obligations still apply to any order. The existing `studio/` standards and playbooks remain reference material for maintaining that offer or deliberately approving a future resource; they are not a required workflow for every analytics case or article.
 
 ---
 
-# What We Build
+# Existing Product Reference
 
-The Studio focuses on practical digital products such as:
+The product-era material in this repository covers practical digital systems such as:
 
 * Google Sheets systems
 * Microsoft Excel templates
@@ -36,9 +32,9 @@ Products are designed to solve one operational problem exceptionally well before
 
 ---
 
-# Product Categories
+# Historical Product Categories
 
-Current product categories include:
+The existing product system lists these categories; they are not an active development queue:
 
 * Sports Competitions
 * Sports Business
@@ -157,9 +153,9 @@ Examples:
 
 ---
 
-# Development Workflow
+# Product Development Workflow (When Needed)
 
-Every product follows the same lifecycle.
+Use this lifecycle only when a new product is deliberately approved. Analytical cases and articles follow their own owning workflows.
 
 ```text
 Idea
@@ -224,7 +220,7 @@ The Studio manages work using:
 * Pull Requests
 * Releases
 
-Every significant piece of work should begin as a GitHub Issue.
+Track significant repository work in GitHub when useful; analytical case work is tracked in its owning repository.
 
 The GitHub Project represents the Studio pipeline rather than a simple task board.
 
@@ -261,7 +257,7 @@ Studio Version:
 
 Current Focus:
 
-Measuring Product 001 through its live Selar offer, public Football Coaching Directory listing and verified Google Search Console property. Paid settlement, KYC and payout remain separately controlled until a real paid order occurs.
+Analytics and selective, evidence-led publication are the main direction. Product 001's Selar offer and public page remain live, with fulfilment and support handled when needed; no dedicated promotion schedule or successor-product pipeline is active. The former Football Coaching Directory listing was deleted on 24 September 2026. Paid settlement, KYC and payout remain unverified until a real paid order occurs.
 
 ---
 
@@ -280,7 +276,7 @@ These documents establish the Studio's operating principles before product work 
 
 # Repository Philosophy
 
-This repository holds the Studio's product-business system, Product 001 work and the source for its public site. Separate product repositories may be appropriate when a product needs one; active development alone does not require a move.
+This repository holds the inherited product-business system, Product 001 work and the source for its public site. It does not own analytical evidence; separate case repositories do. Keep the existing product infrastructure as long as the offer is live, without turning maintenance into a new product-building programme.
 
 The [Analysis Library concept](https://app.notion.com/p/39c6f66c017a8194a4c1f7bc98ab7b63) is the canonical editorial and site direction. The [site guide](site/README.md) explains the current publication boundary. Lab and other case repositories own analytical evidence; this repository may publish only selected, approved article text and media. Publishing an article is a separate decision from releasing a Studio product.
 
@@ -308,4 +304,4 @@ Humphrey Nyanzi
 
 ---
 
-> Build products that deserve to exist.
+> Do the analysis first. Share what is sound and useful.

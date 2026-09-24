@@ -1,8 +1,12 @@
 # Release Plan
 
 Product: Football Competition Results & Standings Manager  
-Status: Live Selar offer and public landing page; checkout and managed-fulfilment rehearsals passed; inbound discovery measurement in progress
-Last verified: 10 September 2026
+Status: Live Selar offer and public landing page; event-driven fulfilment and support; no dedicated promotion or successor-product schedule
+Last verified: 24 September 2026
+
+## Current operating direction — 24 September 2026
+
+Keep the offer open and honour real buyer and support obligations. Analytics and selective publication now take priority over Product 001 growth work. The measurement findings and proposed distribution steps below document the earlier commercial test; they are not current scheduled tasks. Revisit them only if Humphrey separately chooses another distribution experiment. Paid settlement, KYC if requested and payout remain unverified until a real paid order.
 
 ## Product State
 
@@ -30,7 +34,7 @@ The 28 July commercial gate approved public managed fulfilment. The Selar Servic
 
 ## Open Commercial Gates
 
-1. Measure the public Football Coaching Directory listing and Search Console baseline through 24 September 2026. Do not mistake low exposure for weak conversion.
+1. Clean the product records and verify page-level and outbound-click measurement before approving another bounded discovery test. FCD is closed. Do not mistake low or unmeasured exposure for weak conversion.
 2. When a real paid order occurs, complete any resulting KYC and verify settlement and payout.
 3. Add a sitemap in a separately approved website-maintenance release. It is not a launch blocker.
 
@@ -48,10 +52,37 @@ The 28 July commercial gate approved public managed fulfilment. The Selar Servic
 | When a real paid order occurs | Selar settlement qualification | Complete any required KYC and confirm actual payout before treating Selar settlement as dependable. This is an event-driven gate, not a scheduled dependency. |
 | 27 August 2026 | Inbound discovery preparation | Prepare the public landing-page brief, reusable listing pack and authentic screenshot requirements without publishing or buying promotion. |
 | 5 September 2026 | Landing-page release | Completed. PR #18 merged and the canonical product and privacy routes, root redirects and visual design contracts were verified live. |
-| 10 September 2026 | First inbound channel and search baseline | Completed. The Football Coaching Directory listing is public. Search Console domain ownership is verified, the product page is indexed and the privacy page has an active indexing request. |
-| 24 September 2026 | Commercial evidence checkpoint | Review the bounded FCD and Search Console exposure window. Use the available evidence to continue, revise, pause or close. Do not add speculative features to explain weak demand. |
+| 10 September 2026 | First inbound channel and search baseline | Completed at the time. The Football Coaching Directory listing was public. Search Console domain ownership was verified, the product page was indexed and the privacy page had an active indexing request. The FCD listing was later deleted. |
+| 24 September 2026 | Commercial evidence checkpoint | Completed with an Extend Evidence Collection decision. Search exposure was minimal, FCD views and outbound clicks were unavailable, and the available traffic data was not product-page specific. |
+| 24 September 2026 | FCD closure and measurement audit | The Director deleted the FCD listing and closed that channel. The live product, privacy and Selar offer routes passed a controlled navigation check. Cloudflare's pageview beacon was present in the served product HTML; pageview readback and outbound-click tracking remain unverified. |
 
 Any Calendar event descriptions should link back to this release plan and the canonical Product 001 records.
+
+## 24 September 2026 Commercial Evidence Checkpoint
+
+**Decision: Extend Evidence Collection.** The available evidence cannot distinguish weak demand from weak or unmeasured exposure. Keep the current product scope and launch price while preparing one bounded distribution test.
+
+| Source | Observed evidence | Limit |
+|---|---|---|
+| Google Search Console | In the 28-day report through 21 September: 3 impressions and 0 clicks. The product page had 2 impressions and the privacy page 1. Impressions occurred on 8, 11 and 15 September, so 2 followed the 10 September FCD publication. | Search Console covers Google search, not FCD or direct visits. Its report had not yet covered 22 to 24 September. |
+| Football Coaching Directory | At the checkpoint, the listing was public with the $19 price. Its public page displayed no listing-view or outbound-click count. It showed 0 community votes and its editorial evidence fields were unverified. | The public vote count was not a view count. A signed-in creator report was unavailable. The Director subsequently deleted the listing and closed the channel. |
+| FCD screenshots | Three screenshot thumbnails failed to display in Brave. The first direct website image loaded at 1100 by 650 pixels, while FCD's image proxy returned HTTP 400 with `"url" parameter is not allowed`. | This is a listing presentation defect, not evidence that the source image is missing. The other two direct source images and a second browser were not checked. |
+| Cloudflare HTTP Traffic | One screenshot showed 1.73k estimated unique visitors for the domain over the previous 30 days. Later HTTP Traffic screenshots showed 27.41k requests, 18.37k visits, about 982 requests to a truncated product-path entry, and substantial `curl` and probe-path activity. | These are HTTP traffic figures, not verified buyer pageviews, product-page visits or outbound Selar clicks. The path label was truncated and the traffic includes automated-looking requests. |
+| Cloudflare Web Analytics | A separate supplied screenshot showed 0 pageviews. | The property selection and collection window were not visible in that screenshot. It does not prove zero human readers. The measurement setup and readback need a controlled check. |
+| Selar | The creator dashboard showed All Sales 0, All Customers 1 and no product earnings data. The public $19 Service offer remained live. | The customer count includes the earlier zero-value rehearsal; the dashboard screenshot does not show checkout starts, failures or referral sources. |
+| Support inbox | The supplied inbox screenshot showed no visible buyer enquiry among the messages on screen. | An inbox screenshot does not establish that no enquiry or objection exists in other folders or time periods. |
+
+**Decision superseded later on 24 September:** The Director deleted the FCD listing and closed the channel after its login and presentation problems. Do not pursue FCD statistics, screenshots, account recovery or a replacement directory. First clean the product records and verify the domain's measurement path. A future publication destination, tracking change or website deployment requires its own release approval. Do not infer product or price failure from the current data.
+
+## 24 September 2026 Channel Closure And Measurement Audit
+
+- **Channel decision:** FCD is closed by the Director's explicit decision. The Director reported that the account remains because they could not find a way to delete it; no further FCD activity is planned. Retain the 10 and 24 September evidence above only as history.
+- **Live path:** A controlled browser visit to `https://freydigitalstudio.com/` redirected to the canonical product route. The product and product-specific privacy pages loaded. The product page's `View the $19 offer` link opened `https://selar.com/football-competition-manager`, which displayed the live Service at USD 19. The check stopped before checkout.
+- **Beacon installation:** The static site source does not embed the Cloudflare Web Analytics snippet, but a direct fetch of the served product HTML returned HTTP 200 and contained `static.cloudflareinsights.com/beacon.min.js`. Cloudflare can inject this snippet after deployment. Installation in served HTML is verified; successful collection is not.
+- **Readback limit:** The controlled visit could not be matched to a Cloudflare Web Analytics pageview because dashboard readback was unavailable in the checking browser. The earlier zero-pageview screenshot did not show enough context to validate the selected property or collection window. Do not use that zero as a conversion denominator.
+- **Outbound-click limit:** The Selar link navigates correctly, but the static site has no explicit outbound-click event. Cloudflare Web Analytics pageviews alone do not demonstrate that a visitor reached Selar. A measurement design for that step requires a separate review and, if it changes the site, release approval.
+
+**Next bounded step:** Confirm the correct Cloudflare Web Analytics property, collection window and product path; run a browser visit with the beacon allowed and read back the resulting pageview. Then decide whether a privacy-compatible outbound-click measure is necessary and design it before any deployment. Keep HTTP requests, browser pageviews, offer clicks, enquiries, checkout attempts and paid purchases as separate stages. Do not schedule a replacement channel until these stages can be interpreted.
 
 ## Pricing And Market Comparison
 
@@ -115,4 +146,4 @@ Do not blank or distribute the working master. Preserve v0.1.5.9, the Result For
 
 ## Next Release Decision
 
-Maintain the verified public routes and measure the first inbound channel through 24 September 2026. Review FCD visibility, Search Console impressions or clicks, product-page or Selar clicks, enquiries, checkout attempts, purchases and objections before changing the offer, price or product. Qualify payment settlement, KYC if requested and payout when a real paid order occurs. The Director retains approval authority for any new publication destination, paid promotion or website-maintenance release.
+Maintain the verified public routes and live Selar offer. Complete the measurement check above before planning another discovery channel. Review measured exposure and buyer actions before changing the offer, price or product. Qualify payment settlement, KYC if requested and payout when a real paid order occurs. The Director retains approval authority for any new publication destination, paid promotion or website-maintenance release.

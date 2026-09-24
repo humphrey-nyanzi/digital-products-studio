@@ -3,11 +3,11 @@
 ---
 
 **Document:** Studio Charter
-**Status:** Authoritative
+**Status:** Authoritative for the repository's current direction and any maintained product
 **Version:** 1.0.0
 **Owner:** Studio Director (Humphrey Nyanzi)
 **Authority:** Highest
-**Last Updated:** June 2026
+**Last Updated:** 24 September 2026
 **Next Review:** Annual or when the long-term vision fundamentally changes.
 
 ---
@@ -26,25 +26,23 @@ The Charter is intentionally stable. It should change rarely. Operational detail
 
 # Vision
 
-To become the most trusted creator of practical, reliable operational systems that help people and organisations make better decisions through data.
+To make careful analytical work useful beyond the project that produced it, while keeping reliable existing tools available to the people who need them.
 
 ---
 
 # Mission
 
-We design and maintain professional digital systems that solve real operational problems using accessible technologies.
+The primary work is sound analytics: ask a worthwhile question, examine evidence, state limitations, and share approved, public-safe findings clearly. Analytical case repositories own their evidence and methods; this repository may host selected publication content and practical resources.
 
-Our products prioritise clarity over complexity, reliability over novelty, and usefulness over feature count.
-
-They are designed to be adopted quickly, trusted daily and continuously improved through real-world use.
+Product 001 remains a live, manually fulfilled Selar service. We honour its buyer, privacy, support and ownership-transfer commitments without maintaining a dedicated promotion programme. New free or paid templates and tools are optional derivatives of useful work, not a product quota or automatic next step.
 
 ---
 
 # What We Build
 
-The Studio creates modular digital products that simplify operational work.
+The repository preserves standards for modular digital products that simplify operational work. These standards apply when maintaining Product 001 or when a future resource is explicitly chosen for development; they do not govern the analytical casework itself.
 
-Primary product categories are:
+The inherited product categories are:
 
 * Sports Competitions
 * Sports Businesses
@@ -255,7 +253,7 @@ The user should focus on solving their problem rather than understanding the sof
 
 # Engineering Philosophy
 
-The Studio is an engineering studio rather than a template factory.
+When developing a product, use engineering discipline rather than treating it as a disposable template.
 
 Every product is developed as though it were software regardless of its implementation technology.
 
@@ -289,17 +287,7 @@ Every remaining feature should deserve its place.
 
 # Monetisation Philosophy
 
-Revenue validates usefulness.
-
-It is not the primary objective.
-
-The Studio follows a value-first approach:
-
-1. Build products that solve real problems.
-2. Earn trust through quality.
-3. Offer premium versions, extensions and customisation where additional value is created.
-
-Custom implementation and tailored solutions are considered natural extensions of successful products.
+Revenue may follow from genuinely useful work; it is not a requirement for every analysis or publication. Existing products may continue to sell. A future free or paid resource requires a clear user need, a supportable scope and a separate decision to release it. Do not create a standing successor-product pipeline merely to maintain a storefront.
 
 ---
 
@@ -311,7 +299,7 @@ Before making significant decisions, ask:
 * Does it simplify or complicate the product?
 * Will users trust it?
 * Are regional assumptions visible, configurable or documented?
-* Will this decision still make sense when Product #50 ships?
+* Does this justify time away from the primary analytical work?
 * Does it align with this Charter?
 
 If the answer is no, reconsider the decision.
@@ -348,24 +336,10 @@ If a process repeatedly slows development without improving quality, it should b
 
 # Success
 
-The Studio measures success by:
-
-1. Real problems solved.
-2. Reliable products released.
-3. Users who trust the products.
-4. Sustainable revenue.
-5. Continuous improvement of both products and the Studio itself.
+The current direction measures success by defensible analytical work completed, useful public-safe interpretation shared when warranted, and reliable fulfilment of existing product commitments. Revenue and new resources matter when they arise from real value, not from a production target.
 
 ---
 
 # Closing Statement
 
-The Studio exists to create practical, reliable operational systems that people can depend on.
-
-Every product should make work simpler, decisions better and organisations more capable.
-
-We build with discipline, improve through iteration and pursue excellence through thoughtful engineering rather than unnecessary complexity.
-
-The Studio itself is our first product.
-
-Everything that follows should be worthy of being built upon it.
+This repository began as a product studio. Its working name and product-era documents remain for continuity, but the present emphasis is analytics, careful publication and a small set of useful resources when they earn their place. Existing customers and public commitments remain fully supported. A public rename is a separate decision; it is not made by this Charter update.

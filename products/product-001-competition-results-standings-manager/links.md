@@ -12,10 +12,11 @@
 - [Product information](https://freydigitalstudio.com/products/football-competition-manager/)
 - [Product privacy policy](https://freydigitalstudio.com/products/football-competition-manager/privacy/)
 
-## Public Discovery
+## Search And Measurement
 
-- [Football Coaching Directory listing](https://fcd.football/listing/football-competition-results-standings-manager)
 - Google Search Console Domain property for `freydigitalstudio.com`: verified 10 September 2026; product page indexed and privacy-page indexing requested
+- Cloudflare Web Analytics beacon was present in served product-page HTML on 24 September 2026; dashboard pageview readback and outbound Selar-click measurement remain unverified. See the [release plan](docs/release_plan.md#24-september-2026-channel-closure-and-measurement-audit).
+- The former Football Coaching Directory listing was deleted by the Director on 24 September 2026. Do not use it as an active route.
 
 ## Selar Store And Checkout
 

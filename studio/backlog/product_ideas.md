@@ -3,23 +3,23 @@
 ---
 
 **Document:** Product Ideas Backlog
-**Status:** Working
+**Status:** Parked reference; not an active product-development queue
 **Owner:** Studio Director (Humphrey Nyanzi)
-**Last Updated:** June 2026
+**Last Updated:** 24 September 2026
 
 ---
 
 # Purpose
 
-This backlog records product opportunities discovered through Studio research.
+This backlog preserves product opportunities identified during the product-first phase. Listing an idea here does not create a task, deadline or commitment to build it.
 
 It is not an approval document. Ideas listed here remain candidates until they pass the Studio product lifecycle: research, requirements, planning, design, development, QA, packaging and release approval.
 
-The current strategic priority is to develop sports-related products first. Non-sports systems may remain in research or internal testing until they are ready to be commoditised.
+The current priority is analytical work and selective publication. A free or paid template, tool or resource may be considered when completed work reveals a real user need and Humphrey explicitly chooses to pursue it. There is no standing Product 002 search, marketing programme or backlog review rhythm.
 
 ---
 
-# Current Product Priority
+# Existing Live Product
 
 ## Product 001: Football Competition Results & Standings Manager
 
@@ -27,7 +27,7 @@ The current strategic priority is to develop sports-related products first. Non-
 
 **Sport Focus:** Football / soccer first
 
-**Status:** Working prototype v0.1.0, final clean-copy QA pending
+**Status:** Live Selar service; managed fulfilment rehearsal passed. See the linked product records for current technical and commercial evidence.
 
 
 **Product Folder:** `products/product-001-competition-results-standings-manager/`
@@ -50,9 +50,7 @@ The current strategic priority is to develop sports-related products first. Non-
 * Apps Script only where it clearly improves reliability or usability
 * Markdown documentation
 
-**Reason For Priority:**
-
-This idea is strongly aligned with the Studio's sports-first direction, has clear operational pain, supports modular product development and creates a natural path from template product to custom implementation.
+**Current operating rule:** Keep the offer available and fulfil real orders under the existing service terms. Do not infer a new marketing or custom-implementation programme from this historical rationale.
 
 ---
 
@@ -62,7 +60,7 @@ This idea is strongly aligned with the Studio's sports-first direction, has clea
 
 **Category:** Sports Competitions
 
-**Status:** Working prototype v0.1.0, final clean-copy QA pending
+**Status:** Released as Product 001; see its own records rather than treating this duplicate idea entry as a separate build.
 
 **Core Problem:** Competition organisers need a reliable way to collect match results, calculate standings, validate tables and produce shareable outputs.
 
@@ -249,7 +247,7 @@ For Product 001, the most promising commercial path is a football / soccer compe
 
 # Review Rhythm
 
-Review this backlog after each completed research thread, product validation experiment or released product.
+Review this parked list only if a completed analytical case or a concrete user request creates a reason to consider a resource. No recurring backlog review is required.
 
 Ideas should be promoted only when they have:
 
